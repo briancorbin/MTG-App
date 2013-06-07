@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BCSearchOptionsTableViewController.h"
 
-@interface BCFullCardDatabaseViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
+@interface BCFullCardDatabaseViewController : UIViewController<BCSearchOptionsTableViewControllerDelegate,UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 @property (weak, nonatomic) IBOutlet UISearchBar *mySearchBar;
@@ -16,5 +17,9 @@
 
 @property (nonatomic, strong) NSArray *fullLibrary;
 @property (nonatomic, strong) NSMutableArray *searchingLibrary;
+
+@property (nonatomic, strong) NSMutableArray *setFilter;
+@property (nonatomic, strong) NSMutableArray *setIndexPaths;
+
 @property BOOL isSearching;
 @end

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		D36640061762714400010672 /* FullDatabase.txt in Resources */ = {isa = PBXBuildFile; fileRef = D36640051762714400010672 /* FullDatabase.txt */; };
 		D36640091762740300010672 /* BCCardImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36640081762740300010672 /* BCCardImageViewController.m */; };
+		D366400C17628F0A00010672 /* BCSearchOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366400B17628F0A00010672 /* BCSearchOptionsTableViewController.m */; };
+		D366400F1762977900010672 /* BCSetFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366400E1762977900010672 /* BCSetFilterViewController.m */; };
+		D366401117629A8C00010672 /* Set List.txt in Resources */ = {isa = PBXBuildFile; fileRef = D366401017629A8C00010672 /* Set List.txt */; };
+		D366401317629AA400010672 /* Block List.txt in Resources */ = {isa = PBXBuildFile; fileRef = D366401217629AA400010672 /* Block List.txt */; };
 		D3A437E61761111E00A9AE45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A437E51761111E00A9AE45 /* UIKit.framework */; };
 		D3A437E81761111E00A9AE45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A437E71761111E00A9AE45 /* Foundation.framework */; };
 		D3A437EA1761111E00A9AE45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A437E91761111E00A9AE45 /* CoreGraphics.framework */; };
@@ -29,6 +33,12 @@
 		D36640051762714400010672 /* FullDatabase.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FullDatabase.txt; sourceTree = "<group>"; };
 		D36640071762740300010672 /* BCCardImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardImageViewController.h; sourceTree = "<group>"; };
 		D36640081762740300010672 /* BCCardImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardImageViewController.m; sourceTree = "<group>"; };
+		D366400A17628F0A00010672 /* BCSearchOptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSearchOptionsTableViewController.h; sourceTree = "<group>"; };
+		D366400B17628F0A00010672 /* BCSearchOptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSearchOptionsTableViewController.m; sourceTree = "<group>"; };
+		D366400D1762977900010672 /* BCSetFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSetFilterViewController.h; sourceTree = "<group>"; };
+		D366400E1762977900010672 /* BCSetFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSetFilterViewController.m; sourceTree = "<group>"; };
+		D366401017629A8C00010672 /* Set List.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Set List.txt"; sourceTree = "<group>"; };
+		D366401217629AA400010672 /* Block List.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Block List.txt"; sourceTree = "<group>"; };
 		D3A437E21761111E00A9AE45 /* MTG App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTG App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A437E51761111E00A9AE45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3A437E71761111E00A9AE45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +110,10 @@
 				D3A437F41761111E00A9AE45 /* AppDelegate.h */,
 				D3A437F51761111E00A9AE45 /* AppDelegate.m */,
 				D3A437FD1761111E00A9AE45 /* MainStoryboard.storyboard */,
+				D366400D1762977900010672 /* BCSetFilterViewController.h */,
+				D366400E1762977900010672 /* BCSetFilterViewController.m */,
+				D366400A17628F0A00010672 /* BCSearchOptionsTableViewController.h */,
+				D366400B17628F0A00010672 /* BCSearchOptionsTableViewController.m */,
 				D36640071762740300010672 /* BCCardImageViewController.h */,
 				D36640081762740300010672 /* BCCardImageViewController.m */,
 				D3A438111761147700A9AE45 /* BCFullCardDatabaseViewController.h */,
@@ -118,6 +132,8 @@
 		D3A437EC1761111E00A9AE45 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D366401017629A8C00010672 /* Set List.txt */,
+				D366401217629AA400010672 /* Block List.txt */,
 				D36640051762714400010672 /* FullDatabase.txt */,
 				D3A437ED1761111E00A9AE45 /* MTG App-Info.plist */,
 				D3A437EE1761111E00A9AE45 /* InfoPlist.strings */,
@@ -187,6 +203,8 @@
 				D3A437FC1761111E00A9AE45 /* Default-568h@2x.png in Resources */,
 				D3A437FF1761111E00A9AE45 /* MainStoryboard.storyboard in Resources */,
 				D36640061762714400010672 /* FullDatabase.txt in Resources */,
+				D366401117629A8C00010672 /* Set List.txt in Resources */,
+				D366401317629AA400010672 /* Block List.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +222,8 @@
 				D3A43810176112C800A9AE45 /* BCSet.m in Sources */,
 				D3A438131761147700A9AE45 /* BCFullCardDatabaseViewController.m in Sources */,
 				D36640091762740300010672 /* BCCardImageViewController.m in Sources */,
+				D366400C17628F0A00010672 /* BCSearchOptionsTableViewController.m in Sources */,
+				D366400F1762977900010672 /* BCSetFilterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

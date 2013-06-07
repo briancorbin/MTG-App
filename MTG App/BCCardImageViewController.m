@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
     myImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=%@&type=card",selectedCard.imageID ]]]];
+    self.navigationItem.title = selectedCard.name;
 }
 
 - (void)didReceiveMemoryWarning

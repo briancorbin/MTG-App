@@ -11,13 +11,14 @@
 #import "BCSet.h"
 #import "BCLoadData.h"
 #import "BCCardImageViewController.h"
+#import "BCSearchOptionsTableViewController.h"
 
 @interface BCFullCardDatabaseViewController ()
 
 @end
 
 @implementation BCFullCardDatabaseViewController
-@synthesize mySearchBar, myTableView, searchingLibrary, fullLibrary, isSearching;
+@synthesize mySearchBar, myTableView, searchingLibrary, fullLibrary, isSearching, setFilter, setIndexPaths;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,10 +43,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-}
-
-- (IBAction)btnSeachOptions:(id)sender
-{
 }
 
 #pragma mark-TableViewCode
@@ -154,11 +151,39 @@
     cardImageViewController.selectedCard = tempMC;
 
     //Maybe use Navigation Controller to do this, if it works with the data transfer. Would be cleaner
-    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:NO];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
     [UIView commitAnimations];
-    [self presentViewController:cardImageViewController animated:YES completion:nil];
+    [self.navigationController pushViewController:cardImageViewController animated:YES];
+    //[self presentViewController:cardImageViewController animated:YES completion:nil];
     
     return indexPath;
+}
+
+
+#pragma mark-PassFilterDataToSearchOptions
+//-----------------------------------------------------------
+//----------------------SearchOptions------------------------
+//-----------------------------------------------------------
+
+- (IBAction)btnSeachOptions:(id)sender
+{
+    BCSearchOptionsTableViewController *newVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BCSearchOptionsTableViewController"];
+    newVC.setFilter = self.setFilter;
+    newVC.setIndexPaths = self.setIndexPaths;
+    newVC.delegate = self;
+    [self.navigationController pushViewController:newVC animated:YES];
+}
+
+-(void)passBackSetData:(BCSearchOptionsTableViewController *)controller didFinishWithFilter:(NSMutableArray *)Filter AndIndexPaths:(NSMutableArray *)IndexPaths
+{
+    if (setFilter == NULL) {
+        setFilter = [[NSMutableArray alloc]init];
+    }
+    if (setIndexPaths == NULL) {
+        setIndexPaths = [[NSMutableArray alloc]init];
+    }
+    self.setFilter = Filter;
+    self.setIndexPaths = IndexPaths;
 }
 
 @end
