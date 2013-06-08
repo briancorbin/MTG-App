@@ -40,7 +40,7 @@ Planeshift@Invasion
 Apocalypse@Invasion
 Odyssey@Odyssey
 Torment@Odyssey
-Judgement@Odyssey
+Judgment@Odyssey
 Onslaught@Onslaught
 Legions@Onslaught
 Scourge@Onslaught
@@ -50,7 +50,7 @@ Fifth Dawn@Mirrodin
 Champions of Kamigawa@Kamigawa
 Betrayers of Kamigawa@Kamigawa
 Saviors of Kamigawa@Kamigawa
-Ravnica:City of Guilds@Ravnica
+Ravnica: City of Guilds@Ravnica
 Guildpact@Ravnica
 Dissension@Ravnica
 Time Spiral@Time Spiral

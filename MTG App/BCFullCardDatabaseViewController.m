@@ -29,6 +29,11 @@
     return self;
 }
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -39,11 +44,6 @@
     NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
     fullLibrary = [fullLibrary sortedArrayUsingDescriptors:sortDescriptors];
     filteredLibrary = fullLibrary;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
 }
 
 #pragma mark-TableViewCode
@@ -164,13 +164,10 @@
     BCCardImageViewController *cardImageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BCCardImageViewController"];
     
     cardImageViewController.selectedCard = tempMC;
-
-    //Maybe use Navigation Controller to do this, if it works with the data transfer. Would be cleaner
-    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
-    [UIView commitAnimations];
-    [self.navigationController pushViewController:cardImageViewController animated:YES];
-    //[self presentViewController:cardImageViewController animated:YES completion:nil];
     
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
+    [self.navigationController pushViewController:cardImageViewController animated:YES];
+        
     return indexPath;
 }
 

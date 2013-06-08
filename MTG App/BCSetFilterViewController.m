@@ -80,11 +80,13 @@
     setsInBlock = [setList filteredArrayUsingPredicate:predicate];
     
     BCSet *tempSet = [setsInBlock objectAtIndex:[indexPath row]];
-    cell.textLabel.text = tempSet.setName;
+    UILabel *setNameLabel = (UILabel *)[cell viewWithTag:1];
+    setNameLabel.text = tempSet.setName;
     
-    if([self.checkedIndexPaths containsObject:indexPath])
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    else cell.accessoryType = UITableViewCellAccessoryNone;
+    UIImageView *setSymbolImageView = (UIImageView *)[cell viewWithTag:2];
+    
+    if([self.checkedIndexPaths containsObject:indexPath]) setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_rare.gif",tempSet.setName]];//cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    else setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_common.gif",tempSet.setName]]; //cell.accessoryType = UITableViewCellAccessoryNone;
 
     return cell;
 }
@@ -93,19 +95,22 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UITableViewCell *selectedCell = [self.tableView cellForRowAtIndexPath:indexPath];
+    UIImageView *setSymbolImageView = (UIImageView *)[selectedCell viewWithTag:2];
+    UILabel *setNameLabel = (UILabel *)[selectedCell viewWithTag:1];
     if(![self.checkedIndexPaths containsObject:indexPath])
     {
         [self.checkedIndexPaths addObject:indexPath];
-        [self.checkedSetNames addObject:selectedCell.textLabel.text];
-        selectedCell.accessoryType = UITableViewCellAccessoryCheckmark;
+        [self.checkedSetNames addObject:setNameLabel.text];
+        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_rare.gif",setNameLabel.text]];
+        //selectedCell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
     else
     {
         [self.checkedIndexPaths removeObject:indexPath];
-        [self.checkedSetNames removeObject:selectedCell.textLabel.text];
-        selectedCell.accessoryType = UITableViewCellAccessoryNone;
+        [self.checkedSetNames removeObject:setNameLabel.text];
+        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_common.gif",setNameLabel.text]];
+        //selectedCell.accessoryType = UITableViewCellAccessoryNone;
     }
-    NSLog(@"%@",checkedSetNames);
 }
 
 -(void)viewWillDisappear:(BOOL)animated
