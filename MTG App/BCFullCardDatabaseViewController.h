@@ -16,6 +16,7 @@
 - (IBAction)btnSeachOptions:(id)sender;
 
 @property (nonatomic, strong) NSArray *fullLibrary;
+@property (nonatomic, strong) NSArray *filteredLibrary;
 @property (nonatomic, strong) NSMutableArray *searchingLibrary;
 
 @property (nonatomic, strong) NSMutableArray *setFilter;

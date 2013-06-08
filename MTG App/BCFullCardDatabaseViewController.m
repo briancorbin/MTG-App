@@ -18,7 +18,7 @@
 @end
 
 @implementation BCFullCardDatabaseViewController
-@synthesize mySearchBar, myTableView, searchingLibrary, fullLibrary, isSearching, setFilter, setIndexPaths;
+@synthesize mySearchBar, myTableView, searchingLibrary, fullLibrary, isSearching, setFilter, setIndexPaths, filteredLibrary;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,6 +38,7 @@
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]initWithKey:@"name" ascending:YES];
     NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
     fullLibrary = [fullLibrary sortedArrayUsingDescriptors:sortDescriptors];
+    filteredLibrary = fullLibrary;
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,7 +59,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if(isSearching) return [searchingLibrary count];
-    return [fullLibrary count];
+    return [filteredLibrary count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -77,7 +78,7 @@
     }
     else
     {
-        BCMagicCard *tempMC = (BCMagicCard *)[fullLibrary objectAtIndex:indexPath.row];
+        BCMagicCard *tempMC = (BCMagicCard *)[filteredLibrary objectAtIndex:indexPath.row];
         cell.textLabel.text = tempMC.name;
     }
     
@@ -91,6 +92,20 @@
     [super viewWillAppear:animated];
     NSIndexPath* selection = [self.myTableView indexPathForSelectedRow];
     if(selection) [self.myTableView deselectRowAtIndexPath:selection animated:YES];
+    filteredLibrary = fullLibrary;//resets the filteredLibrary to contain all cards before filtering again
+    NSPredicate *predicate;
+    NSString *strPredicate;
+    //Fitlers out selected sets first
+    for (int i = 0; i<setFilter.count; i++)
+    {
+        if(i==0) strPredicate = [NSString stringWithFormat:@"set like[c] '%@'",[setFilter objectAtIndex:i]];
+        else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" OR set like[c] '%@'", [setFilter objectAtIndex:i]]];
+    }
+    if (strPredicate != nil) {
+        predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@", strPredicate]];
+        filteredLibrary = [filteredLibrary filteredArrayUsingPredicate:predicate];
+    }
+    [myTableView reloadData];
 }
 
 #pragma mark-SearchBarCode
@@ -107,7 +122,7 @@
     {
         isSearching = YES;
         searchingLibrary = [[NSMutableArray alloc]init];
-        for(BCMagicCard *tempMC in fullLibrary)
+        for(BCMagicCard *tempMC in filteredLibrary)
         {
             NSRange MCNameRange = [tempMC.name rangeOfString:searchText options:NSCaseInsensitiveSearch];
             if(MCNameRange.location != NSNotFound)
@@ -143,7 +158,7 @@
     }
     else
     {
-        tempMC = fullLibrary[indexPath.row];
+        tempMC = filteredLibrary[indexPath.row];
     }
     
     BCCardImageViewController *cardImageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BCCardImageViewController"];
