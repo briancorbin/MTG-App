@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BCSetFilterViewController.h"
+#import "BCCardTypeFilterViewController.h"
 
 @class BCSearchOptionsTableViewController;
 
@@ -17,13 +18,12 @@
 
 @end
 
-@interface BCSearchOptionsTableViewController : UITableViewController<BCSetFilterViewControllerDelegate>
+@interface BCSearchOptionsTableViewController : UITableViewController<BCSetFilterViewControllerDelegate, BCCardTypeFilterViewControllerDelegate>
 
 @property (strong, nonatomic) NSMutableArray *setFilter;
 @property (strong, nonatomic) NSMutableArray *setIndexPaths;
-@property (strong, nonatomic) NSMutableArray *editionFilter;
-@property (strong, nonatomic) NSMutableArray *colorFilter;
-@property (strong, nonatomic) NSMutableArray *rarityFilter;
+@property (strong, nonatomic) NSMutableArray *cardTypeFilter;
+@property (strong, nonatomic) NSMutableArray *cardTypeIndexPaths;
 
 
 @property (weak, nonatomic) id<BCSearchOptionsTableViewControllerDelegate>delegate;

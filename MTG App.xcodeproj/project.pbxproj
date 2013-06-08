@@ -366,6 +366,8 @@
 		D31D88121762CDA00037636A /* Zendikar_Mythic.gif in Resources */ = {isa = PBXBuildFile; fileRef = D31D86AB1762CDA00037636A /* Zendikar_Mythic.gif */; };
 		D31D88131762CDA00037636A /* Zendikar_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D31D86AC1762CDA00037636A /* Zendikar_Rare.gif */; };
 		D31D88141762CDA00037636A /* Zendikar_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D31D86AD1762CDA00037636A /* Zendikar_Uncommon.gif */; };
+		D35A5C29176371B100E96F4D /* Card Types.txt in Resources */ = {isa = PBXBuildFile; fileRef = D35A5C28176371B100E96F4D /* Card Types.txt */; };
+		D35A5C2C1763731700E96F4D /* BCCardTypeFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35A5C2B1763731700E96F4D /* BCCardTypeFilterViewController.m */; };
 		D36640061762714400010672 /* FullDatabase.txt in Resources */ = {isa = PBXBuildFile; fileRef = D36640051762714400010672 /* FullDatabase.txt */; };
 		D36640091762740300010672 /* BCCardImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36640081762740300010672 /* BCCardImageViewController.m */; };
 		D366400C17628F0A00010672 /* BCSearchOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366400B17628F0A00010672 /* BCSearchOptionsTableViewController.m */; };
@@ -386,6 +388,9 @@
 		D3A4380D176112A700A9AE45 /* BCMagicCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4380C176112A700A9AE45 /* BCMagicCard.m */; };
 		D3A43810176112C800A9AE45 /* BCSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4380F176112C800A9AE45 /* BCSet.m */; };
 		D3A438131761147700A9AE45 /* BCFullCardDatabaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A438121761147700A9AE45 /* BCFullCardDatabaseViewController.m */; };
+		D3A8BA5B1763786A007D23CE /* BCColorRarityFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A8BA5A1763786A007D23CE /* BCColorRarityFilterViewController.m */; };
+		D3A8BA5D176378F7007D23CE /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3A8BA5C176378F7007D23CE /* Colors.txt */; };
+		D3A8BA5F17637903007D23CE /* Rarities.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3A8BA5E17637903007D23CE /* Rarities.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -748,6 +753,9 @@
 		D31D86AB1762CDA00037636A /* Zendikar_Mythic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Zendikar_Mythic.gif; sourceTree = "<group>"; };
 		D31D86AC1762CDA00037636A /* Zendikar_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Zendikar_Rare.gif; sourceTree = "<group>"; };
 		D31D86AD1762CDA00037636A /* Zendikar_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Zendikar_Uncommon.gif; sourceTree = "<group>"; };
+		D35A5C28176371B100E96F4D /* Card Types.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Card Types.txt"; sourceTree = "<group>"; };
+		D35A5C2A1763731700E96F4D /* BCCardTypeFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardTypeFilterViewController.h; sourceTree = "<group>"; };
+		D35A5C2B1763731700E96F4D /* BCCardTypeFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardTypeFilterViewController.m; sourceTree = "<group>"; };
 		D36640051762714400010672 /* FullDatabase.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FullDatabase.txt; sourceTree = "<group>"; };
 		D36640071762740300010672 /* BCCardImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardImageViewController.h; sourceTree = "<group>"; };
 		D36640081762740300010672 /* BCCardImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardImageViewController.m; sourceTree = "<group>"; };
@@ -779,6 +787,10 @@
 		D3A4380F176112C800A9AE45 /* BCSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSet.m; sourceTree = "<group>"; };
 		D3A438111761147700A9AE45 /* BCFullCardDatabaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFullCardDatabaseViewController.h; sourceTree = "<group>"; };
 		D3A438121761147700A9AE45 /* BCFullCardDatabaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFullCardDatabaseViewController.m; sourceTree = "<group>"; };
+		D3A8BA591763786A007D23CE /* BCColorRarityFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCColorRarityFilterViewController.h; sourceTree = "<group>"; };
+		D3A8BA5A1763786A007D23CE /* BCColorRarityFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCColorRarityFilterViewController.m; sourceTree = "<group>"; };
+		D3A8BA5C176378F7007D23CE /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
+		D3A8BA5E17637903007D23CE /* Rarities.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rarities.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -831,6 +843,9 @@
 				D366401017629A8C00010672 /* Set List.txt */,
 				D366401217629AA400010672 /* Block List.txt */,
 				D36640051762714400010672 /* FullDatabase.txt */,
+				D35A5C28176371B100E96F4D /* Card Types.txt */,
+				D3A8BA5C176378F7007D23CE /* Colors.txt */,
+				D3A8BA5E17637903007D23CE /* Rarities.txt */,
 			);
 			name = "Load Data";
 			sourceTree = "<group>";
@@ -852,6 +867,10 @@
 			children = (
 				D366400D1762977900010672 /* BCSetFilterViewController.h */,
 				D366400E1762977900010672 /* BCSetFilterViewController.m */,
+				D35A5C2A1763731700E96F4D /* BCCardTypeFilterViewController.h */,
+				D35A5C2B1763731700E96F4D /* BCCardTypeFilterViewController.m */,
+				D3A8BA591763786A007D23CE /* BCColorRarityFilterViewController.h */,
+				D3A8BA5A1763786A007D23CE /* BCColorRarityFilterViewController.m */,
 			);
 			name = SearchOptionTo;
 			sourceTree = "<group>";
@@ -1705,6 +1724,9 @@
 				D31D88121762CDA00037636A /* Zendikar_Mythic.gif in Resources */,
 				D31D88131762CDA00037636A /* Zendikar_Rare.gif in Resources */,
 				D31D88141762CDA00037636A /* Zendikar_Uncommon.gif in Resources */,
+				D35A5C29176371B100E96F4D /* Card Types.txt in Resources */,
+				D3A8BA5D176378F7007D23CE /* Colors.txt in Resources */,
+				D3A8BA5F17637903007D23CE /* Rarities.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1724,6 +1746,8 @@
 				D36640091762740300010672 /* BCCardImageViewController.m in Sources */,
 				D366400C17628F0A00010672 /* BCSearchOptionsTableViewController.m in Sources */,
 				D366400F1762977900010672 /* BCSetFilterViewController.m in Sources */,
+				D35A5C2C1763731700E96F4D /* BCCardTypeFilterViewController.m in Sources */,
+				D3A8BA5B1763786A007D23CE /* BCColorRarityFilterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

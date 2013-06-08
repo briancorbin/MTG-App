@@ -1,0 +1,9 @@
+Card Type
+Artifact
+Creature
+Enchantment
+Instant
+Land
+Planeswalker
+Tribal
+Sorcery

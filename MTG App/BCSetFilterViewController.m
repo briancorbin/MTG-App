@@ -27,6 +27,8 @@
 
 - (void)viewDidLoad
 {
+    self.navigationItem.title = @"Set Filter";
+    
     BCLoadData *loadData = [[BCLoadData alloc]init];
     setList = [loadData loadSetData];
     if (checkedIndexPaths == NULL) {

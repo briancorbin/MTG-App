@@ -12,7 +12,7 @@
 
 @implementation BCLoadData
 
-@synthesize cardLibrary, setList, blockList;
+@synthesize cardLibrary, setList, blockList, cardTypeList, colorList, rarityList;
 
 -(NSMutableArray *)loadCardData
 {
@@ -81,6 +81,50 @@
         [blockList addObject:[rowArray objectAtIndex:i]];
     }
     return blockList;
+}
+
+-(NSMutableArray *)loadCardTypeData
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Card Types" ofType:@"txt"];
+    NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    NSMutableArray *rowArray = [[NSMutableArray alloc] initWithArray:[fileContent componentsSeparatedByString:@"\n"]];
+    [rowArray removeObjectAtIndex:0];
+    cardTypeList = [[NSMutableArray alloc]init];
+    for (int i=0; i<rowArray.count;i++)
+    {
+        [cardTypeList addObject:[rowArray objectAtIndex:i]];
+    }
+    return cardTypeList;
+}
+
+-(NSMutableArray *)loadColorData
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Colors" ofType:@"txt"];
+    NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    NSMutableArray *rowArray = [[NSMutableArray alloc] initWithArray:[fileContent componentsSeparatedByString:@"\n"]];
+    [rowArray removeObjectAtIndex:0];
+    colorList = [[NSMutableArray alloc]init];
+    for (int i=0; i<rowArray.count;i++)
+    {
+        [colorList addObject:[rowArray objectAtIndex:i]];
+    }
+    return colorList;
+
+}
+
+-(NSMutableArray *)loadRarityData
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Rarities" ofType:@"txt"];
+    NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    NSMutableArray *rowArray = [[NSMutableArray alloc] initWithArray:[fileContent componentsSeparatedByString:@"\n"]];
+    [rowArray removeObjectAtIndex:0];
+    rarityList = [[NSMutableArray alloc]init];
+    for (int i=0; i<rowArray.count;i++)
+    {
+        [rarityList addObject:[rowArray objectAtIndex:i]];
+    }
+    return rarityList;
+
 }
 
 @end

@@ -1,0 +1,5 @@
+Rarities
+Common
+Uncommon
+Rare
+Mythic
