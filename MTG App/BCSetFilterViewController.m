@@ -102,18 +102,17 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UITableViewCell *selectedCell = [self.tableView cellForRowAtIndexPath:indexPath];
     UIImageView *setSymbolImageView = (UIImageView *)[selectedCell viewWithTag:2];
-    UILabel *setNameLabel = (UILabel *)[selectedCell viewWithTag:1];
     UILabel *setCodeLabel = (UILabel *)[selectedCell viewWithTag:3];
     if(![self.checkedIndexPaths containsObject:indexPath])
     {
         [self.checkedIndexPaths addObject:indexPath];
-        [self.checkedSetNames addObject:setNameLabel.text];
+        [self.checkedSetNames addObject:setCodeLabel.text];
         setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_R.gif",setCodeLabel.text]];
     }
     else
     {
         [self.checkedIndexPaths removeObject:indexPath];
-        [self.checkedSetNames removeObject:setNameLabel.text];
+        [self.checkedSetNames removeObject:setCodeLabel.text];
         setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_C.gif",setCodeLabel.text]];
     }
 }

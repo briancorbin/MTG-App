@@ -105,8 +105,8 @@
     //Fitlers out selected sets first
     for (int i = 0; i<setFilter.count; i++)
     {
-        if(i==0) strPredicate = [NSString stringWithFormat:@"set like[c] '%@'",[setFilter objectAtIndex:i]];
-        else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" OR set like[c] '%@'", [setFilter objectAtIndex:i]]];
+        if(i==0) strPredicate = [NSString stringWithFormat:@"setCode like[c] '%@'",[setFilter objectAtIndex:i]];
+        else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" OR setCode like[c] '%@'", [setFilter objectAtIndex:i]]];
     }
     if (strPredicate != nil) {
         predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@", strPredicate]];

@@ -14,7 +14,7 @@ Magic 2010@Core@M10
 Magic 2011@Core@M11
 Magic 2012@Core@M12
 Magic 2013@Core@M13
-Arabian Nights@None@ARN
+Arabian Nights@None@AN
 Antiquities@None@ATQ
 Legends@None@LEG
 The Dark@None@DRK
