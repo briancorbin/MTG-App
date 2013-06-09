@@ -37,7 +37,7 @@
     if (checkedSetNames == NULL) checkedSetNames = [[NSMutableArray alloc]init];
     
     //Create right bar button to reset filter to contain no objects
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]initWithTitle:@"Reset Filter" style:UIBarButtonItemStyleBordered target:self action:@selector(actionResetSetFilter:)];
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]initWithTitle:@"Reset" style:UIBarButtonItemStyleBordered target:self action:@selector(actionResetFilter:)];
     self.navigationItem.rightBarButtonItem = rightButton;
 }
 
@@ -123,7 +123,7 @@
     [self.delegate passSetFilterBack:self didFinishWithFilter:self.checkedSetNames AndIndexPaths:self.checkedIndexPaths];
 }
 
--(IBAction)actionResetSetFilter:(id)sender
+-(IBAction)actionResetFilter:(id)sender
 {
     [self.checkedIndexPaths removeAllObjects];
     [self.checkedSetNames removeAllObjects];

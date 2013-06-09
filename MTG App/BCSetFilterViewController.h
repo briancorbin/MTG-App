@@ -22,7 +22,7 @@
 @property (strong, nonatomic) NSMutableArray *checkedIndexPaths;
 @property (strong, nonatomic) NSMutableArray *checkedSetNames;
 
-- (IBAction)actionResetSetFilter:(id)sender;
+- (IBAction)actionResetFilter:(id)sender;
 
 @property (weak, nonatomic) id<BCSetFilterViewControllerDelegate>delegate;
 

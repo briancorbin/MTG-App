@@ -33,7 +33,7 @@
     UIBarButtonItem *backBarButton = [[UIBarButtonItem alloc]init];
     backBarButton.title = @"Back";
     self.navigationItem.backBarButtonItem = backBarButton;
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]initWithTitle:@"Reset Filters" style:UIBarButtonItemStyleBordered target:self action:@selector(actionResetFilters:)];
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]initWithTitle:@"Reset All" style:UIBarButtonItemStyleBordered target:self action:@selector(actionResetFilters:)];
     self.navigationItem.rightBarButtonItem = rightButton;
 }
 

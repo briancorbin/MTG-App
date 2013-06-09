@@ -23,6 +23,7 @@
 @property (strong, nonatomic) NSMutableArray *checkedRarities;
 @property (strong, nonatomic) NSMutableArray *checkedIndexPaths;
 
+- (IBAction)actionResetFilter:(id)sender;
 
 @property (weak, nonatomic)id <BCColorRarityFilterViewControllerDelegate>delegate;
 

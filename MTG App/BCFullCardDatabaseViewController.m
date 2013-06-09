@@ -122,6 +122,39 @@
         predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@", strPredicate]];
         filteredLibrary = [filteredLibrary filteredArrayUsingPredicate:predicate];
     }
+    //then filter out selected colors
+    for(int i=0; i<colorFilter.count; i++)
+    {
+        NSString *selectedColor;
+        if([[colorFilter objectAtIndex:i] isEqualToString:@"White"]) selectedColor = @"W";
+        if([[colorFilter objectAtIndex:i] isEqualToString:@"Black"]) selectedColor = @"B";
+        if([[colorFilter objectAtIndex:i] isEqualToString:@"Blue"]) selectedColor = @"U";
+        if([[colorFilter objectAtIndex:i] isEqualToString:@"Red"]) selectedColor = @"R";
+        if([[colorFilter objectAtIndex:i] isEqualToString:@"Green"]) selectedColor = @"G";
+        if(i==0)strPredicate = [NSString stringWithFormat:@"color CONTAINS[c] '%@'", selectedColor];
+        else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" OR color CONTAINS[c] '%@'",selectedColor]];
+    }
+    if (strPredicate != nil) {
+        predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@", strPredicate]];
+        filteredLibrary = [filteredLibrary filteredArrayUsingPredicate:predicate];
+    }
+    //then filter our selected rarities
+    for(int i=0; i<rarityFilter.count; i++)
+    {
+        NSString *selectedRarity;
+        if([[rarityFilter objectAtIndex:i] isEqualToString:@"Common"]) selectedRarity = @"C";
+        if([[rarityFilter objectAtIndex:i] isEqualToString:@"Uncommon"]) selectedRarity = @"U";
+        if([[rarityFilter objectAtIndex:i] isEqualToString:@"Rare"]) selectedRarity = @"R";
+        if([[rarityFilter objectAtIndex:i] isEqualToString:@"Mythic"]) selectedRarity = @"M";
+        if([[rarityFilter objectAtIndex:i] isEqualToString:@"Land"]) selectedRarity = @"L";
+        if(i==0) strPredicate = [NSString stringWithFormat:@"rarity CONTAINS[c] '%@'", selectedRarity];
+        else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" OR rarity CONTAINS[c] '%@'", selectedRarity]];
+    }
+    if (strPredicate != nil) {
+        predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@", strPredicate]];
+        filteredLibrary = [filteredLibrary filteredArrayUsingPredicate:predicate];
+    }
+
     [myTableView reloadData];
 }
 
@@ -189,9 +222,9 @@
 }
 
 
-#pragma mark-PassFilterDataToSearchOptions
+#pragma mark-PassFilterDataToSearchOptionsViewController
 //-----------------------------------------------------------
-//----------------------SearchOptions------------------------
+//--------------------SearchOptionsVC------------------------
 //-----------------------------------------------------------
 
 - (IBAction)btnSeachOptions:(id)sender
@@ -207,8 +240,6 @@
     newVC.delegate = self;
     [self.navigationController pushViewController:newVC animated:YES];
 }
-
-//Passing data between view controllers
 
 -(void)passBackSetFilterData:(BCSearchOptionsTableViewController *)controller didFinishWithFilter:(NSMutableArray *)Filter AndIndexPaths:(NSMutableArray *)IndexPaths
 {

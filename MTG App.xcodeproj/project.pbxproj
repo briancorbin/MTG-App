@@ -373,7 +373,6 @@
 		D3394F351764E1E300510E51 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F301764E1E300510E51 /* Red.png */; };
 		D35A5C29176371B100E96F4D /* Card Types.txt in Resources */ = {isa = PBXBuildFile; fileRef = D35A5C28176371B100E96F4D /* Card Types.txt */; };
 		D35A5C2C1763731700E96F4D /* BCCardTypeFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35A5C2B1763731700E96F4D /* BCCardTypeFilterViewController.m */; };
-		D36640061762714400010672 /* FullDatabase.txt in Resources */ = {isa = PBXBuildFile; fileRef = D36640051762714400010672 /* FullDatabase.txt */; };
 		D36640091762740300010672 /* BCCardImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36640081762740300010672 /* BCCardImageViewController.m */; };
 		D366400C17628F0A00010672 /* BCSearchOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366400B17628F0A00010672 /* BCSearchOptionsTableViewController.m */; };
 		D366400F1762977900010672 /* BCSetFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366400E1762977900010672 /* BCSetFilterViewController.m */; };
@@ -767,7 +766,6 @@
 		D35A5C28176371B100E96F4D /* Card Types.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Card Types.txt"; sourceTree = "<group>"; };
 		D35A5C2A1763731700E96F4D /* BCCardTypeFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardTypeFilterViewController.h; sourceTree = "<group>"; };
 		D35A5C2B1763731700E96F4D /* BCCardTypeFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardTypeFilterViewController.m; sourceTree = "<group>"; };
-		D36640051762714400010672 /* FullDatabase.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FullDatabase.txt; sourceTree = "<group>"; };
 		D36640071762740300010672 /* BCCardImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardImageViewController.h; sourceTree = "<group>"; };
 		D36640081762740300010672 /* BCCardImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardImageViewController.m; sourceTree = "<group>"; };
 		D366400A17628F0A00010672 /* BCSearchOptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSearchOptionsTableViewController.h; sourceTree = "<group>"; };
@@ -852,13 +850,12 @@
 		D31D85411762C7C90037636A /* Load Data */ = {
 			isa = PBXGroup;
 			children = (
+				D380E234176436BE00187964 /* test.txt */,
 				D366401017629A8C00010672 /* Set List.txt */,
 				D366401217629AA400010672 /* Block List.txt */,
-				D36640051762714400010672 /* FullDatabase.txt */,
 				D35A5C28176371B100E96F4D /* Card Types.txt */,
 				D3A8BA5C176378F7007D23CE /* Colors.txt */,
 				D3A8BA5E17637903007D23CE /* Rarities.txt */,
-				D380E234176436BE00187964 /* test.txt */,
 			);
 			name = "Load Data";
 			sourceTree = "<group>";
@@ -1396,7 +1393,6 @@
 				D3A437FA1761111E00A9AE45 /* Default@2x.png in Resources */,
 				D3A437FC1761111E00A9AE45 /* Default-568h@2x.png in Resources */,
 				D3A437FF1761111E00A9AE45 /* MainStoryboard.storyboard in Resources */,
-				D36640061762714400010672 /* FullDatabase.txt in Resources */,
 				D366401117629A8C00010672 /* Set List.txt in Resources */,
 				D366401317629AA400010672 /* Block List.txt in Resources */,
 				D35A5C29176371B100E96F4D /* Card Types.txt in Resources */,

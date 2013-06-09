@@ -35,6 +35,10 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Card Type Filter";
     
+    //Create right bar button to reset filter to contain no objects
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]initWithTitle:@"Reset" style:UIBarButtonItemStyleBordered target:self action:@selector(actionResetFilter:)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+    
     BCLoadData *loadData = [[BCLoadData alloc]init];
     cardTypeList = [loadData loadCardTypeData];
     if(checkedIndexPaths == NULL) checkedIndexPaths = [[NSMutableArray alloc]init];
@@ -84,6 +88,13 @@
         selectedCell.accessoryType = UITableViewCellAccessoryNone;
     }
 
+}
+
+-(IBAction)actionResetFilter:(id)sender
+{
+    [self.checkedIndexPaths removeAllObjects];
+    [self.checkedCardTypeNames removeAllObjects];
+    [self.tableView reloadData];
 }
 
 -(void)viewWillDisappear:(BOOL)animated

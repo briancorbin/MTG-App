@@ -31,6 +31,10 @@
     
     self.navigationItem.title = @"Color/Rarity Filter";
     
+    //Create right bar button to reset filter to contain no objects
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]initWithTitle:@"Reset" style:UIBarButtonItemStyleBordered target:self action:@selector(actionResetFilter:)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+    
     BCLoadData *loadData = [[BCLoadData alloc]init];
     
     colorList = [loadData loadColorData];
@@ -106,6 +110,14 @@
         selectedCell.accessoryType = UITableViewCellAccessoryNone;
     }
 
+}
+
+-(IBAction)actionResetFilter:(id)sender
+{
+    [self.checkedIndexPaths removeAllObjects];
+    [self.checkedColors removeAllObjects];
+    [self.checkedRarities removeAllObjects];
+    [self.tableView reloadData];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
