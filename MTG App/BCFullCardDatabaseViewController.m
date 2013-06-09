@@ -18,7 +18,7 @@
 @end
 
 @implementation BCFullCardDatabaseViewController
-@synthesize mySearchBar, myTableView, searchingLibrary, fullLibrary, isSearching, setFilter, setIndexPaths, filteredLibrary, cardTypeIndexPaths, cardTypeFilter;
+@synthesize mySearchBar, myTableView, searchingLibrary, fullLibrary, isSearching, setFilter, setIndexPaths, filteredLibrary, cardTypeIndexPaths, cardTypeFilter, colorRarityIndexPaths, colorFilter, rarityFilter;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -201,6 +201,9 @@
     newVC.setIndexPaths = self.setIndexPaths;
     newVC.cardTypeFilter = self.cardTypeFilter;
     newVC.cardTypeIndexPaths = self.cardTypeIndexPaths;
+    newVC.colorFilter = self.colorFilter;
+    newVC.rarityFilter = self.rarityFilter;
+    newVC.colorRarityIndexPaths = self.colorRarityIndexPaths;
     newVC.delegate = self;
     [self.navigationController pushViewController:newVC animated:YES];
 }
@@ -221,6 +224,16 @@
     if(cardTypeIndexPaths == NULL) cardTypeIndexPaths = [[NSMutableArray alloc]init];
     self.cardTypeFilter = Filter;
     self.cardTypeIndexPaths = IndexPaths;
+}
+
+-(void)passBackColorRarityFilterData:(BCSearchOptionsTableViewController *)controller didFinishWithColorFilter:(NSMutableArray *)ColorFilter AndRarityFilter:(NSMutableArray *)RarityFilter AndIndexPaths:(NSMutableArray *)IndexPaths
+{
+    if(colorFilter == NULL) colorFilter = [[NSMutableArray alloc]init];
+    if(rarityFilter == NULL) rarityFilter = [[NSMutableArray alloc]init];
+    if(colorRarityIndexPaths == NULL) colorRarityIndexPaths = [[NSMutableArray alloc]init];
+    self.colorFilter = ColorFilter;
+    self.rarityFilter = RarityFilter;
+    self.colorRarityIndexPaths = IndexPaths;
 }
 
 @end

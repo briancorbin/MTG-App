@@ -4,3 +4,4 @@ Blue
 Black
 Green
 White
+Colorless

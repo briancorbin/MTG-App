@@ -15,7 +15,7 @@
 @end
 
 @implementation BCSearchOptionsTableViewController
-@synthesize setFilter, setIndexPaths, cardTypeFilter, cardTypeIndexPaths;
+@synthesize setFilter, setIndexPaths, cardTypeFilter, cardTypeIndexPaths, colorFilter, rarityFilter, colorRarityIndexPaths;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -33,6 +33,8 @@
     UIBarButtonItem *backBarButton = [[UIBarButtonItem alloc]init];
     backBarButton.title = @"Back";
     self.navigationItem.backBarButtonItem = backBarButton;
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]initWithTitle:@"Reset Filters" style:UIBarButtonItemStyleBordered target:self action:@selector(actionResetFilters:)];
+    self.navigationItem.rightBarButtonItem = rightButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,12 +60,22 @@
         newVC.delegate = self;
         [self.navigationController pushViewController:newVC animated:YES];
     }
+    if(indexPath.row == 2)
+    {
+        BCColorRarityFilterViewController *newVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BCColorRarityFilterViewController"];
+        newVC.checkedColors = colorFilter;
+        newVC.checkedRarities = rarityFilter;
+        newVC.checkedIndexPaths = colorRarityIndexPaths;
+        newVC.delegate = self;
+        [self.navigationController pushViewController:newVC animated:YES];
+    }
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     [self.delegate passBackSetFilterData:self didFinishWithFilter:self.setFilter AndIndexPaths:self.setIndexPaths];
     [self.delegate passBackCardTypeFilterData:self didFinishWithFilter:self.cardTypeFilter AndIndexPaths:self.cardTypeIndexPaths];
+    [self.delegate passBackColorRarityFilterData:self didFinishWithColorFilter:colorFilter AndRarityFilter:rarityFilter AndIndexPaths:colorRarityIndexPaths];
 }
 
 -(void)passSetFilterBack:(BCSetFilterViewController *)controller didFinishWithFilter:(NSMutableArray *)Filter AndIndexPaths:(NSMutableArray *)indexPaths
@@ -80,6 +92,26 @@
     if(self.cardTypeFilter == NULL) self.cardTypeFilter = [[NSMutableArray alloc]init];
     self.cardTypeFilter = Filter;
     self.cardTypeIndexPaths = indexPaths;
+}
+-(void)passDataBack:(BCColorRarityFilterViewController *)controller didFinishWithColorFilter:(NSMutableArray *)ColorFilter AndRarityFilter:(NSMutableArray *)RarityFilter AndIndexPaths:(NSMutableArray *)IndexPaths
+{
+    if(self.colorRarityIndexPaths == NULL) self.colorRarityIndexPaths = [[NSMutableArray alloc]init];
+    if(self.colorFilter == NULL) self.colorFilter = [[NSMutableArray alloc]init];
+    if(self.rarityFilter == NULL) self.rarityFilter = [[NSMutableArray alloc]init];
+    self.colorRarityIndexPaths = IndexPaths;
+    self.colorFilter = ColorFilter;
+    self.rarityFilter = RarityFilter;
+}
+
+-(IBAction)actionResetFilters:(id)sender
+{
+    self.setFilter = NULL;
+    self.setIndexPaths = NULL;
+    self.cardTypeFilter = NULL;
+    self.cardTypeIndexPaths = NULL;
+    self.colorFilter = NULL;
+    self.rarityFilter = NULL;
+    self.colorRarityIndexPaths = NULL;
 }
 
 @end

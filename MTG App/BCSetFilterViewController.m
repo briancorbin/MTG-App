@@ -104,7 +104,6 @@
     UIImageView *setSymbolImageView = (UIImageView *)[selectedCell viewWithTag:2];
     UILabel *setNameLabel = (UILabel *)[selectedCell viewWithTag:1];
     UILabel *setCodeLabel = (UILabel *)[selectedCell viewWithTag:3];
-    NSLog(@"%@",setCodeLabel.text);
     if(![self.checkedIndexPaths containsObject:indexPath])
     {
         [self.checkedIndexPaths addObject:indexPath];

@@ -366,6 +366,11 @@
 		D3394F281764D1E500510E51 /* Zendikar_Mythic.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3394DC11764D1E500510E51 /* Zendikar_Mythic.gif */; };
 		D3394F291764D1E500510E51 /* Zendikar_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3394DC21764D1E500510E51 /* Zendikar_Rare.gif */; };
 		D3394F2A1764D1E500510E51 /* Zendikar_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3394DC31764D1E500510E51 /* Zendikar_Uncommon.gif */; };
+		D3394F311764E1E300510E51 /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2C1764E1E300510E51 /* Black.png */; };
+		D3394F321764E1E300510E51 /* White.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2D1764E1E300510E51 /* White.png */; };
+		D3394F331764E1E300510E51 /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2E1764E1E300510E51 /* Blue.png */; };
+		D3394F341764E1E300510E51 /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2F1764E1E300510E51 /* Green.png */; };
+		D3394F351764E1E300510E51 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F301764E1E300510E51 /* Red.png */; };
 		D35A5C29176371B100E96F4D /* Card Types.txt in Resources */ = {isa = PBXBuildFile; fileRef = D35A5C28176371B100E96F4D /* Card Types.txt */; };
 		D35A5C2C1763731700E96F4D /* BCCardTypeFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35A5C2B1763731700E96F4D /* BCCardTypeFilterViewController.m */; };
 		D36640061762714400010672 /* FullDatabase.txt in Resources */ = {isa = PBXBuildFile; fileRef = D36640051762714400010672 /* FullDatabase.txt */; };
@@ -754,6 +759,11 @@
 		D3394DC11764D1E500510E51 /* Zendikar_Mythic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Zendikar_Mythic.gif; sourceTree = "<group>"; };
 		D3394DC21764D1E500510E51 /* Zendikar_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Zendikar_Rare.gif; sourceTree = "<group>"; };
 		D3394DC31764D1E500510E51 /* Zendikar_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Zendikar_Uncommon.gif; sourceTree = "<group>"; };
+		D3394F2C1764E1E300510E51 /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
+		D3394F2D1764E1E300510E51 /* White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White.png; sourceTree = "<group>"; };
+		D3394F2E1764E1E300510E51 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
+		D3394F2F1764E1E300510E51 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
+		D3394F301764E1E300510E51 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
 		D35A5C28176371B100E96F4D /* Card Types.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Card Types.txt"; sourceTree = "<group>"; };
 		D35A5C2A1763731700E96F4D /* BCCardTypeFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardTypeFilterViewController.h; sourceTree = "<group>"; };
 		D35A5C2B1763731700E96F4D /* BCCardTypeFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardTypeFilterViewController.m; sourceTree = "<group>"; };
@@ -881,6 +891,7 @@
 		D31D85451762CD6B0037636A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D3394F2B1764E1CD00510E51 /* Mana Symbols */,
 				D3394C5B1764D1E300510E51 /* Set Symbols */,
 			);
 			name = Images;
@@ -1258,6 +1269,18 @@
 				D3394DC31764D1E500510E51 /* Zendikar_Uncommon.gif */,
 			);
 			path = Small;
+			sourceTree = "<group>";
+		};
+		D3394F2B1764E1CD00510E51 /* Mana Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				D3394F2C1764E1E300510E51 /* Black.png */,
+				D3394F2D1764E1E300510E51 /* White.png */,
+				D3394F2E1764E1E300510E51 /* Blue.png */,
+				D3394F2F1764E1E300510E51 /* Green.png */,
+				D3394F301764E1E300510E51 /* Red.png */,
+			);
+			name = "Mana Symbols";
 			sourceTree = "<group>";
 		};
 		D3A437D91761111E00A9AE45 = {
@@ -1739,6 +1762,11 @@
 				D3394F281764D1E500510E51 /* Zendikar_Mythic.gif in Resources */,
 				D3394F291764D1E500510E51 /* Zendikar_Rare.gif in Resources */,
 				D3394F2A1764D1E500510E51 /* Zendikar_Uncommon.gif in Resources */,
+				D3394F311764E1E300510E51 /* Black.png in Resources */,
+				D3394F321764E1E300510E51 /* White.png in Resources */,
+				D3394F331764E1E300510E51 /* Blue.png in Resources */,
+				D3394F341764E1E300510E51 /* Green.png in Resources */,
+				D3394F351764E1E300510E51 /* Red.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
