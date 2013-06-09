@@ -13,7 +13,7 @@
 
 @protocol BCCardTypeFilterViewControllerDelegate <NSObject>
 
--(void)passCardTypeFilterBack:(BCCardTypeFilterViewController *)controller didFinishWithData:(NSMutableArray *)data AndWithIndexPaths:(NSMutableArray *)indexPaths;
+-(void)passCardTypeFilterBack:(BCCardTypeFilterViewController *)controller didFinishWithFilter:(NSMutableArray *)Filter AndIndexPaths:(NSMutableArray *)indexPaths;
 
 @end
 @interface BCCardTypeFilterViewController : UITableViewController

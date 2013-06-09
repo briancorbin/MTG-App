@@ -374,6 +374,8 @@
 		D366400F1762977900010672 /* BCSetFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366400E1762977900010672 /* BCSetFilterViewController.m */; };
 		D366401117629A8C00010672 /* Set List.txt in Resources */ = {isa = PBXBuildFile; fileRef = D366401017629A8C00010672 /* Set List.txt */; };
 		D366401317629AA400010672 /* Block List.txt in Resources */ = {isa = PBXBuildFile; fileRef = D366401217629AA400010672 /* Block List.txt */; };
+		D380E233176435FE00187964 /* ARBtest.txt in Resources */ = {isa = PBXBuildFile; fileRef = D380E232176435FE00187964 /* ARBtest.txt */; };
+		D380E235176436BE00187964 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = D380E234176436BE00187964 /* test.txt */; };
 		D3A437E61761111E00A9AE45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A437E51761111E00A9AE45 /* UIKit.framework */; };
 		D3A437E81761111E00A9AE45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A437E71761111E00A9AE45 /* Foundation.framework */; };
 		D3A437EA1761111E00A9AE45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A437E91761111E00A9AE45 /* CoreGraphics.framework */; };
@@ -765,6 +767,8 @@
 		D366400E1762977900010672 /* BCSetFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSetFilterViewController.m; sourceTree = "<group>"; };
 		D366401017629A8C00010672 /* Set List.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Set List.txt"; sourceTree = "<group>"; };
 		D366401217629AA400010672 /* Block List.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Block List.txt"; sourceTree = "<group>"; };
+		D380E232176435FE00187964 /* ARBtest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ARBtest.txt; sourceTree = "<group>"; };
+		D380E234176436BE00187964 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		D3A437E21761111E00A9AE45 /* MTG App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTG App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A437E51761111E00A9AE45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3A437E71761111E00A9AE45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -844,8 +848,10 @@
 				D366401217629AA400010672 /* Block List.txt */,
 				D36640051762714400010672 /* FullDatabase.txt */,
 				D35A5C28176371B100E96F4D /* Card Types.txt */,
+				D380E232176435FE00187964 /* ARBtest.txt */,
 				D3A8BA5C176378F7007D23CE /* Colors.txt */,
 				D3A8BA5E17637903007D23CE /* Rarities.txt */,
+				D380E234176436BE00187964 /* test.txt */,
 			);
 			name = "Load Data";
 			sourceTree = "<group>";
@@ -1727,6 +1733,8 @@
 				D35A5C29176371B100E96F4D /* Card Types.txt in Resources */,
 				D3A8BA5D176378F7007D23CE /* Colors.txt in Resources */,
 				D3A8BA5F17637903007D23CE /* Rarities.txt in Resources */,
+				D380E233176435FE00187964 /* ARBtest.txt in Resources */,
+				D380E235176436BE00187964 /* test.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

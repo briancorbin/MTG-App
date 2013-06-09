@@ -6,4 +6,5 @@ Instant
 Land
 Planeswalker
 Tribal
+Scheme
 Sorcery

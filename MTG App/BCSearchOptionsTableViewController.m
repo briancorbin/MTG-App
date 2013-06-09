@@ -8,6 +8,7 @@
 
 #import "BCSearchOptionsTableViewController.h"
 #import "BCSetFilterViewController.h"
+#import "BCCardTypeFilterViewController.h"
 
 @interface BCSearchOptionsTableViewController ()
 
@@ -19,8 +20,8 @@
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
+    if (self)
+    {
     }
     return self;
 }
@@ -52,7 +53,7 @@
     if(indexPath.row == 1)
     {
         BCCardTypeFilterViewController *newVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BCCardTypeFilterViewController"];
-        newVC.cardTypeList = cardTypeFilter;
+        newVC.checkedCardTypeNames = cardTypeFilter;
         newVC.checkedIndexPaths = cardTypeIndexPaths;
         newVC.delegate = self;
         [self.navigationController pushViewController:newVC animated:YES];
@@ -61,22 +62,23 @@
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    [self.delegate passBackSetData:self didFinishWithFilter:self.setFilter AndIndexPaths:self.setIndexPaths];
+    [self.delegate passBackSetFilterData:self didFinishWithFilter:self.setFilter AndIndexPaths:self.setIndexPaths];
+    [self.delegate passBackCardTypeFilterData:self didFinishWithFilter:self.cardTypeFilter AndIndexPaths:self.cardTypeIndexPaths];
 }
 
--(void)passSetFilterBack:(BCSetFilterViewController *)controller didFinishWithData:(NSMutableArray *)data And:(NSMutableArray *)indexPaths
+-(void)passSetFilterBack:(BCSetFilterViewController *)controller didFinishWithFilter:(NSMutableArray *)Filter AndIndexPaths:(NSMutableArray *)indexPaths
 {
     if (self.setIndexPaths == NULL) self.setIndexPaths = [[NSMutableArray alloc]init];
     if (self.setFilter == NULL) self.setFilter = [[NSMutableArray alloc]init];
-    self.setFilter = data;
+    self.setFilter = Filter;
     self.setIndexPaths = indexPaths;
 }
 
--(void)passCardTypeFilterBack:(BCCardTypeFilterViewController *)controller didFinishWithData:(NSMutableArray *)data AndWithIndexPaths:(NSMutableArray *)indexPaths
+-(void)passCardTypeFilterBack:(BCCardTypeFilterViewController *)controller didFinishWithFilter:(NSMutableArray *)Filter AndIndexPaths:(NSMutableArray *)indexPaths
 {
     if(self.cardTypeIndexPaths == NULL) self.cardTypeIndexPaths = [[NSMutableArray alloc]init];
     if(self.cardTypeFilter == NULL) self.cardTypeFilter = [[NSMutableArray alloc]init];
-    self.cardTypeFilter = data;
+    self.cardTypeFilter = Filter;
     self.cardTypeIndexPaths = indexPaths;
 }
 

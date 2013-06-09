@@ -23,5 +23,6 @@
 -(NSMutableArray *)loadCardTypeData;
 -(NSMutableArray *)loadColorData;
 -(NSMutableArray *)loadRarityData;
+-(void)loadNewFormatTest;
 
 @end

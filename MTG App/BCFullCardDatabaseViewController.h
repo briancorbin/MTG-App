@@ -21,6 +21,8 @@
 
 @property (nonatomic, strong) NSMutableArray *setFilter;
 @property (nonatomic, strong) NSMutableArray *setIndexPaths;
+@property (nonatomic, strong) NSMutableArray *cardTypeFilter;
+@property (nonatomic, strong) NSMutableArray *cardTypeIndexPaths;
 
 @property BOOL isSearching;
 @end

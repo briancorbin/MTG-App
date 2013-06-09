@@ -37,14 +37,8 @@
     
     BCLoadData *loadData = [[BCLoadData alloc]init];
     cardTypeList = [loadData loadCardTypeData];
-    if(checkedIndexPaths == NULL)
-    {
-        checkedIndexPaths = [[NSMutableArray alloc]init];
-    }
-    if(checkedCardTypeNames == NULL)
-    {
-        checkedCardTypeNames = [[NSMutableArray alloc]init];
-    }
+    if(checkedIndexPaths == NULL) checkedIndexPaths = [[NSMutableArray alloc]init];
+    if(checkedCardTypeNames == NULL) checkedCardTypeNames = [[NSMutableArray alloc]init];
 }
 
 #pragma mark - Table view data source
@@ -63,22 +57,37 @@
 {
     static NSString *CellIdentifier = @"CardTypeCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    if(cell == nil)
-    {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CardTypeCell"];
-    }
+    if(cell == nil) cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CardTypeCell"];
     
     cell.textLabel.text = [cardTypeList objectAtIndex:indexPath.row];
+    
+    if([self.checkedIndexPaths containsObject:indexPath]) cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    else cell.accessoryType = UITableViewCellAccessoryNone;
 
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    UITableViewCell *selectedCell = [self.tableView cellForRowAtIndexPath:indexPath];
+    if(![self.checkedIndexPaths containsObject:indexPath])
+    {
+        [self.checkedIndexPaths addObject:indexPath];
+        [self.checkedCardTypeNames addObject:selectedCell.textLabel.text];
+        selectedCell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else
+    {
+        [self.checkedIndexPaths removeObject:indexPath];
+        [self.checkedCardTypeNames removeObject:selectedCell.textLabel.text];
+        selectedCell.accessoryType = UITableViewCellAccessoryNone;
+    }
+
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    [self.delegate passCardTypeFilterBack:self didFinishWithData:self.checkedCardTypeNames AndWithIndexPaths:self.checkedIndexPaths];
+    [self.delegate passCardTypeFilterBack:self didFinishWithFilter:self.checkedCardTypeNames AndIndexPaths:self.checkedIndexPaths];
 }
 @end

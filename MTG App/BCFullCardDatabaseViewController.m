@@ -18,7 +18,7 @@
 @end
 
 @implementation BCFullCardDatabaseViewController
-@synthesize mySearchBar, myTableView, searchingLibrary, fullLibrary, isSearching, setFilter, setIndexPaths, filteredLibrary;
+@synthesize mySearchBar, myTableView, searchingLibrary, fullLibrary, isSearching, setFilter, setIndexPaths, filteredLibrary, cardTypeIndexPaths, cardTypeFilter;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,6 +38,7 @@
 {
     [super viewDidLoad];
 	BCLoadData *loadData = [[BCLoadData alloc]init];
+    [loadData loadNewFormatTest];
     fullLibrary = [loadData loadCardData];
     
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]initWithKey:@"name" ascending:YES];
@@ -65,6 +66,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CardCell"];
+    UILabel *labelCardName =(UILabel *)[cell viewWithTag:1];
+    UILabel *labelCardType =(UILabel *)[cell viewWithTag:2];
+    UIImageView *imageViewSet =(UIImageView *)[cell viewWithTag:3];
     
     if(cell == nil)
     {
@@ -74,15 +78,17 @@
     if(isSearching)
     {
         BCMagicCard *tempMC = (BCMagicCard *)[searchingLibrary objectAtIndex:indexPath.row];
-        cell.textLabel.text = tempMC.name;
+        labelCardName.text = tempMC.name;
+        labelCardType.text = tempMC.type;
+        imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.set, tempMC.rarity]];
     }
     else
     {
         BCMagicCard *tempMC = (BCMagicCard *)[filteredLibrary objectAtIndex:indexPath.row];
-        cell.textLabel.text = tempMC.name;
+        labelCardName.text = tempMC.name;
+        labelCardType.text = tempMC.type;
+        imageViewSet.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.set, tempMC.rarity]];
     }
-    
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
@@ -92,7 +98,8 @@
     [super viewWillAppear:animated];
     NSIndexPath* selection = [self.myTableView indexPathForSelectedRow];
     if(selection) [self.myTableView deselectRowAtIndexPath:selection animated:YES];
-    filteredLibrary = fullLibrary;//resets the filteredLibrary to contain all cards before filtering again
+    //-----------------------------------
+    filteredLibrary = fullLibrary; //resets the filteredLibrary to contain all cards before filtering again
     NSPredicate *predicate;
     NSString *strPredicate;
     //Fitlers out selected sets first
@@ -100,6 +107,16 @@
     {
         if(i==0) strPredicate = [NSString stringWithFormat:@"set like[c] '%@'",[setFilter objectAtIndex:i]];
         else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" OR set like[c] '%@'", [setFilter objectAtIndex:i]]];
+    }
+    if (strPredicate != nil) {
+        predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@", strPredicate]];
+        filteredLibrary = [filteredLibrary filteredArrayUsingPredicate:predicate];
+    }
+    //then filters out selected card Types
+    for(int i=0; i<cardTypeFilter.count;i++)
+    {
+        if(i==0) strPredicate = [NSString stringWithFormat:@"type CONTAINS[c] '%@'", [cardTypeFilter objectAtIndex:i]];
+        else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" OR type CONTAINS[c] '%@'", [cardTypeFilter objectAtIndex:i]]];
     }
     if (strPredicate != nil) {
         predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@", strPredicate]];
@@ -182,20 +199,28 @@
     BCSearchOptionsTableViewController *newVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BCSearchOptionsTableViewController"];
     newVC.setFilter = self.setFilter;
     newVC.setIndexPaths = self.setIndexPaths;
+    newVC.cardTypeFilter = self.cardTypeFilter;
+    newVC.cardTypeIndexPaths = self.cardTypeIndexPaths;
     newVC.delegate = self;
     [self.navigationController pushViewController:newVC animated:YES];
 }
 
--(void)passBackSetData:(BCSearchOptionsTableViewController *)controller didFinishWithFilter:(NSMutableArray *)Filter AndIndexPaths:(NSMutableArray *)IndexPaths
+//Passing data between view controllers
+
+-(void)passBackSetFilterData:(BCSearchOptionsTableViewController *)controller didFinishWithFilter:(NSMutableArray *)Filter AndIndexPaths:(NSMutableArray *)IndexPaths
 {
-    if (setFilter == NULL) {
-        setFilter = [[NSMutableArray alloc]init];
-    }
-    if (setIndexPaths == NULL) {
-        setIndexPaths = [[NSMutableArray alloc]init];
-    }
+    if (setFilter == NULL) setFilter = [[NSMutableArray alloc]init];
+    if (setIndexPaths == NULL) setIndexPaths = [[NSMutableArray alloc]init];
     self.setFilter = Filter;
     self.setIndexPaths = IndexPaths;
+}
+
+-(void)passBackCardTypeFilterData:(BCSearchOptionsTableViewController *)controller didFinishWithFilter:(NSMutableArray *)Filter AndIndexPaths:(NSMutableArray *)IndexPaths
+{
+    if(cardTypeFilter == NULL) cardTypeFilter = [[NSMutableArray alloc]init];
+    if(cardTypeIndexPaths == NULL) cardTypeIndexPaths = [[NSMutableArray alloc]init];
+    self.cardTypeFilter = Filter;
+    self.cardTypeIndexPaths = IndexPaths;
 }
 
 @end

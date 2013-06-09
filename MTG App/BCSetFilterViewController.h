@@ -11,7 +11,7 @@
 
 @protocol BCSetFilterViewControllerDelegate <NSObject>
 
--(void)passSetFilterBack:(BCSetFilterViewController *)controller didFinishWithData:(NSMutableArray *)data And:(NSMutableArray *)indexPaths;
+-(void)passSetFilterBack:(BCSetFilterViewController *)controller didFinishWithFilter:(NSMutableArray *)Filter AndIndexPaths:(NSMutableArray *)indexPaths;
 
 @end
 
@@ -21,6 +21,8 @@
 @property (strong, nonatomic) NSMutableArray *blockList;
 @property (strong, nonatomic) NSMutableArray *checkedIndexPaths;
 @property (strong, nonatomic) NSMutableArray *checkedSetNames;
+
+- (IBAction)actionResetSetFilter:(id)sender;
 
 @property (weak, nonatomic) id<BCSetFilterViewControllerDelegate>delegate;
 

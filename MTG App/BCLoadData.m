@@ -38,7 +38,8 @@
         [cardCMCs addObject:[tempArray objectAtIndex:2]];
         [cardTypes addObject:[tempArray objectAtIndex:3]];
         [cardSets addObject:[tempArray objectAtIndex:4]];
-        [cardRarities addObject:[tempArray objectAtIndex:5]];
+        if([[tempArray objectAtIndex:5] isEqualToString:@"Land"]) [cardRarities addObject:[NSString stringWithFormat:@"Common"]];
+        else [cardRarities addObject:[tempArray objectAtIndex:5]];
         [cardPs addObject:[tempArray objectAtIndex:6]];
         [cardTs addObject:[tempArray objectAtIndex:7]];
         [cardOracleRulings addObject:[tempArray objectAtIndex:8]];
@@ -124,6 +125,15 @@
         [rarityList addObject:[rowArray objectAtIndex:i]];
     }
     return rarityList;
+
+}
+
+-(void)loadNewFormatTest
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"txt"];
+    NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    NSMutableArray *rowArray = [[NSMutableArray alloc] initWithArray:[fileContent componentsSeparatedByString:@"\n"]];
+    [rowArray removeObjectAtIndex:0];
 
 }
 
