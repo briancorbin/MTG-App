@@ -202,9 +202,17 @@
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" text="Set Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1y-bs-AlZ">
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="217" id="fvc-eD-aT2"/>
+                                                <constraint firstAttribute="width" constant="162" id="NRN-Fe-8n5"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIK-Rs-CrZ">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="47" id="z1d-Ay-u89"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
@@ -212,10 +220,13 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="n1y-bs-AlZ" firstAttribute="centerY" secondItem="BNt-1J-wVG" secondAttribute="centerY" type="default" id="1rP-on-qxe"/>
-                                    <constraint firstItem="n1y-bs-AlZ" firstAttribute="leading" secondItem="JwU-XR-pka" secondAttribute="leading" constant="30" id="7U1-bF-8QB"/>
+                                    <constraint firstItem="GIK-Rs-CrZ" firstAttribute="leading" secondItem="n1y-bs-AlZ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="4eE-SZ-lf2"/>
+                                    <constraint firstItem="BNt-1J-wVG" firstAttribute="leading" secondItem="GIK-Rs-CrZ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="GUE-1A-r7u"/>
+                                    <constraint firstItem="GIK-Rs-CrZ" firstAttribute="centerY" secondItem="BNt-1J-wVG" secondAttribute="centerY" type="default" id="I0H-QF-Pmu"/>
+                                    <constraint firstItem="GIK-Rs-CrZ" firstAttribute="top" secondItem="n1y-bs-AlZ" secondAttribute="top" type="default" id="UU5-MK-zYK"/>
                                     <constraint firstItem="BNt-1J-wVG" firstAttribute="top" secondItem="JwU-XR-pka" secondAttribute="top" constant="5" id="XfK-48-ZCG"/>
-                                    <constraint firstItem="BNt-1J-wVG" firstAttribute="leading" secondItem="n1y-bs-AlZ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="pCq-pK-78P"/>
+                                    <constraint firstItem="n1y-bs-AlZ" firstAttribute="leading" secondItem="JwU-XR-pka" secondAttribute="leading" constant="30" id="ZtQ-Wc-OrU"/>
+                                    <constraint firstItem="GIK-Rs-CrZ" firstAttribute="baseline" secondItem="n1y-bs-AlZ" secondAttribute="baseline" type="default" id="eb4-An-9j1"/>
                                 </constraints>
                             </tableViewCell>
                         </prototypes>
@@ -394,6 +405,9 @@
         </class>
         <class className="BCSetFilterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BCSetFilterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionResetSetFilter:"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>

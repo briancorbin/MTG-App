@@ -80,23 +80,20 @@
     
     BCSet *tempSet = [setsInBlock objectAtIndex:[indexPath row]];
     UILabel *setNameLabel = (UILabel *)[cell viewWithTag:1];
+    UILabel *setCodeLabel = (UILabel *)[cell viewWithTag:3];
     setNameLabel.text = tempSet.setName;
+    setCodeLabel.text = tempSet.setCode;
     
     UIImageView *setSymbolImageView = (UIImageView *)[cell viewWithTag:2];
     
     if([self.checkedIndexPaths containsObject:indexPath])
     {
-        if([setNameLabel.text isEqualToString:@"Ravnica: City of Guilds"]) setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"Ravnica City of Guilds_rare.gif" ]];
-        else setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_rare.gif",setNameLabel.text]];
+        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_R.gif",setCodeLabel.text]];
     }
-        //setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_rare.gif",tempSet.setName]];
     else
     {
-        if([setNameLabel.text isEqualToString:@"Ravnica: City of Guilds"]) setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"Ravnica City of Guilds_common.gif" ]];
-        else setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_common.gif",setNameLabel.text]];
+        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_C.gif",setCodeLabel.text]];
     }
-        //setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_common.gif",tempSet.setName]];
-
     return cell;
 }
 
@@ -106,19 +103,19 @@
     UITableViewCell *selectedCell = [self.tableView cellForRowAtIndexPath:indexPath];
     UIImageView *setSymbolImageView = (UIImageView *)[selectedCell viewWithTag:2];
     UILabel *setNameLabel = (UILabel *)[selectedCell viewWithTag:1];
+    UILabel *setCodeLabel = (UILabel *)[selectedCell viewWithTag:3];
+    NSLog(@"%@",setCodeLabel.text);
     if(![self.checkedIndexPaths containsObject:indexPath])
     {
         [self.checkedIndexPaths addObject:indexPath];
         [self.checkedSetNames addObject:setNameLabel.text];
-        if([setNameLabel.text isEqualToString:@"Ravnica: City of Guilds"]) setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"Ravnica City of Guilds_rare.gif" ]];
-        else setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_rare.gif",setNameLabel.text]];
+        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_R.gif",setCodeLabel.text]];
     }
     else
     {
         [self.checkedIndexPaths removeObject:indexPath];
         [self.checkedSetNames removeObject:setNameLabel.text];
-        if([setNameLabel.text isEqualToString:@"Ravnica: City of Guilds"]) setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"Ravnica City of Guilds_common.gif" ]];
-        else setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_common.gif",setNameLabel.text]];
+        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_C.gif",setCodeLabel.text]];
     }
 }
 

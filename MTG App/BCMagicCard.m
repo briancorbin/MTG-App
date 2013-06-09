@@ -9,20 +9,29 @@
 #import "BCMagicCard.h"
 
 @implementation BCMagicCard
-@synthesize name, type, cmc, p, t, set, rarity, imageID, oracleRulings;
+@synthesize name, set, setCode, imageID, type, p, t, loyalty, mc, cmc, artist, flavor, color, generatedMana, number, rarity, rating, ruling, ability;
 
--(id)initWithImageID:(NSString *)aImageID AndName:(NSString *)aCardName AndCMC:(NSString *)aCMC AndType:(NSString *)aCardType AndSet:(NSString *)aSet AndRarity:(NSString *)aRarity AndPower:(NSString *)aP AndToughness:(NSString *)aT AndOracleRulings:(NSString *)aOracleRulings
+-(id)initWithName:(NSString *)aName AndWithSet:(NSString *)aSet AndWithSetCode:(NSString *)aSetCode AndWithImageID:(NSString *)aImageID AndWithType:(NSString *)aType AndWithPower:(NSString *)aPower AndWithToughness:(NSString *)aToughness AndWithLoyalty:(NSString *)aLoyalty AndWithMC:(NSString *)aMC AndWithCMC:(NSString *)aCMC AndWithArtist:(NSString *)aArtist AndWithFlavor:(NSString *)aFlavor AndWithColor:(NSString *)aColor AndWithGeneratedMana:(NSString *)aGeneratedMana AndWithNumber:(NSString *)aNumber AndWithRarity:(NSString *)aRarity AndWithRating:(NSString *)aRating AndWithRuling:(NSString *)aRuling AndWithAbility:(NSString *)aAbility
 {
-    self.imageID = aImageID;
-    self.name = aCardName;
-    self.cmc = aCMC;
-    self.type = aCardType;
+    self.name = aName;
     self.set = aSet;
+    self.setCode = aSetCode;
+    self.imageID = aImageID;
+    self.type = aType;
+    self.p = aPower;
+    self.t = aToughness;
+    self.loyalty = aLoyalty;
+    self.mc = aMC;
+    self.cmc = aCMC;
+    self.artist = aArtist;
+    self.flavor = aFlavor;
+    self.color = aColor;
+    self.generatedMana = aGeneratedMana;
+    self.number = aNumber;
     self.rarity = aRarity;
-    self.P = aP;
-    self.T = aT;
-    self.oracleRulings = aOracleRulings;
-    
+    self.rating = aRating;
+    self.ruling = aRuling;
+    self.ability = aAbility;
     return self;
 }
 @end

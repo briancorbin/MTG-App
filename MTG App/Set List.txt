@@ -1,77 +1,77 @@
-Set Name@Set Block
-Limited Edition Alpha@Core
-Limited Edition Beta@Core
-Unlimited Edition@Core
-Revised Edition@Core
-Fourth Edition@Core
-Fifth Edition@Core
-Classic Sixth Edition@Core
-Seventh Edition@Core
-Eighth Edition@Core
-Ninth Edition@Core
-Tenth Edition@Core
-Magic 2010@Core
-Magic 2011@Core
-Magic 2012@Core
-Magic 2013@Core
-Arabian Nights@None
-Antiquities@None
-Legends@None
-The Dark@None
-Fallen Empires@None
-Homelands@None
-Ice Age@Ice Age
-Alliances@Ice Age
-Coldsnap@Ice Age
-Mirage@Mirage
-Visions@Mirage
-Weatherlight@Mirage
-Tempest@Tempest
-Stronghold@Tempest
-Exodus@Tempest
-Urza's Saga@Urza
-Urza's Legacy@Urza
-Urza's Destiny@Urza
-Mercadian Masques@Masques
-Nemesis@Masques
-Prophecy@Masques
-Invasion@Invasion
-Planeshift@Invasion
-Apocalypse@Invasion
-Odyssey@Odyssey
-Torment@Odyssey
-Judgment@Odyssey
-Onslaught@Onslaught
-Legions@Onslaught
-Scourge@Onslaught
-Mirrodin@Mirrodin
-Darksteel@Mirrodin
-Fifth Dawn@Mirrodin
-Champions of Kamigawa@Kamigawa
-Betrayers of Kamigawa@Kamigawa
-Saviors of Kamigawa@Kamigawa
-Ravnica: City of Guilds@Ravnica
-Guildpact@Ravnica
-Dissension@Ravnica
-Time Spiral@Time Spiral
-Planar Chaos@Time Spiral
-Future Sight@Time Spiral
-Lorwyn@Lorwyn
-Morningtide@Lorwyn
-Shadowmoor@Shadowmoor
-Eventide@Shadowmoor
-Shards of Alara@Shards of Alara
-Conflux@Shards of Alara
-Alara Reborn@Shards of Alara
-Zendikar@Zendikar
-Worldwake@Zendikar
-Rise of the Eldrazi@Zendikar
-Scars of Mirrodin@Scars of Mirrodin
-Mirrodin Besieged@Scars of Mirrodin
-New Phyrexia@Scars of Mirrodin
-Innistrad@Innistrad
-Dark Ascension@Innistrad
-Avacyn Restored@Innistrad
-Return to Ravnica@Return to Ravnica
-Gatecrash@Return to Ravnica
-Dragon's Maze@Return to Ravnica
+Set Name@Set Block@Set Code
+Limited Edition Alpha@Core@A
+Limited Edition Beta@Core@B
+Unlimited Edition@Core@U
+Revised Edition@Core@R
+Fourth Edition@Core@4E
+Fifth Edition@Core@5E
+Classic Sixth Edition@Core@6E
+Seventh Edition@Core@7E
+Eighth Edition@Core@8E
+Ninth Edition@Core@9E
+Tenth Edition@Core@10E
+Magic 2010@Core@M10
+Magic 2011@Core@M11
+Magic 2012@Core@M12
+Magic 2013@Core@M13
+Arabian Nights@None@ARN
+Antiquities@None@ATQ
+Legends@None@LEG
+The Dark@None@DRK
+Fallen Empires@None@FEM
+Homelands@None@HML
+Ice Age@Ice Age@ICE
+Alliances@Ice Age@ALL
+Coldsnap@Ice Age@CSP
+Mirage@Mirage@MIR
+Visions@Mirage@VIS
+Weatherlight@Mirage@WTH
+Tempest@Tempest@TMP
+Stronghold@Tempest@STH
+Exodus@Tempest@EXO
+Urza's Saga@Urza@USG
+Urza's Legacy@Urza@ULG
+Urza's Destiny@Urza@UDS
+Mercadian Masques@Masques@MMQ
+Nemesis@Masques@NMS
+Prophecy@Masques@PCY
+Invasion@Invasion@INV
+Planeshift@Invasion@PLS
+Apocalypse@Invasion@APC
+Odyssey@Odyssey@ODY
+Torment@Odyssey@TOR
+Judgment@Odyssey@JUD
+Onslaught@Onslaught@ONS
+Legions@Onslaught@LGN
+Scourge@Onslaught@SCG
+Mirrodin@Mirrodin@MRD
+Darksteel@Mirrodin@DST
+Fifth Dawn@Mirrodin@5DN
+Champions of Kamigawa@Kamigawa@CHK
+Betrayers of Kamigawa@Kamigawa@BOK
+Saviors of Kamigawa@Kamigawa@SOK
+Ravnica: City of Guilds@Ravnica@RAV
+Guildpact@Ravnica@GPT
+Dissension@Ravnica@DIS
+Time Spiral@Time Spiral@TSP
+Planar Chaos@Time Spiral@PLC
+Future Sight@Time Spiral@FUT
+Lorwyn@Lorwyn@LRW
+Morningtide@Lorwyn@MOR
+Shadowmoor@Shadowmoor@SHM
+Eventide@Shadowmoor@EVE
+Shards of Alara@Shards of Alara@ALA
+Conflux@Shards of Alara@CON
+Alara Reborn@Shards of Alara@ARB
+Zendikar@Zendikar@ZEN
+Worldwake@Zendikar@WWK
+Rise of the Eldrazi@Zendikar@ROE
+Scars of Mirrodin@Scars of Mirrodin@SOM
+Mirrodin Besieged@Scars of Mirrodin@MBS
+New Phyrexia@Scars of Mirrodin@NPH
+Innistrad@Innistrad@ISD
+Dark Ascension@Innistrad@DKA
+Avacyn Restored@Innistrad@AVR
+Return to Ravnica@Return to Ravnica@RTR
+Gatecrash@Return to Ravnica@GTC
+Dragon's Maze@Return to Ravnica@DGM

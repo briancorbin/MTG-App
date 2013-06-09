@@ -80,14 +80,14 @@
         BCMagicCard *tempMC = (BCMagicCard *)[searchingLibrary objectAtIndex:indexPath.row];
         labelCardName.text = tempMC.name;
         labelCardType.text = tempMC.type;
-        imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.set, tempMC.rarity]];
+        imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.setCode, tempMC.rarity]];
     }
     else
     {
         BCMagicCard *tempMC = (BCMagicCard *)[filteredLibrary objectAtIndex:indexPath.row];
         labelCardName.text = tempMC.name;
         labelCardType.text = tempMC.type;
-        imageViewSet.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.set, tempMC.rarity]];
+        imageViewSet.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.setCode, tempMC.rarity]];
     }
     
     return cell;

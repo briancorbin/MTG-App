@@ -9,12 +9,13 @@
 #import "BCSet.h"
 
 @implementation BCSet
-@synthesize setName, setBlock;
+@synthesize setName, setBlock,setCode;
 
--(id)initWithSetName:(NSString *)aSetName AndWithSetBlock:(NSString *)aSetBlock
+-(id)initWithSetName:(NSString *)aSetName AndWithSetBlock:(NSString *)aSetBlock AndWithSetCode:(NSString *)aSetCode
 {
     self.setName = aSetName;
     self.setBlock = aSetBlock;
+    self.setCode = aSetCode;
     return self;
 }
 
