@@ -14,7 +14,7 @@
 @end
 
 @implementation BCColorRarityFilterViewController
-@synthesize checkedColors, checkedIndexPaths, checkedRarities, colorList, rarityList;
+@synthesize checkedColors, checkedIndexPaths, checkedRarities, colorList, rarityList, checkedMulticolors, multicolorList;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -36,12 +36,12 @@
     self.navigationItem.rightBarButtonItem = rightButton;
     
     BCLoadData *loadData = [[BCLoadData alloc]init];
-    
     colorList = [loadData loadColorData];
     rarityList = [loadData loadRarityData];
     if(checkedIndexPaths == NULL) checkedIndexPaths = [[NSMutableArray alloc]init];
     if(checkedColors == NULL) checkedColors = [[NSMutableArray alloc]init];
     if(checkedRarities == NULL) checkedRarities = [[NSMutableArray alloc]init];
+    if(checkedMulticolors == NULL) checkedMulticolors = [[NSMutableArray alloc]init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -116,12 +116,13 @@
 {
     [self.checkedIndexPaths removeAllObjects];
     [self.checkedColors removeAllObjects];
+    [self.checkedMulticolors removeAllObjects];
     [self.checkedRarities removeAllObjects];
     [self.tableView reloadData];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    [self.delegate passDataBack:self didFinishWithColorFilter:checkedColors AndRarityFilter:checkedRarities AndIndexPaths:checkedIndexPaths];
+    [self.delegate passDataBack:self didFinishWithColorFilter:checkedColors AndMulticolorFilter:checkedMulticolors AndRarityFilter:checkedRarities AndIndexPaths:checkedIndexPaths];
 }
 @end

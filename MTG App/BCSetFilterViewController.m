@@ -83,16 +83,17 @@
     UILabel *setCodeLabel = (UILabel *)[cell viewWithTag:3];
     setNameLabel.text = tempSet.setName;
     setCodeLabel.text = tempSet.setCode;
+    NSString *strSetName = [tempSet.setName stringByReplacingOccurrencesOfString:@":" withString:@""];
     
     UIImageView *setSymbolImageView = (UIImageView *)[cell viewWithTag:2];
     
     if([self.checkedIndexPaths containsObject:indexPath])
     {
-        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_R.gif",setCodeLabel.text]];
+        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Rare.gif",strSetName]];
     }
     else
     {
-        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_C.gif",setCodeLabel.text]];
+        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Common.gif",strSetName]];
     }
     return cell;
 }
@@ -102,18 +103,22 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UITableViewCell *selectedCell = [self.tableView cellForRowAtIndexPath:indexPath];
     UIImageView *setSymbolImageView = (UIImageView *)[selectedCell viewWithTag:2];
+    UILabel *setNameLabel = (UILabel *)[selectedCell viewWithTag:1];
     UILabel *setCodeLabel = (UILabel *)[selectedCell viewWithTag:3];
+    
+    NSString *strSetName = [setNameLabel.text stringByReplacingOccurrencesOfString:@":" withString:@""];
+    
     if(![self.checkedIndexPaths containsObject:indexPath])
     {
         [self.checkedIndexPaths addObject:indexPath];
         [self.checkedSetNames addObject:setCodeLabel.text];
-        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_R.gif",setCodeLabel.text]];
+        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Rare.gif",strSetName]];
     }
     else
     {
         [self.checkedIndexPaths removeObject:indexPath];
         [self.checkedSetNames removeObject:setCodeLabel.text];
-        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_C.gif",setCodeLabel.text]];
+        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Common.gif",strSetName]];
     }
 }
 

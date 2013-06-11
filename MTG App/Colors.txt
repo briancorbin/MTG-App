@@ -4,4 +4,5 @@ Blue
 Black
 Green
 White
-Colorless
+Artifact
+Land

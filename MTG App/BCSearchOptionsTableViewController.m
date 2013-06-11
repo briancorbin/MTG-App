@@ -15,7 +15,7 @@
 @end
 
 @implementation BCSearchOptionsTableViewController
-@synthesize setFilter, setIndexPaths, cardTypeFilter, cardTypeIndexPaths, colorFilter, rarityFilter, colorRarityIndexPaths;
+@synthesize setFilter, setIndexPaths, cardTypeFilter, cardTypeIndexPaths, colorFilter, rarityFilter, colorRarityIndexPaths, multicolorFilter;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -64,6 +64,7 @@
     {
         BCColorRarityFilterViewController *newVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BCColorRarityFilterViewController"];
         newVC.checkedColors = colorFilter;
+        newVC.checkedMulticolors = multicolorFilter;
         newVC.checkedRarities = rarityFilter;
         newVC.checkedIndexPaths = colorRarityIndexPaths;
         newVC.delegate = self;
@@ -93,13 +94,15 @@
     self.cardTypeFilter = Filter;
     self.cardTypeIndexPaths = indexPaths;
 }
--(void)passDataBack:(BCColorRarityFilterViewController *)controller didFinishWithColorFilter:(NSMutableArray *)ColorFilter AndRarityFilter:(NSMutableArray *)RarityFilter AndIndexPaths:(NSMutableArray *)IndexPaths
+-(void)passDataBack:(BCColorRarityFilterViewController *)controller didFinishWithColorFilter:(NSMutableArray *)ColorFilter AndMulticolorFilter:(NSMutableArray *)MulticolorFilter AndRarityFilter:(NSMutableArray *)RarityFilter AndIndexPaths:(NSMutableArray *)IndexPaths
 {
     if(self.colorRarityIndexPaths == NULL) self.colorRarityIndexPaths = [[NSMutableArray alloc]init];
     if(self.colorFilter == NULL) self.colorFilter = [[NSMutableArray alloc]init];
+    if(self.multicolorFilter == NULL) self.multicolorFilter = [[NSMutableArray alloc]init];
     if(self.rarityFilter == NULL) self.rarityFilter = [[NSMutableArray alloc]init];
     self.colorRarityIndexPaths = IndexPaths;
     self.colorFilter = ColorFilter;
+    self.multicolorFilter = MulticolorFilter;
     self.rarityFilter = RarityFilter;
 }
 
@@ -110,6 +113,7 @@
     self.cardTypeFilter = NULL;
     self.cardTypeIndexPaths = NULL;
     self.colorFilter = NULL;
+    self.multicolorFilter = NULL;
     self.rarityFilter = NULL;
     self.colorRarityIndexPaths = NULL;
 }

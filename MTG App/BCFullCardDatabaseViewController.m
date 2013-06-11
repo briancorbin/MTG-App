@@ -80,28 +80,26 @@
         BCMagicCard *tempMC = (BCMagicCard *)[searchingLibrary objectAtIndex:indexPath.row];
         labelCardName.text = tempMC.name;
         labelCardType.text = tempMC.type;
-        NSString *strSymbolName = [tempMC.set stringByReplacingOccurrencesOfString:@":" withString:@" "];
+        NSString *strSymbolName = [tempMC.set stringByReplacingOccurrencesOfString:@":" withString:@""];
         NSString *strRarity;
         if([tempMC.rarity isEqualToString:@"C"]) strRarity = @"Common";
         if([tempMC.rarity isEqualToString:@"U"]) strRarity = @"Uncommon";
         if([tempMC.rarity isEqualToString:@"R"]) strRarity = @"Rare";
         if([tempMC.rarity isEqualToString:@"M"]) strRarity = @"Mythic";
-        imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, tempMC.rarity]];
-        //imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.setCode, tempMC.rarity]];
+        imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, strRarity]];
     }
     else
     {
         BCMagicCard *tempMC = (BCMagicCard *)[filteredLibrary objectAtIndex:indexPath.row];
         labelCardName.text = tempMC.name;
         labelCardType.text = tempMC.type;
-        NSString *strSymbolName = [tempMC.set stringByReplacingOccurrencesOfString:@":" withString:@" "];
+        NSString *strSymbolName = [tempMC.set stringByReplacingOccurrencesOfString:@":" withString:@""];
         NSString *strRarity;
         if([tempMC.rarity isEqualToString:@"C"]) strRarity = @"Common";
         if([tempMC.rarity isEqualToString:@"U"]) strRarity = @"Uncommon";
         if([tempMC.rarity isEqualToString:@"R"]) strRarity = @"Rare";
         if([tempMC.rarity isEqualToString:@"M"]) strRarity = @"Mythic";
         imageViewSet.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, strRarity]];
-        //imageViewSet.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.setCode, tempMC.rarity]];
     }
     
     return cell;
@@ -139,14 +137,48 @@
     //then filter out selected colors
     for(int i=0; i<colorFilter.count; i++)
     {
-        NSString *selectedColor;
+        /*NSString *selectedColor;
         if([[colorFilter objectAtIndex:i] isEqualToString:@"White"]) selectedColor = @"W";
         if([[colorFilter objectAtIndex:i] isEqualToString:@"Black"]) selectedColor = @"B";
         if([[colorFilter objectAtIndex:i] isEqualToString:@"Blue"]) selectedColor = @"U";
         if([[colorFilter objectAtIndex:i] isEqualToString:@"Red"]) selectedColor = @"R";
         if([[colorFilter objectAtIndex:i] isEqualToString:@"Green"]) selectedColor = @"G";
-        if(i==0)strPredicate = [NSString stringWithFormat:@"color CONTAINS[c] '%@'", selectedColor];
-        else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" OR color CONTAINS[c] '%@'",selectedColor]];
+        if([[colorFilter objectAtIndex:i] isEqualToString:@"Colorless"]) selectedColor = @"C";
+        if(i==0)strPredicate = [NSString stringWithFormat:@"color like[c] 'A%@' OR color like[c] '%@'", selectedColor, selectedColor];
+        else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" OR color like[c] 'A%@' OR color like[c] '%@'",selectedColor, selectedColor]];*/
+    }
+    NSMutableArray *colorsNotInSelection = [[NSMutableArray alloc]init];
+    BOOL White = NO;
+    BOOL Red = NO;
+    BOOL Green = NO;
+    BOOL Black = NO;
+    BOOL Blue = NO;
+    BOOL Artifact = NO;
+    BOOL Land = NO;
+    for (NSString *color in colorFilter)
+    {
+        if ([color isEqualToString:@"White"]) White = YES;
+        if ([color isEqualToString:@"Blue"]) Blue = YES;
+        if ([color isEqualToString:@"Green"]) Green = YES;
+        if ([color isEqualToString:@"Black"]) Black = YES;
+        if ([color isEqualToString:@"Red"]) Red = YES;
+        if ([color isEqualToString:@"Artifact"]) Artifact = YES;
+        if ([color isEqualToString:@"Land"]) Land = YES;
+    }
+    if(colorFilter.count != 0)
+    {
+        if(!White) [colorsNotInSelection addObject:@"W"];
+        if(!Red) [colorsNotInSelection addObject:@"R"];
+        if(!Green) [colorsNotInSelection addObject:@"G"];
+        if(!Black) [colorsNotInSelection addObject:@"B"];
+        if(!Blue) [colorsNotInSelection addObject:@"U"];
+        if(!Artifact) [colorsNotInSelection addObject:@"A"];
+        if(!Land) [colorsNotInSelection addObject:@"L"];
+    }
+    for (int i=0; i<colorsNotInSelection.count; i++)
+    {
+        if(i==0) strPredicate = [NSString stringWithFormat:@"NOT color like[c] '*%@*'", [colorsNotInSelection objectAtIndex:i]];
+        else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" AND NOT color like[c] '*%@*'", [colorsNotInSelection objectAtIndex:i]]];
     }
     if (strPredicate != nil) {
         predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@", strPredicate]];
@@ -160,7 +192,6 @@
         if([[rarityFilter objectAtIndex:i] isEqualToString:@"Uncommon"]) selectedRarity = @"U";
         if([[rarityFilter objectAtIndex:i] isEqualToString:@"Rare"]) selectedRarity = @"R";
         if([[rarityFilter objectAtIndex:i] isEqualToString:@"Mythic"]) selectedRarity = @"M";
-        if([[rarityFilter objectAtIndex:i] isEqualToString:@"Land"]) selectedRarity = @"L";
         if(i==0) strPredicate = [NSString stringWithFormat:@"rarity CONTAINS[c] '%@'", selectedRarity];
         else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" OR rarity CONTAINS[c] '%@'", selectedRarity]];
     }
@@ -243,6 +274,11 @@
 
 - (IBAction)btnSeachOptions:(id)sender
 {
+    //Resets search bar
+    mySearchBar.text = @"";
+    isSearching = NO;
+    [mySearchBar resignFirstResponder];
+    
     BCSearchOptionsTableViewController *newVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BCSearchOptionsTableViewController"];
     newVC.setFilter = self.setFilter;
     newVC.setIndexPaths = self.setIndexPaths;

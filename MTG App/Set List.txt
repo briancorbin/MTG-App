@@ -16,7 +16,7 @@ Magic 2012@Core@M12
 Magic 2013@Core@M13
 Arabian Nights@None@AN
 Antiquities@None@ATQ
-Legends@None@LEG
+Legends@None@LG
 The Dark@None@DRK
 Fallen Empires@None@FEM
 Homelands@None@HML
@@ -45,7 +45,7 @@ Onslaught@Onslaught@ONS
 Legions@Onslaught@LGN
 Scourge@Onslaught@SCG
 Mirrodin@Mirrodin@MRD
-Darksteel@Mirrodin@DST
+Darksteel@Mirrodin@DS
 Fifth Dawn@Mirrodin@5DN
 Champions of Kamigawa@Kamigawa@CHK
 Betrayers of Kamigawa@Kamigawa@BOK

@@ -12,14 +12,16 @@
 @class BCColorRarityFilterViewController;
 @protocol BCColorRarityFilterViewControllerDelegate <NSObject>
 
--(void)passDataBack:(BCColorRarityFilterViewController *)controller didFinishWithColorFilter:(NSMutableArray *)ColorFilter AndRarityFilter:(NSMutableArray *)RarityFilter AndIndexPaths:(NSMutableArray *)IndexPaths;
+-(void)passDataBack:(BCColorRarityFilterViewController *)controller didFinishWithColorFilter:(NSMutableArray *)ColorFilter AndMulticolorFilter:(NSMutableArray *)MulticolorFilter AndRarityFilter:(NSMutableArray *)RarityFilter AndIndexPaths:(NSMutableArray *)IndexPaths;
 
 @end
 @interface BCColorRarityFilterViewController : UITableViewController
 
 @property (strong, nonatomic) NSMutableArray *colorList;
 @property (strong, nonatomic) NSMutableArray *rarityList;
+@property (strong, nonatomic) NSMutableArray *multicolorList;
 @property (strong, nonatomic) NSMutableArray *checkedColors;
+@property (strong, nonatomic) NSMutableArray *checkedMulticolors;
 @property (strong, nonatomic) NSMutableArray *checkedRarities;
 @property (strong, nonatomic) NSMutableArray *checkedIndexPaths;
 

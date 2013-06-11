@@ -16,7 +16,7 @@
 
 -(NSMutableArray *)loadCardData
 {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"txt"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Full Database" ofType:@"txt"];
     NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
     NSMutableArray *rowArray = [[NSMutableArray alloc] initWithArray:[fileContent componentsSeparatedByString:@"\n"]];
     [rowArray removeObjectAtIndex:0];

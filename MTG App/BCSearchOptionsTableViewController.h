@@ -30,6 +30,7 @@
 @property (strong, nonatomic) NSMutableArray *cardTypeFilter;
 @property (strong, nonatomic) NSMutableArray *cardTypeIndexPaths;
 @property (strong, nonatomic) NSMutableArray *colorFilter;
+@property (strong, nonatomic) NSMutableArray *multicolorFilter;
 @property (strong, nonatomic) NSMutableArray *rarityFilter;
 @property (strong, nonatomic) NSMutableArray *colorRarityIndexPaths;
 
