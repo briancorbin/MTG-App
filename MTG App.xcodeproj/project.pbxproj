@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D324979E1767CBB10060C563 /* Dragon's Maze_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D324979A1767CBB10060C563 /* Dragon's Maze_Common.gif */; };
+		D324979F1767CBB10060C563 /* Dragon's Maze_Mythic.gif in Resources */ = {isa = PBXBuildFile; fileRef = D324979B1767CBB10060C563 /* Dragon's Maze_Mythic.gif */; };
+		D32497A01767CBB10060C563 /* Dragon's Maze_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D324979C1767CBB10060C563 /* Dragon's Maze_Rare.gif */; };
+		D32497A11767CBB10060C563 /* Dragon's Maze_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D324979D1767CBB10060C563 /* Dragon's Maze_Uncommon.gif */; };
+		D32497A61767CC0A0060C563 /* Modern Masters_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497A21767CC0A0060C563 /* Modern Masters_Common.gif */; };
+		D32497A71767CC0A0060C563 /* Modern Masters_Mythic.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497A31767CC0A0060C563 /* Modern Masters_Mythic.gif */; };
+		D32497A81767CC0A0060C563 /* Modern Masters_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497A41767CC0A0060C563 /* Modern Masters_Rare.gif */; };
+		D32497A91767CC0A0060C563 /* Modern Masters_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497A51767CC0A0060C563 /* Modern Masters_Uncommon.gif */; };
+		D32497B61767D1260060C563 /* Masters Edition III_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497AA1767D1250060C563 /* Masters Edition III_Uncommon.gif */; };
+		D32497B71767D1260060C563 /* Masters Edition III_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497AB1767D1250060C563 /* Masters Edition III_Rare.gif */; };
+		D32497B81767D1260060C563 /* Masters Edition II_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497AC1767D1250060C563 /* Masters Edition II_Rare.gif */; };
+		D32497B91767D1260060C563 /* Masters Edition II_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497AD1767D1250060C563 /* Masters Edition II_Uncommon.gif */; };
+		D32497BA1767D1260060C563 /* Masters Edition II_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497AE1767D1250060C563 /* Masters Edition II_Common.gif */; };
+		D32497BB1767D1260060C563 /* Masters Edition_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497AF1767D1250060C563 /* Masters Edition_Common.gif */; };
+		D32497BC1767D1260060C563 /* Masters Edition IV_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497B01767D1250060C563 /* Masters Edition IV_Uncommon.gif */; };
+		D32497BD1767D1260060C563 /* Masters Edition IV_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497B11767D1250060C563 /* Masters Edition IV_Rare.gif */; };
+		D32497BE1767D1260060C563 /* Masters Edition IV_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497B21767D1250060C563 /* Masters Edition IV_Common.gif */; };
+		D32497BF1767D1260060C563 /* Masters Edition_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497B31767D1250060C563 /* Masters Edition_Uncommon.gif */; };
+		D32497C01767D1260060C563 /* Masters Edition III_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497B41767D1250060C563 /* Masters Edition III_Common.gif */; };
+		D32497C11767D1260060C563 /* Masters Edition_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497B51767D1250060C563 /* Masters Edition_Rare.gif */; };
+		D32497C71767E2850060C563 /* Custom_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497C31767E2850060C563 /* Custom_Common.gif */; };
+		D32497C81767E2850060C563 /* Custom_Mythic.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497C41767E2850060C563 /* Custom_Mythic.gif */; };
+		D32497C91767E2850060C563 /* Custom_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497C51767E2850060C563 /* Custom_Rare.gif */; };
+		D32497CA1767E2850060C563 /* Custom_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497C61767E2850060C563 /* Custom_Uncommon.gif */; };
 		D3394F311764E1E300510E51 /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2C1764E1E300510E51 /* Black.png */; };
 		D3394F321764E1E300510E51 /* White.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2D1764E1E300510E51 /* White.png */; };
 		D3394F331764E1E300510E51 /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2E1764E1E300510E51 /* Blue.png */; };
@@ -74,8 +98,6 @@
 		D3C6DFC81767969D00F88A9E /* Champions of Kamigawa_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DE611767969A00F88A9E /* Champions of Kamigawa_Rare.gif */; };
 		D3C6DFC91767969D00F88A9E /* Champions of Kamigawa_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DE621767969A00F88A9E /* Champions of Kamigawa_Uncommon.gif */; };
 		D3C6DFCA1767969D00F88A9E /* Chronicles_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DE631767969A00F88A9E /* Chronicles_Common.gif */; };
-		D3C6DFCB1767969D00F88A9E /* Chronicles_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DE641767969A00F88A9E /* Chronicles_Rare.gif */; };
-		D3C6DFCC1767969D00F88A9E /* Chronicles_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DE651767969A00F88A9E /* Chronicles_Uncommon.gif */; };
 		D3C6DFCD1767969D00F88A9E /* Classic Sixth Edition_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DE661767969A00F88A9E /* Classic Sixth Edition_Common.gif */; };
 		D3C6DFCE1767969D00F88A9E /* Classic Sixth Edition_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DE671767969A00F88A9E /* Classic Sixth Edition_Rare.gif */; };
 		D3C6DFCF1767969D00F88A9E /* Classic Sixth Edition_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DE681767969A00F88A9E /* Classic Sixth Edition_Uncommon.gif */; };
@@ -285,8 +307,6 @@
 		D3C6E09B1767969D00F88A9E /* Portal Three Kingdoms_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF341767969C00F88A9E /* Portal Three Kingdoms_Rare.gif */; };
 		D3C6E09C1767969D00F88A9E /* Portal Three Kingdoms_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF351767969C00F88A9E /* Portal Three Kingdoms_Uncommon.gif */; };
 		D3C6E09D1767969D00F88A9E /* Portal_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF361767969C00F88A9E /* Portal_Common.gif */; };
-		D3C6E09E1767969D00F88A9E /* Portal_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF371767969C00F88A9E /* Portal_Rare.gif */; };
-		D3C6E09F1767969D00F88A9E /* Portal_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF381767969C00F88A9E /* Portal_Uncommon.gif */; };
 		D3C6E0A01767969D00F88A9E /* Premium Deck Series Fire and Lightning_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF391767969C00F88A9E /* Premium Deck Series Fire and Lightning_Common.gif */; };
 		D3C6E0A11767969D00F88A9E /* Premium Deck Series Fire and Lightning_Mythic.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF3A1767969C00F88A9E /* Premium Deck Series Fire and Lightning_Mythic.gif */; };
 		D3C6E0A21767969D00F88A9E /* Premium Deck Series Fire and Lightning_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF3B1767969C00F88A9E /* Premium Deck Series Fire and Lightning_Rare.gif */; };
@@ -340,8 +360,6 @@
 		D3C6E0D21767969D00F88A9E /* Starter 1999_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF6B1767969C00F88A9E /* Starter 1999_Rare.gif */; };
 		D3C6E0D31767969D00F88A9E /* Starter 1999_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF6C1767969C00F88A9E /* Starter 1999_Uncommon.gif */; };
 		D3C6E0D41767969D00F88A9E /* Starter 2000_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF6D1767969C00F88A9E /* Starter 2000_Common.gif */; };
-		D3C6E0D51767969D00F88A9E /* Starter 2000_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF6E1767969C00F88A9E /* Starter 2000_Rare.gif */; };
-		D3C6E0D61767969D00F88A9E /* Starter 2000_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF6F1767969C00F88A9E /* Starter 2000_Uncommon.gif */; };
 		D3C6E0D71767969D00F88A9E /* Stronghold_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF701767969C00F88A9E /* Stronghold_Common.gif */; };
 		D3C6E0D81767969D00F88A9E /* Stronghold_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF711767969C00F88A9E /* Stronghold_Rare.gif */; };
 		D3C6E0D91767969D00F88A9E /* Stronghold_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF721767969C00F88A9E /* Stronghold_Uncommon.gif */; };
@@ -365,8 +383,6 @@
 		D3C6E0EB1767969D00F88A9E /* Torment_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF841767969D00F88A9E /* Torment_Rare.gif */; };
 		D3C6E0EC1767969D00F88A9E /* Torment_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF851767969D00F88A9E /* Torment_Uncommon.gif */; };
 		D3C6E0ED1767969D00F88A9E /* Unglued_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF861767969D00F88A9E /* Unglued_Common.gif */; };
-		D3C6E0EE1767969D00F88A9E /* Unglued_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF871767969D00F88A9E /* Unglued_Rare.gif */; };
-		D3C6E0EF1767969D00F88A9E /* Unglued_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF881767969D00F88A9E /* Unglued_Uncommon.gif */; };
 		D3C6E0F01767969D00F88A9E /* Unhinged_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF891767969D00F88A9E /* Unhinged_Common.gif */; };
 		D3C6E0F11767969D00F88A9E /* Unhinged_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF8A1767969D00F88A9E /* Unhinged_Rare.gif */; };
 		D3C6E0F21767969D00F88A9E /* Unhinged_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3C6DF8B1767969D00F88A9E /* Unhinged_Uncommon.gif */; };
@@ -399,6 +415,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D324979A1767CBB10060C563 /* Dragon's Maze_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Dragon's Maze_Common.gif"; sourceTree = "<group>"; };
+		D324979B1767CBB10060C563 /* Dragon's Maze_Mythic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Dragon's Maze_Mythic.gif"; sourceTree = "<group>"; };
+		D324979C1767CBB10060C563 /* Dragon's Maze_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Dragon's Maze_Rare.gif"; sourceTree = "<group>"; };
+		D324979D1767CBB10060C563 /* Dragon's Maze_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Dragon's Maze_Uncommon.gif"; sourceTree = "<group>"; };
+		D32497A21767CC0A0060C563 /* Modern Masters_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Modern Masters_Common.gif"; sourceTree = "<group>"; };
+		D32497A31767CC0A0060C563 /* Modern Masters_Mythic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Modern Masters_Mythic.gif"; sourceTree = "<group>"; };
+		D32497A41767CC0A0060C563 /* Modern Masters_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Modern Masters_Rare.gif"; sourceTree = "<group>"; };
+		D32497A51767CC0A0060C563 /* Modern Masters_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Modern Masters_Uncommon.gif"; sourceTree = "<group>"; };
+		D32497AA1767D1250060C563 /* Masters Edition III_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition III_Uncommon.gif"; sourceTree = "<group>"; };
+		D32497AB1767D1250060C563 /* Masters Edition III_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition III_Rare.gif"; sourceTree = "<group>"; };
+		D32497AC1767D1250060C563 /* Masters Edition II_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition II_Rare.gif"; sourceTree = "<group>"; };
+		D32497AD1767D1250060C563 /* Masters Edition II_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition II_Uncommon.gif"; sourceTree = "<group>"; };
+		D32497AE1767D1250060C563 /* Masters Edition II_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition II_Common.gif"; sourceTree = "<group>"; };
+		D32497AF1767D1250060C563 /* Masters Edition_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition_Common.gif"; sourceTree = "<group>"; };
+		D32497B01767D1250060C563 /* Masters Edition IV_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition IV_Uncommon.gif"; sourceTree = "<group>"; };
+		D32497B11767D1250060C563 /* Masters Edition IV_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition IV_Rare.gif"; sourceTree = "<group>"; };
+		D32497B21767D1250060C563 /* Masters Edition IV_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition IV_Common.gif"; sourceTree = "<group>"; };
+		D32497B31767D1250060C563 /* Masters Edition_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition_Uncommon.gif"; sourceTree = "<group>"; };
+		D32497B41767D1250060C563 /* Masters Edition III_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition III_Common.gif"; sourceTree = "<group>"; };
+		D32497B51767D1250060C563 /* Masters Edition_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Masters Edition_Rare.gif"; sourceTree = "<group>"; };
+		D32497C31767E2850060C563 /* Custom_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Custom_Common.gif; sourceTree = "<group>"; };
+		D32497C41767E2850060C563 /* Custom_Mythic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Custom_Mythic.gif; sourceTree = "<group>"; };
+		D32497C51767E2850060C563 /* Custom_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Custom_Rare.gif; sourceTree = "<group>"; };
+		D32497C61767E2850060C563 /* Custom_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Custom_Uncommon.gif; sourceTree = "<group>"; };
 		D3394F2C1764E1E300510E51 /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
 		D3394F2D1764E1E300510E51 /* White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White.png; sourceTree = "<group>"; };
 		D3394F2E1764E1E300510E51 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
@@ -479,8 +519,6 @@
 		D3C6DE611767969A00F88A9E /* Champions of Kamigawa_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Champions of Kamigawa_Rare.gif"; sourceTree = "<group>"; };
 		D3C6DE621767969A00F88A9E /* Champions of Kamigawa_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Champions of Kamigawa_Uncommon.gif"; sourceTree = "<group>"; };
 		D3C6DE631767969A00F88A9E /* Chronicles_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Chronicles_Common.gif; sourceTree = "<group>"; };
-		D3C6DE641767969A00F88A9E /* Chronicles_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Chronicles_Rare.gif; sourceTree = "<group>"; };
-		D3C6DE651767969A00F88A9E /* Chronicles_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Chronicles_Uncommon.gif; sourceTree = "<group>"; };
 		D3C6DE661767969A00F88A9E /* Classic Sixth Edition_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Classic Sixth Edition_Common.gif"; sourceTree = "<group>"; };
 		D3C6DE671767969A00F88A9E /* Classic Sixth Edition_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Classic Sixth Edition_Rare.gif"; sourceTree = "<group>"; };
 		D3C6DE681767969A00F88A9E /* Classic Sixth Edition_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Classic Sixth Edition_Uncommon.gif"; sourceTree = "<group>"; };
@@ -690,8 +728,6 @@
 		D3C6DF341767969C00F88A9E /* Portal Three Kingdoms_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Portal Three Kingdoms_Rare.gif"; sourceTree = "<group>"; };
 		D3C6DF351767969C00F88A9E /* Portal Three Kingdoms_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Portal Three Kingdoms_Uncommon.gif"; sourceTree = "<group>"; };
 		D3C6DF361767969C00F88A9E /* Portal_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Portal_Common.gif; sourceTree = "<group>"; };
-		D3C6DF371767969C00F88A9E /* Portal_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Portal_Rare.gif; sourceTree = "<group>"; };
-		D3C6DF381767969C00F88A9E /* Portal_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Portal_Uncommon.gif; sourceTree = "<group>"; };
 		D3C6DF391767969C00F88A9E /* Premium Deck Series Fire and Lightning_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Premium Deck Series Fire and Lightning_Common.gif"; sourceTree = "<group>"; };
 		D3C6DF3A1767969C00F88A9E /* Premium Deck Series Fire and Lightning_Mythic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Premium Deck Series Fire and Lightning_Mythic.gif"; sourceTree = "<group>"; };
 		D3C6DF3B1767969C00F88A9E /* Premium Deck Series Fire and Lightning_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Premium Deck Series Fire and Lightning_Rare.gif"; sourceTree = "<group>"; };
@@ -745,8 +781,6 @@
 		D3C6DF6B1767969C00F88A9E /* Starter 1999_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Starter 1999_Rare.gif"; sourceTree = "<group>"; };
 		D3C6DF6C1767969C00F88A9E /* Starter 1999_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Starter 1999_Uncommon.gif"; sourceTree = "<group>"; };
 		D3C6DF6D1767969C00F88A9E /* Starter 2000_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Starter 2000_Common.gif"; sourceTree = "<group>"; };
-		D3C6DF6E1767969C00F88A9E /* Starter 2000_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Starter 2000_Rare.gif"; sourceTree = "<group>"; };
-		D3C6DF6F1767969C00F88A9E /* Starter 2000_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Starter 2000_Uncommon.gif"; sourceTree = "<group>"; };
 		D3C6DF701767969C00F88A9E /* Stronghold_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Stronghold_Common.gif; sourceTree = "<group>"; };
 		D3C6DF711767969C00F88A9E /* Stronghold_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Stronghold_Rare.gif; sourceTree = "<group>"; };
 		D3C6DF721767969C00F88A9E /* Stronghold_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Stronghold_Uncommon.gif; sourceTree = "<group>"; };
@@ -770,8 +804,6 @@
 		D3C6DF841767969D00F88A9E /* Torment_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Torment_Rare.gif; sourceTree = "<group>"; };
 		D3C6DF851767969D00F88A9E /* Torment_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Torment_Uncommon.gif; sourceTree = "<group>"; };
 		D3C6DF861767969D00F88A9E /* Unglued_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unglued_Common.gif; sourceTree = "<group>"; };
-		D3C6DF871767969D00F88A9E /* Unglued_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unglued_Rare.gif; sourceTree = "<group>"; };
-		D3C6DF881767969D00F88A9E /* Unglued_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unglued_Uncommon.gif; sourceTree = "<group>"; };
 		D3C6DF891767969D00F88A9E /* Unhinged_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unhinged_Common.gif; sourceTree = "<group>"; };
 		D3C6DF8A1767969D00F88A9E /* Unhinged_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unhinged_Rare.gif; sourceTree = "<group>"; };
 		D3C6DF8B1767969D00F88A9E /* Unhinged_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unhinged_Uncommon.gif; sourceTree = "<group>"; };
@@ -894,6 +926,17 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		D32497C21767E27A0060C563 /* Custom Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				D32497C31767E2850060C563 /* Custom_Common.gif */,
+				D32497C41767E2850060C563 /* Custom_Mythic.gif */,
+				D32497C51767E2850060C563 /* Custom_Rare.gif */,
+				D32497C61767E2850060C563 /* Custom_Uncommon.gif */,
+			);
+			name = "Custom Symbols";
+			sourceTree = "<group>";
+		};
 		D3394F2B1764E1CD00510E51 /* Mana Symbols */ = {
 			isa = PBXGroup;
 			children = (
@@ -966,6 +1009,7 @@
 		D3C6DE3D1767969A00F88A9E /* Set Symbols */ = {
 			isa = PBXGroup;
 			children = (
+				D32497C21767E27A0060C563 /* Custom Symbols */,
 				D3C6DE3E1767969A00F88A9E /* Small */,
 			);
 			path = "Set Symbols";
@@ -1011,8 +1055,6 @@
 				D3C6DE611767969A00F88A9E /* Champions of Kamigawa_Rare.gif */,
 				D3C6DE621767969A00F88A9E /* Champions of Kamigawa_Uncommon.gif */,
 				D3C6DE631767969A00F88A9E /* Chronicles_Common.gif */,
-				D3C6DE641767969A00F88A9E /* Chronicles_Rare.gif */,
-				D3C6DE651767969A00F88A9E /* Chronicles_Uncommon.gif */,
 				D3C6DE661767969A00F88A9E /* Classic Sixth Edition_Common.gif */,
 				D3C6DE671767969A00F88A9E /* Classic Sixth Edition_Rare.gif */,
 				D3C6DE681767969A00F88A9E /* Classic Sixth Edition_Uncommon.gif */,
@@ -1037,6 +1079,10 @@
 				D3C6DE7B1767969A00F88A9E /* Dissension_Common.gif */,
 				D3C6DE7C1767969A00F88A9E /* Dissension_Rare.gif */,
 				D3C6DE7D1767969A00F88A9E /* Dissension_Uncommon.gif */,
+				D324979A1767CBB10060C563 /* Dragon's Maze_Common.gif */,
+				D324979B1767CBB10060C563 /* Dragon's Maze_Mythic.gif */,
+				D324979C1767CBB10060C563 /* Dragon's Maze_Rare.gif */,
+				D324979D1767CBB10060C563 /* Dragon's Maze_Uncommon.gif */,
 				D3C6DE7E1767969A00F88A9E /* Duel Decks Ajani vs. Nicol Bolas_Common.gif */,
 				D3C6DE7F1767969A00F88A9E /* Duel Decks Ajani vs. Nicol Bolas_Mythic.gif */,
 				D3C6DE801767969A00F88A9E /* Duel Decks Ajani vs. Nicol Bolas_Rare.gif */,
@@ -1170,6 +1216,18 @@
 				D3C6DF001767969B00F88A9E /* Magic The Gathering-Commander_Mythic.gif */,
 				D3C6DF011767969B00F88A9E /* Magic The Gathering-Commander_Rare.gif */,
 				D3C6DF021767969B00F88A9E /* Magic The Gathering-Commander_Uncommon.gif */,
+				D32497AA1767D1250060C563 /* Masters Edition III_Uncommon.gif */,
+				D32497AB1767D1250060C563 /* Masters Edition III_Rare.gif */,
+				D32497AC1767D1250060C563 /* Masters Edition II_Rare.gif */,
+				D32497AD1767D1250060C563 /* Masters Edition II_Uncommon.gif */,
+				D32497AE1767D1250060C563 /* Masters Edition II_Common.gif */,
+				D32497AF1767D1250060C563 /* Masters Edition_Common.gif */,
+				D32497B01767D1250060C563 /* Masters Edition IV_Uncommon.gif */,
+				D32497B11767D1250060C563 /* Masters Edition IV_Rare.gif */,
+				D32497B21767D1250060C563 /* Masters Edition IV_Common.gif */,
+				D32497B31767D1250060C563 /* Masters Edition_Uncommon.gif */,
+				D32497B41767D1250060C563 /* Masters Edition III_Common.gif */,
+				D32497B51767D1250060C563 /* Masters Edition_Rare.gif */,
 				D3C6DF031767969B00F88A9E /* Mercadian Masques_Common.gif */,
 				D3C6DF041767969B00F88A9E /* Mercadian Masques_Rare.gif */,
 				D3C6DF051767969B00F88A9E /* Mercadian Masques_Uncommon.gif */,
@@ -1183,6 +1241,10 @@
 				D3C6DF0D1767969B00F88A9E /* Mirrodin_Common.gif */,
 				D3C6DF0E1767969B00F88A9E /* Mirrodin_Rare.gif */,
 				D3C6DF0F1767969B00F88A9E /* Mirrodin_Uncommon.gif */,
+				D32497A21767CC0A0060C563 /* Modern Masters_Common.gif */,
+				D32497A31767CC0A0060C563 /* Modern Masters_Mythic.gif */,
+				D32497A41767CC0A0060C563 /* Modern Masters_Rare.gif */,
+				D32497A51767CC0A0060C563 /* Modern Masters_Uncommon.gif */,
 				D3C6DF101767969B00F88A9E /* Morningtide_Common.gif */,
 				D3C6DF111767969B00F88A9E /* Morningtide_Rare.gif */,
 				D3C6DF121767969B00F88A9E /* Morningtide_Uncommon.gif */,
@@ -1222,8 +1284,6 @@
 				D3C6DF341767969C00F88A9E /* Portal Three Kingdoms_Rare.gif */,
 				D3C6DF351767969C00F88A9E /* Portal Three Kingdoms_Uncommon.gif */,
 				D3C6DF361767969C00F88A9E /* Portal_Common.gif */,
-				D3C6DF371767969C00F88A9E /* Portal_Rare.gif */,
-				D3C6DF381767969C00F88A9E /* Portal_Uncommon.gif */,
 				D3C6DF391767969C00F88A9E /* Premium Deck Series Fire and Lightning_Common.gif */,
 				D3C6DF3A1767969C00F88A9E /* Premium Deck Series Fire and Lightning_Mythic.gif */,
 				D3C6DF3B1767969C00F88A9E /* Premium Deck Series Fire and Lightning_Rare.gif */,
@@ -1277,8 +1337,6 @@
 				D3C6DF6B1767969C00F88A9E /* Starter 1999_Rare.gif */,
 				D3C6DF6C1767969C00F88A9E /* Starter 1999_Uncommon.gif */,
 				D3C6DF6D1767969C00F88A9E /* Starter 2000_Common.gif */,
-				D3C6DF6E1767969C00F88A9E /* Starter 2000_Rare.gif */,
-				D3C6DF6F1767969C00F88A9E /* Starter 2000_Uncommon.gif */,
 				D3C6DF701767969C00F88A9E /* Stronghold_Common.gif */,
 				D3C6DF711767969C00F88A9E /* Stronghold_Rare.gif */,
 				D3C6DF721767969C00F88A9E /* Stronghold_Uncommon.gif */,
@@ -1302,8 +1360,6 @@
 				D3C6DF841767969D00F88A9E /* Torment_Rare.gif */,
 				D3C6DF851767969D00F88A9E /* Torment_Uncommon.gif */,
 				D3C6DF861767969D00F88A9E /* Unglued_Common.gif */,
-				D3C6DF871767969D00F88A9E /* Unglued_Rare.gif */,
-				D3C6DF881767969D00F88A9E /* Unglued_Uncommon.gif */,
 				D3C6DF891767969D00F88A9E /* Unhinged_Common.gif */,
 				D3C6DF8A1767969D00F88A9E /* Unhinged_Rare.gif */,
 				D3C6DF8B1767969D00F88A9E /* Unhinged_Uncommon.gif */,
@@ -1441,8 +1497,6 @@
 				D3C6DFC81767969D00F88A9E /* Champions of Kamigawa_Rare.gif in Resources */,
 				D3C6DFC91767969D00F88A9E /* Champions of Kamigawa_Uncommon.gif in Resources */,
 				D3C6DFCA1767969D00F88A9E /* Chronicles_Common.gif in Resources */,
-				D3C6DFCB1767969D00F88A9E /* Chronicles_Rare.gif in Resources */,
-				D3C6DFCC1767969D00F88A9E /* Chronicles_Uncommon.gif in Resources */,
 				D3C6DFCD1767969D00F88A9E /* Classic Sixth Edition_Common.gif in Resources */,
 				D3C6DFCE1767969D00F88A9E /* Classic Sixth Edition_Rare.gif in Resources */,
 				D3C6DFCF1767969D00F88A9E /* Classic Sixth Edition_Uncommon.gif in Resources */,
@@ -1652,8 +1706,6 @@
 				D3C6E09B1767969D00F88A9E /* Portal Three Kingdoms_Rare.gif in Resources */,
 				D3C6E09C1767969D00F88A9E /* Portal Three Kingdoms_Uncommon.gif in Resources */,
 				D3C6E09D1767969D00F88A9E /* Portal_Common.gif in Resources */,
-				D3C6E09E1767969D00F88A9E /* Portal_Rare.gif in Resources */,
-				D3C6E09F1767969D00F88A9E /* Portal_Uncommon.gif in Resources */,
 				D3C6E0A01767969D00F88A9E /* Premium Deck Series Fire and Lightning_Common.gif in Resources */,
 				D3C6E0A11767969D00F88A9E /* Premium Deck Series Fire and Lightning_Mythic.gif in Resources */,
 				D3C6E0A21767969D00F88A9E /* Premium Deck Series Fire and Lightning_Rare.gif in Resources */,
@@ -1707,8 +1759,6 @@
 				D3C6E0D21767969D00F88A9E /* Starter 1999_Rare.gif in Resources */,
 				D3C6E0D31767969D00F88A9E /* Starter 1999_Uncommon.gif in Resources */,
 				D3C6E0D41767969D00F88A9E /* Starter 2000_Common.gif in Resources */,
-				D3C6E0D51767969D00F88A9E /* Starter 2000_Rare.gif in Resources */,
-				D3C6E0D61767969D00F88A9E /* Starter 2000_Uncommon.gif in Resources */,
 				D3C6E0D71767969D00F88A9E /* Stronghold_Common.gif in Resources */,
 				D3C6E0D81767969D00F88A9E /* Stronghold_Rare.gif in Resources */,
 				D3C6E0D91767969D00F88A9E /* Stronghold_Uncommon.gif in Resources */,
@@ -1732,8 +1782,6 @@
 				D3C6E0EB1767969D00F88A9E /* Torment_Rare.gif in Resources */,
 				D3C6E0EC1767969D00F88A9E /* Torment_Uncommon.gif in Resources */,
 				D3C6E0ED1767969D00F88A9E /* Unglued_Common.gif in Resources */,
-				D3C6E0EE1767969D00F88A9E /* Unglued_Rare.gif in Resources */,
-				D3C6E0EF1767969D00F88A9E /* Unglued_Uncommon.gif in Resources */,
 				D3C6E0F01767969D00F88A9E /* Unhinged_Common.gif in Resources */,
 				D3C6E0F11767969D00F88A9E /* Unhinged_Rare.gif in Resources */,
 				D3C6E0F21767969D00F88A9E /* Unhinged_Uncommon.gif in Resources */,
@@ -1763,6 +1811,30 @@
 				D3C6E10A1767969D00F88A9E /* Zendikar_Mythic.gif in Resources */,
 				D3C6E10B1767969D00F88A9E /* Zendikar_Rare.gif in Resources */,
 				D3C6E10C1767969D00F88A9E /* Zendikar_Uncommon.gif in Resources */,
+				D324979E1767CBB10060C563 /* Dragon's Maze_Common.gif in Resources */,
+				D324979F1767CBB10060C563 /* Dragon's Maze_Mythic.gif in Resources */,
+				D32497A01767CBB10060C563 /* Dragon's Maze_Rare.gif in Resources */,
+				D32497A11767CBB10060C563 /* Dragon's Maze_Uncommon.gif in Resources */,
+				D32497A61767CC0A0060C563 /* Modern Masters_Common.gif in Resources */,
+				D32497A71767CC0A0060C563 /* Modern Masters_Mythic.gif in Resources */,
+				D32497A81767CC0A0060C563 /* Modern Masters_Rare.gif in Resources */,
+				D32497A91767CC0A0060C563 /* Modern Masters_Uncommon.gif in Resources */,
+				D32497B61767D1260060C563 /* Masters Edition III_Uncommon.gif in Resources */,
+				D32497B71767D1260060C563 /* Masters Edition III_Rare.gif in Resources */,
+				D32497B81767D1260060C563 /* Masters Edition II_Rare.gif in Resources */,
+				D32497B91767D1260060C563 /* Masters Edition II_Uncommon.gif in Resources */,
+				D32497BA1767D1260060C563 /* Masters Edition II_Common.gif in Resources */,
+				D32497BB1767D1260060C563 /* Masters Edition_Common.gif in Resources */,
+				D32497BC1767D1260060C563 /* Masters Edition IV_Uncommon.gif in Resources */,
+				D32497BD1767D1260060C563 /* Masters Edition IV_Rare.gif in Resources */,
+				D32497BE1767D1260060C563 /* Masters Edition IV_Common.gif in Resources */,
+				D32497BF1767D1260060C563 /* Masters Edition_Uncommon.gif in Resources */,
+				D32497C01767D1260060C563 /* Masters Edition III_Common.gif in Resources */,
+				D32497C11767D1260060C563 /* Masters Edition_Rare.gif in Resources */,
+				D32497C71767E2850060C563 /* Custom_Common.gif in Resources */,
+				D32497C81767E2850060C563 /* Custom_Mythic.gif in Resources */,
+				D32497C91767E2850060C563 /* Custom_Rare.gif in Resources */,
+				D32497CA1767E2850060C563 /* Custom_Uncommon.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -86,14 +86,17 @@
     NSString *strSetName = [tempSet.setName stringByReplacingOccurrencesOfString:@":" withString:@""];
     
     UIImageView *setSymbolImageView = (UIImageView *)[cell viewWithTag:2];
-    
+    BOOL fileCommonExists = [[NSFileManager defaultManager]fileExistsAtPath:[NSString stringWithFormat:@"/Users/Brian/Documents/iOS Apps/MTG App/MTG App/Set Symbols/Small/%@_Common.gif", strSetName]];
+    BOOL fileRareExists = [[NSFileManager defaultManager]fileExistsAtPath:[NSString stringWithFormat:@"/Users/Brian/Documents/iOS Apps/MTG App/MTG App/Set Symbols/Small/%@_Rare.gif", strSetName]];
     if([self.checkedIndexPaths containsObject:indexPath])
     {
-        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Rare.gif",strSetName]];
+        if(fileRareExists) setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Rare.gif",strSetName]];
+        else setSymbolImageView.image = [UIImage imageNamed:@"Custom_Rare.gif"];
     }
     else
     {
-        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Common.gif",strSetName]];
+        if(fileCommonExists) setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Common.gif",strSetName]];
+        else setSymbolImageView.image = [UIImage imageNamed:@"Custom_Common.gif"];
     }
     return cell;
 }
@@ -107,18 +110,21 @@
     UILabel *setCodeLabel = (UILabel *)[selectedCell viewWithTag:3];
     
     NSString *strSetName = [setNameLabel.text stringByReplacingOccurrencesOfString:@":" withString:@""];
-    
+    BOOL fileCommonExists = [[NSFileManager defaultManager]fileExistsAtPath:[NSString stringWithFormat:@"/Users/Brian/Documents/iOS Apps/MTG App/MTG App/Set Symbols/Small/%@_Common.gif", strSetName]];
+    BOOL fileRareExists = [[NSFileManager defaultManager]fileExistsAtPath:[NSString stringWithFormat:@"/Users/Brian/Documents/iOS Apps/MTG App/MTG App/Set Symbols/Small/%@_Rare.gif", strSetName]];
     if(![self.checkedIndexPaths containsObject:indexPath])
     {
         [self.checkedIndexPaths addObject:indexPath];
         [self.checkedSetNames addObject:setCodeLabel.text];
-        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Rare.gif",strSetName]];
+        if(fileRareExists) setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Rare.gif",strSetName]];
+        else setSymbolImageView.image = [UIImage imageNamed:@"Custom_Rare.gif"];
     }
     else
     {
         [self.checkedIndexPaths removeObject:indexPath];
         [self.checkedSetNames removeObject:setCodeLabel.text];
-        setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Common.gif",strSetName]];
+        if(fileCommonExists) setSymbolImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_Common.gif",strSetName]];
+        else setSymbolImageView.image = [UIImage imageNamed:@"Custom_Common.gif"];
     }
 }
 

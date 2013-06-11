@@ -113,7 +113,7 @@ Starter 2000@Starter@S00
 Starter 1999@Starter@S99
 Unhinged@Un-sets@UNH
 Unglued@Un-sets@UGL
-Masters Edition IV@Masters@ME4
-Masters Edition III@Masters@ME3
-Masters Edition II@Masters@ME2
-Masters Edition@Masters@MED
+Masters Edition IV@Masters Editions@ME4
+Masters Edition III@Masters Editions@ME3
+Masters Edition II@Masters Editions@ME2
+Masters Edition@Masters Editions@MED
