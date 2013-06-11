@@ -135,18 +135,6 @@
         filteredLibrary = [filteredLibrary filteredArrayUsingPredicate:predicate];
     }
     //then filter out selected colors
-    for(int i=0; i<colorFilter.count; i++)
-    {
-        /*NSString *selectedColor;
-        if([[colorFilter objectAtIndex:i] isEqualToString:@"White"]) selectedColor = @"W";
-        if([[colorFilter objectAtIndex:i] isEqualToString:@"Black"]) selectedColor = @"B";
-        if([[colorFilter objectAtIndex:i] isEqualToString:@"Blue"]) selectedColor = @"U";
-        if([[colorFilter objectAtIndex:i] isEqualToString:@"Red"]) selectedColor = @"R";
-        if([[colorFilter objectAtIndex:i] isEqualToString:@"Green"]) selectedColor = @"G";
-        if([[colorFilter objectAtIndex:i] isEqualToString:@"Colorless"]) selectedColor = @"C";
-        if(i==0)strPredicate = [NSString stringWithFormat:@"color like[c] 'A%@' OR color like[c] '%@'", selectedColor, selectedColor];
-        else strPredicate = [strPredicate stringByAppendingString:[NSString stringWithFormat:@" OR color like[c] 'A%@' OR color like[c] '%@'",selectedColor, selectedColor]];*/
-    }
     NSMutableArray *colorsNotInSelection = [[NSMutableArray alloc]init];
     BOOL White = NO;
     BOOL Red = NO;

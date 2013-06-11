@@ -1,77 +1,119 @@
 Set Name@Set Block@Set Code
-Limited Edition Alpha@Core@A
-Limited Edition Beta@Core@B
-Unlimited Edition@Core@U
-Revised Edition@Core@R
-Fourth Edition@Core@4E
-Fifth Edition@Core@5E
-Classic Sixth Edition@Core@6E
-Seventh Edition@Core@7E
-Eighth Edition@Core@8E
-Ninth Edition@Core@9E
-Tenth Edition@Core@10E
-Magic 2010@Core@M10
-Magic 2011@Core@M11
-Magic 2012@Core@M12
 Magic 2013@Core@M13
-Arabian Nights@None@AN
-Antiquities@None@ATQ
-Legends@None@LG
-The Dark@None@DRK
-Fallen Empires@None@FEM
+Magic 2012@Core@M12
+Magic 2011@Core@M11
+Magic 2010@Core@M10
+Tenth Edition@Core@10E
+Ninth Edition@Core@9ED
+Eighth Edition@Core@8ED
+Seventh Edition@Core@7ED
+Classic Sixth Edition@Core@6ED
+Fifth Edition@Core@5ED
+Fourth Edition@Core@4ED
+Revised Edition@Core@3ED
+Unlimited Edition@Core@2ED
+Limited Edition Beta@Core@LEB
+Limited Edition Alpha@Core@LEA
 Homelands@None@HML
-Ice Age@Ice Age@ICE
-Alliances@Ice Age@ALL
+Fallen Empires@None@FEM
+The Dark@None@DRK
+Legends@None@LEG
+Antiquities@None@ATQ
+Arabian Nights@None@ARN
 Coldsnap@Ice Age@CSP
-Mirage@Mirage@MIR
-Visions@Mirage@VIS
+Alliances@Ice Age@ALL
+Ice Age@Ice Age@ICE
 Weatherlight@Mirage@WTH
-Tempest@Tempest@TMP
-Stronghold@Tempest@STH
+Visions@Mirage@VIS
+Mirage@Mirage@MIR
 Exodus@Tempest@EXO
-Urza's Saga@Urza@USG
-Urza's Legacy@Urza@ULG
+Stronghold@Tempest@STH
+Tempest@Tempest@TMP
 Urza's Destiny@Urza@UDS
-Mercadian Masques@Masques@MMQ
-Nemesis@Masques@NMS
+Urza's Legacy@Urza@ULG
+Urza's Saga@Urza@USG
 Prophecy@Masques@PCY
-Invasion@Invasion@INV
-Planeshift@Invasion@PLS
+Nemesis@Masques@NMS
+Mercadian Masques@Masques@MMQ
 Apocalypse@Invasion@APC
-Odyssey@Odyssey@ODY
-Torment@Odyssey@TOR
+Planeshift@Invasion@PLS
+Invasion@Invasion@INV
 Judgment@Odyssey@JUD
-Onslaught@Onslaught@ONS
-Legions@Onslaught@LGN
+Torment@Odyssey@TOR
+Odyssey@Odyssey@ODY
 Scourge@Onslaught@SCG
-Mirrodin@Mirrodin@MRD
-Darksteel@Mirrodin@DS
+Legions@Onslaught@LGN
+Onslaught@Onslaught@ONS
 Fifth Dawn@Mirrodin@5DN
-Champions of Kamigawa@Kamigawa@CHK
-Betrayers of Kamigawa@Kamigawa@BOK
+Darksteel@Mirrodin@DST
+Mirrodin@Mirrodin@MRD
 Saviors of Kamigawa@Kamigawa@SOK
-Ravnica: City of Guilds@Ravnica@RAV
-Guildpact@Ravnica@GPT
+Betrayers of Kamigawa@Kamigawa@BOK
+Champions of Kamigawa@Kamigawa@CHK
 Dissension@Ravnica@DIS
-Time Spiral@Time Spiral@TSP
-Planar Chaos@Time Spiral@PLC
+Guildpact@Ravnica@GPT
+Ravnica: City of Guilds@Ravnica@RAV
 Future Sight@Time Spiral@FUT
-Lorwyn@Lorwyn@LRW
+Planar Chaos@Time Spiral@PLC
+Time Spiral@Time Spiral@TSP
 Morningtide@Lorwyn@MOR
-Shadowmoor@Shadowmoor@SHM
+Lorwyn@Lorwyn@LRW
 Eventide@Shadowmoor@EVE
-Shards of Alara@Shards of Alara@ALA
-Conflux@Shards of Alara@CON
+Shadowmoor@Shadowmoor@SHM
 Alara Reborn@Shards of Alara@ARB
-Zendikar@Zendikar@ZEN
-Worldwake@Zendikar@WWK
+Conflux@Shards of Alara@CON
+Shards of Alara@Shards of Alara@ALA
 Rise of the Eldrazi@Zendikar@ROE
-Scars of Mirrodin@Scars of Mirrodin@SOM
-Mirrodin Besieged@Scars of Mirrodin@MBS
+Worldwake@Zendikar@WWK
+Zendikar@Zendikar@ZEN
 New Phyrexia@Scars of Mirrodin@NPH
-Innistrad@Innistrad@ISD
-Dark Ascension@Innistrad@DKA
+Mirrodin Besieged@Scars of Mirrodin@MBS
+Scars of Mirrodin@Scars of Mirrodin@SOM
 Avacyn Restored@Innistrad@AVR
-Return to Ravnica@Return to Ravnica@RTR
-Gatecrash@Return to Ravnica@GTC
+Dark Ascension@Innistrad@DKA
+Innistrad@Innistrad@ISD
 Dragon's Maze@Return to Ravnica@DGM
+Gatecrash@Return to Ravnica@GTC
+Return to Ravnica@Return to Ravnica@RTR
+Modern Masters@Reprints@MMA
+Archenemy@Reprints@ARC
+Duels of the Planeswalkers@Reprints@DPA
+Deckmasters@Reprints@DKM
+Beatdown Box Set@Reprints@BTD
+Battle Royale Box Set@Reprints@BRB
+Anthologies@Reprints@ATH
+Chronicles@Reprints@CHR
+Duel Decks: Sorin vs. Tibalt@Duel Decks@DDK
+Duel Decks: Izzet vs. Golgari@Duel Decks@DDJ
+Duel Decks: Venser vs. Koth@Duel Decks@DDI
+Duel Decks: Ajani vs. Nicol Bolas@Duel Decks@DDH
+Duel Decks: Knights vs. Dragons@Duel Decks@DDG
+Duel Decks: Elspeth vs. Tezzeret@Duel Decks@DDF
+Duel Decks: Phyrexia vs. the Coalition@Duel Decks@DDE
+Duel Decks: Garruk vs. Liliana@Duel Decks@DDD
+Duel Decks: Divine vs. Demonic@Duel Decks@DDC
+Duel Decks: Jace vs. Chandra@Duel Decks@DD2
+Duel Decks: Elves vs. Goblins@Duel Decks@EVG
+From the Vault: Realms@From the Vault@V12
+From the Vault: Legends@From the Vault@V11
+From the Vault: Relics@From the Vault@V10
+From the Vault: Exiled@From the Vault@V09
+From the Vault: Dragons@From the Vault@DRB
+Planechase 2012 Edition@Planechase@PC2
+Planechase@Planechase@HOP
+Premium Deck Series: Graveborn@Premium Deck Series@PD3
+Premium Deck Series: Fire and Lightning@Premium Deck Series@PD2
+Premium Deck Series: Slivers@Premium Deck Series@H09
+Commander's Arsenal@Commander@CMA
+Magic The Gathering-Commander@Commander@CMD
+Portal Three Kingdoms@Portal@PTK
+Portal Second Age@Portal@P02
+Portal@Portal@POR
+Starter 2000@Starter@S00
+Starter 1999@Starter@S99
+Unhinged@Un-sets@UNH
+Unglued@Un-sets@UGL
+Masters Edition IV@Masters@ME4
+Masters Edition III@Masters@ME3
+Masters Edition II@Masters@ME2
+Masters Edition@Masters@MED
