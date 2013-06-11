@@ -80,14 +80,28 @@
         BCMagicCard *tempMC = (BCMagicCard *)[searchingLibrary objectAtIndex:indexPath.row];
         labelCardName.text = tempMC.name;
         labelCardType.text = tempMC.type;
-        imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.setCode, tempMC.rarity]];
+        NSString *strSymbolName = [tempMC.set stringByReplacingOccurrencesOfString:@":" withString:@" "];
+        NSString *strRarity;
+        if([tempMC.rarity isEqualToString:@"C"]) strRarity = @"Common";
+        if([tempMC.rarity isEqualToString:@"U"]) strRarity = @"Uncommon";
+        if([tempMC.rarity isEqualToString:@"R"]) strRarity = @"Rare";
+        if([tempMC.rarity isEqualToString:@"M"]) strRarity = @"Mythic";
+        imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, tempMC.rarity]];
+        //imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.setCode, tempMC.rarity]];
     }
     else
     {
         BCMagicCard *tempMC = (BCMagicCard *)[filteredLibrary objectAtIndex:indexPath.row];
         labelCardName.text = tempMC.name;
         labelCardType.text = tempMC.type;
-        imageViewSet.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.setCode, tempMC.rarity]];
+        NSString *strSymbolName = [tempMC.set stringByReplacingOccurrencesOfString:@":" withString:@" "];
+        NSString *strRarity;
+        if([tempMC.rarity isEqualToString:@"C"]) strRarity = @"Common";
+        if([tempMC.rarity isEqualToString:@"U"]) strRarity = @"Uncommon";
+        if([tempMC.rarity isEqualToString:@"R"]) strRarity = @"Rare";
+        if([tempMC.rarity isEqualToString:@"M"]) strRarity = @"Mythic";
+        imageViewSet.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, strRarity]];
+        //imageViewSet.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",tempMC.setCode, tempMC.rarity]];
     }
     
     return cell;
