@@ -8,17 +8,15 @@
 
 #import "BCCardInfoViewController.h"
 
-@interface BCCardInfoViewController ()
-
-@end
-
 @implementation BCCardInfoViewController
+
+@synthesize myImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self)
+    {
     }
     return self;
 }
@@ -26,13 +24,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    UITapGestureRecognizer *tapImage = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(actionFlipView:)];
+    [myImageView addGestureRecognizer:tapImage];
+    myImageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 0, 300, 420)];
+    myImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://ark42.com/mtg/cards/Dragon's%20Maze/Advent%20of%20the%20Wurm.full.jpg"]]];
+    [myImageView addGestureRecognizer:tapImage];
+    [self.view addSubview:myImageView];
+}
+
+- (IBAction)actionFlipView:(id)sender
+{
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

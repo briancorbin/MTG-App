@@ -10,4 +10,7 @@
 
 @interface BCCardInfoViewController : UIViewController
 
+- (IBAction)actionFlipView:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *myImageView;
+
 @end
