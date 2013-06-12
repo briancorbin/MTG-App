@@ -86,7 +86,10 @@
         if([tempMC.rarity isEqualToString:@"U"]) strRarity = @"Uncommon";
         if([tempMC.rarity isEqualToString:@"R"]) strRarity = @"Rare";
         if([tempMC.rarity isEqualToString:@"M"]) strRarity = @"Mythic";
-        imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, strRarity]];
+        NSString *strSetName = [tempMC.set stringByReplacingOccurrencesOfString:@":" withString:@""];
+        BOOL fileCommonExists = [[NSFileManager defaultManager]fileExistsAtPath:[NSString stringWithFormat:@"/Users/Brian/Documents/iOS Apps/MTG App/MTG App/Set Symbols/Small/%@_%@.gif", strSetName, strRarity]];
+        if (fileCommonExists) imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, strRarity]];
+        else imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"Custom_%@.gif", strRarity]];
     }
     else
     {
@@ -99,7 +102,10 @@
         if([tempMC.rarity isEqualToString:@"U"]) strRarity = @"Uncommon";
         if([tempMC.rarity isEqualToString:@"R"]) strRarity = @"Rare";
         if([tempMC.rarity isEqualToString:@"M"]) strRarity = @"Mythic";
-        imageViewSet.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, strRarity]];
+        NSString *strSetName = [tempMC.set stringByReplacingOccurrencesOfString:@":" withString:@""];
+        BOOL fileCommonExists = [[NSFileManager defaultManager]fileExistsAtPath:[NSString stringWithFormat:@"/Users/Brian/Documents/iOS Apps/MTG App/MTG App/Set Symbols/Small/%@_%@.gif", strSetName, strRarity]];
+        if (fileCommonExists) imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, strRarity]];
+        else imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"Custom_%@.gif", strRarity]];
     }
     
     return cell;
@@ -248,9 +254,8 @@
     
     cardImageViewController.selectedCard = tempMC;
     
-    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
     [self.navigationController pushViewController:cardImageViewController animated:YES];
-        
+    
     return indexPath;
 }
 
