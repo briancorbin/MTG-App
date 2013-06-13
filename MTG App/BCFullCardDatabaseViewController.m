@@ -10,7 +10,7 @@
 #import "BCMagicCard.h"
 #import "BCSet.h"
 #import "BCLoadData.h"
-#import "BCCardImageViewController.h"
+#import "BCCardImageInfoViewController.h"
 #import "BCSearchOptionsTableViewController.h"
 
 @interface BCFullCardDatabaseViewController ()
@@ -235,26 +235,24 @@
 
 #pragma mark-PassRowDataToBCImageView
 //-----------------------------------------------------------
-//----------------------PassDataToBCImageView----------------
+//----------------------ImageInfoViewCode--------------------
 //-----------------------------------------------------------
 
 -(NSIndexPath *)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    BCMagicCard *tempMC = [[BCMagicCard alloc]init];
+    BCCardImageInfoViewController *cardImageInfoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BCCardImageInfoViewController"];
+    
     if(isSearching)
     {
-        tempMC = searchingLibrary[indexPath.row];
+        cardImageInfoViewController.cardDatabase = searchingLibrary;
     }
     else
     {
-        tempMC = filteredLibrary[indexPath.row];
+        cardImageInfoViewController.cardDatabase = filteredLibrary;
     }
+    cardImageInfoViewController.cardIndex = indexPath.row;
     
-    BCCardImageViewController *cardImageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BCCardImageViewController"];
-    
-    cardImageViewController.selectedCard = tempMC;
-    
-    [self.navigationController pushViewController:cardImageViewController animated:YES];
+    [self.navigationController pushViewController:cardImageInfoViewController animated:YES];
     
     return indexPath;
 }

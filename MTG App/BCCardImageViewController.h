@@ -11,9 +11,6 @@
 
 @interface BCCardImageViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
-@property (weak, nonatomic) IBOutlet UINavigationItem *myVCTitle;
-- (IBAction)btnBack:(id)sender;
-- (IBAction)actionFlipImage:(id)sender;
 
 @property BCMagicCard *selectedCard;
 
