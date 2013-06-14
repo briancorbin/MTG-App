@@ -10,19 +10,19 @@
 #import "BCCardInfoViewController.h"
 #import "BCCardImageViewController.h"
 
-@interface BCCardImageInfoViewController : UIViewController
+@interface BCCardImageInfoViewController : UIViewController <UIScrollViewDelegate>
 {
     BCCardImageViewController *cardImageVC;
     BCCardInfoViewController *cardInfoVC;
+    
+    UIScrollView *cardImageSV;
 }
 
 @property (nonatomic, retain) BCCardImageViewController *cardImageVC;
 @property (nonatomic, retain) BCCardInfoViewController *cardInfoVC;
+@property (strong, nonatomic) IBOutlet UIScrollView *myScrollView;
 
 @property (strong, nonatomic) NSArray *cardDatabase;
 @property int cardIndex;
-
--(void)didSwipeLeft:(UISwipeGestureRecognizer*)swipe;
--(void)didSwipeRight:(UISwipeGestureRecognizer*)swipe;
 
 @end
