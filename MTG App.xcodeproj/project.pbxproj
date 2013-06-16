@@ -31,7 +31,6 @@
 		D32497C81767E2850060C563 /* Custom_Mythic.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497C41767E2850060C563 /* Custom_Mythic.gif */; };
 		D32497C91767E2850060C563 /* Custom_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497C51767E2850060C563 /* Custom_Rare.gif */; };
 		D32497CA1767E2850060C563 /* Custom_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497C61767E2850060C563 /* Custom_Uncommon.gif */; };
-		D327E2A717680DA400E9A54F /* BCCardInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D327E2A617680DA400E9A54F /* BCCardInfoViewController.m */; };
 		D33884CF176A0F9D00C87C35 /* BCCardImageInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33884CE176A0F9D00C87C35 /* BCCardImageInfoViewController.m */; };
 		D3394F311764E1E300510E51 /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2C1764E1E300510E51 /* Black.png */; };
 		D3394F321764E1E300510E51 /* White.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2D1764E1E300510E51 /* White.png */; };
@@ -40,7 +39,6 @@
 		D3394F351764E1E300510E51 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F301764E1E300510E51 /* Red.png */; };
 		D35A5C29176371B100E96F4D /* Card Types.txt in Resources */ = {isa = PBXBuildFile; fileRef = D35A5C28176371B100E96F4D /* Card Types.txt */; };
 		D35A5C2C1763731700E96F4D /* BCCardTypeFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35A5C2B1763731700E96F4D /* BCCardTypeFilterViewController.m */; };
-		D36640091762740300010672 /* BCCardImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36640081762740300010672 /* BCCardImageViewController.m */; };
 		D366400C17628F0A00010672 /* BCSearchOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366400B17628F0A00010672 /* BCSearchOptionsTableViewController.m */; };
 		D366400F1762977900010672 /* BCSetFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366400E1762977900010672 /* BCSetFilterViewController.m */; };
 		D366401117629A8C00010672 /* Set List.txt in Resources */ = {isa = PBXBuildFile; fileRef = D366401017629A8C00010672 /* Set List.txt */; };
@@ -441,8 +439,6 @@
 		D32497C41767E2850060C563 /* Custom_Mythic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Custom_Mythic.gif; sourceTree = "<group>"; };
 		D32497C51767E2850060C563 /* Custom_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Custom_Rare.gif; sourceTree = "<group>"; };
 		D32497C61767E2850060C563 /* Custom_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Custom_Uncommon.gif; sourceTree = "<group>"; };
-		D327E2A517680DA300E9A54F /* BCCardInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardInfoViewController.h; sourceTree = "<group>"; };
-		D327E2A617680DA400E9A54F /* BCCardInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardInfoViewController.m; sourceTree = "<group>"; };
 		D33884CD176A0F9D00C87C35 /* BCCardImageInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardImageInfoViewController.h; sourceTree = "<group>"; };
 		D33884CE176A0F9D00C87C35 /* BCCardImageInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardImageInfoViewController.m; sourceTree = "<group>"; };
 		D3394F2C1764E1E300510E51 /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
@@ -453,8 +449,6 @@
 		D35A5C28176371B100E96F4D /* Card Types.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Card Types.txt"; sourceTree = "<group>"; };
 		D35A5C2A1763731700E96F4D /* BCCardTypeFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardTypeFilterViewController.h; sourceTree = "<group>"; };
 		D35A5C2B1763731700E96F4D /* BCCardTypeFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardTypeFilterViewController.m; sourceTree = "<group>"; };
-		D36640071762740300010672 /* BCCardImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardImageViewController.h; sourceTree = "<group>"; };
-		D36640081762740300010672 /* BCCardImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardImageViewController.m; sourceTree = "<group>"; };
 		D366400A17628F0A00010672 /* BCSearchOptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSearchOptionsTableViewController.h; sourceTree = "<group>"; };
 		D366400B17628F0A00010672 /* BCSearchOptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSearchOptionsTableViewController.m; sourceTree = "<group>"; };
 		D366400D1762977900010672 /* BCSetFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSetFilterViewController.h; sourceTree = "<group>"; };
@@ -903,7 +897,6 @@
 			children = (
 				D33884CD176A0F9D00C87C35 /* BCCardImageInfoViewController.h */,
 				D33884CE176A0F9D00C87C35 /* BCCardImageInfoViewController.m */,
-				D33884CC176A0B5100C87C35 /* Card Image/Info */,
 				D366400A17628F0A00010672 /* BCSearchOptionsTableViewController.h */,
 				D366400B17628F0A00010672 /* BCSearchOptionsTableViewController.m */,
 				D31D85441762C9F00037636A /* SearchOptionTo */,
@@ -942,17 +935,6 @@
 				D32497C61767E2850060C563 /* Custom_Uncommon.gif */,
 			);
 			name = "Custom Symbols";
-			sourceTree = "<group>";
-		};
-		D33884CC176A0B5100C87C35 /* Card Image/Info */ = {
-			isa = PBXGroup;
-			children = (
-				D36640071762740300010672 /* BCCardImageViewController.h */,
-				D36640081762740300010672 /* BCCardImageViewController.m */,
-				D327E2A517680DA300E9A54F /* BCCardInfoViewController.h */,
-				D327E2A617680DA400E9A54F /* BCCardInfoViewController.m */,
-			);
-			name = "Card Image/Info";
 			sourceTree = "<group>";
 		};
 		D3394F2B1764E1CD00510E51 /* Mana Symbols */ = {
@@ -1869,12 +1851,10 @@
 				D3A4380D176112A700A9AE45 /* BCMagicCard.m in Sources */,
 				D3A43810176112C800A9AE45 /* BCSet.m in Sources */,
 				D3A438131761147700A9AE45 /* BCFullCardDatabaseViewController.m in Sources */,
-				D36640091762740300010672 /* BCCardImageViewController.m in Sources */,
 				D366400C17628F0A00010672 /* BCSearchOptionsTableViewController.m in Sources */,
 				D366400F1762977900010672 /* BCSetFilterViewController.m in Sources */,
 				D35A5C2C1763731700E96F4D /* BCCardTypeFilterViewController.m in Sources */,
 				D3A8BA5B1763786A007D23CE /* BCColorRarityFilterViewController.m in Sources */,
-				D327E2A717680DA400E9A54F /* BCCardInfoViewController.m in Sources */,
 				D33884CF176A0F9D00C87C35 /* BCCardImageInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

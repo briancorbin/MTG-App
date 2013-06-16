@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="yav-sb-OKd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yav-sb-OKd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -12,8 +12,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Search Cards" showsCancelButton="YES" id="e27-Rd-mNq">
-                                <rect key="frame" x="0.0" y="1" width="320" height="44"/>
+                            <searchBar contentMode="redraw" placeholder="Search Cards" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e27-Rd-mNq">
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
@@ -23,8 +22,7 @@
                                     <outlet property="delegate" destination="p3i-qV-eV6" id="PFw-qC-BpL"/>
                                 </connections>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ulc-4C-5ps">
-                                <rect key="frame" x="0.0" y="132" width="320" height="372"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ulc-4C-5ps">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardCell" id="rgg-7f-LUR">
@@ -34,24 +32,40 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" text="Card Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rmm-Pb-ER9">
-                                                    <rect key="frame" x="20" y="5" width="190" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" text="Card Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmm-Pb-ER9">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="190" id="VYf-oY-Iky"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" text="Card Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vhr-zl-HGw">
-                                                    <rect key="frame" x="49" y="25" width="161" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" text="Card Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhr-zl-HGw">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="8Xo-SF-DUz"/>
+                                                        <constraint firstAttribute="width" constant="161" id="adY-LN-SDJ"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" id="z8G-kY-tSu">
-                                                    <rect key="frame" x="277" y="14" width="28" height="28"/>
+                                                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8G-kY-tSu">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="28" id="9mh-yA-sUC"/>
+                                                        <constraint firstAttribute="height" constant="28" id="iXH-G2-zDo"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="Rmm-Pb-ER9" firstAttribute="leading" secondItem="rgg-7f-LUR" secondAttribute="leading" constant="20" type="default" id="PWX-M6-9ex"/>
+                                            <constraint firstItem="Rmm-Pb-ER9" firstAttribute="top" secondItem="rgg-7f-LUR" secondAttribute="top" constant="5" id="Uc6-pb-Wrg"/>
+                                            <constraint firstAttribute="trailing" secondItem="z8G-kY-tSu" secondAttribute="trailing" constant="15" id="alb-CF-09G"/>
+                                            <constraint firstItem="z8G-kY-tSu" firstAttribute="top" secondItem="rgg-7f-LUR" secondAttribute="top" constant="14" id="jT7-kK-zFe"/>
+                                            <constraint firstItem="Vhr-zl-HGw" firstAttribute="trailing" secondItem="Rmm-Pb-ER9" secondAttribute="trailing" type="default" id="tzr-L4-xEA"/>
+                                            <constraint firstItem="Vhr-zl-HGw" firstAttribute="top" secondItem="rgg-7f-LUR" secondAttribute="top" constant="25" id="xB4-kF-fGO"/>
+                                        </constraints>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -61,6 +75,15 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ulc-4C-5ps" firstAttribute="bottom" secondItem="Kmw-pC-QvT" secondAttribute="bottom" type="default" id="LfR-6K-5cy"/>
+                            <constraint firstItem="e27-Rd-mNq" firstAttribute="trailing" secondItem="Kmw-pC-QvT" secondAttribute="trailing" type="default" id="OeE-Nt-iVy"/>
+                            <constraint firstItem="Ulc-4C-5ps" firstAttribute="top" secondItem="e27-Rd-mNq" secondAttribute="bottom" type="default" id="Qdg-4A-SwL"/>
+                            <constraint firstItem="e27-Rd-mNq" firstAttribute="top" secondItem="Kmw-pC-QvT" secondAttribute="top" type="default" id="SPh-SK-U4e"/>
+                            <constraint firstItem="e27-Rd-mNq" firstAttribute="leading" secondItem="Kmw-pC-QvT" secondAttribute="leading" type="default" id="cNp-0S-1LV"/>
+                            <constraint firstItem="Ulc-4C-5ps" firstAttribute="leading" secondItem="Kmw-pC-QvT" secondAttribute="leading" type="default" id="iGa-F1-iSv"/>
+                            <constraint firstItem="Ulc-4C-5ps" firstAttribute="trailing" secondItem="Kmw-pC-QvT" secondAttribute="trailing" type="default" id="yMR-KS-A5r"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Magic Card Database" id="9AZ-Wf-Ra4">
                         <barButtonItem key="backBarButtonItem" title="Back" id="5fE-j8-VOy"/>
@@ -172,17 +195,24 @@
                                     <rect key="frame" x="10" y="1" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" id="BNt-1J-wVG">
-                                            <rect key="frame" x="245" y="4" width="35" height="35"/>
+                                        <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNt-1J-wVG">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="BzW-zG-dHh"/>
+                                                <constraint firstAttribute="width" constant="35" id="sS3-ty-A7b"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" text="Set Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n1y-bs-AlZ">
-                                            <rect key="frame" x="20" y="11" width="162" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" text="Set Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1y-bs-AlZ">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="162" id="C2W-Or-mtD"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GIK-Rs-CrZ">
-                                            <rect key="frame" x="190" y="11" width="47" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIK-Rs-CrZ">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="47" id="BVr-P7-hsg"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -190,6 +220,15 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="BNt-1J-wVG" firstAttribute="leading" secondItem="GIK-Rs-CrZ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="2YW-yg-QMz"/>
+                                    <constraint firstItem="n1y-bs-AlZ" firstAttribute="leading" secondItem="JwU-XR-pka" secondAttribute="leading" constant="30" id="BUd-q8-7m2"/>
+                                    <constraint firstItem="BNt-1J-wVG" firstAttribute="top" secondItem="JwU-XR-pka" secondAttribute="top" constant="5" id="DfV-qq-oD2"/>
+                                    <constraint firstItem="GIK-Rs-CrZ" firstAttribute="centerY" secondItem="BNt-1J-wVG" secondAttribute="centerY" type="default" id="Upy-8D-f1W"/>
+                                    <constraint firstItem="GIK-Rs-CrZ" firstAttribute="baseline" secondItem="n1y-bs-AlZ" secondAttribute="baseline" type="default" id="Yzb-vJ-U5y"/>
+                                    <constraint firstItem="GIK-Rs-CrZ" firstAttribute="leading" secondItem="n1y-bs-AlZ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="aSU-yK-dsE"/>
+                                    <constraint firstItem="n1y-bs-AlZ" firstAttribute="top" secondItem="GIK-Rs-CrZ" secondAttribute="top" type="default" id="cxx-Ju-V9z"/>
+                                </constraints>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -318,55 +357,23 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="YKi-s8-xmp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMp-VF-qFc"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HMp-VF-qFc" firstAttribute="top" secondItem="scL-yt-T1g" secondAttribute="top" type="default" id="D7X-YR-UIr"/>
+                            <constraint firstItem="HMp-VF-qFc" firstAttribute="bottom" secondItem="scL-yt-T1g" secondAttribute="bottom" type="default" id="RYS-dF-yXs"/>
+                            <constraint firstItem="HMp-VF-qFc" firstAttribute="leading" secondItem="scL-yt-T1g" secondAttribute="leading" type="default" id="dFd-qt-ZxC"/>
+                            <constraint firstItem="HMp-VF-qFc" firstAttribute="trailing" secondItem="scL-yt-T1g" secondAttribute="trailing" type="default" id="mr2-Nz-Dm0"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="myScrollView" destination="YKi-s8-xmp" id="3uF-Nt-DHa"/>
+                        <outlet property="myImageView" destination="HMp-VF-qFc" id="sVi-Ha-4kA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGR-BW-qW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="815" y="396"/>
-        </scene>
-        <!--Card Image View Controller-->
-        <scene sceneID="JMN-EP-Xqh">
-            <objects>
-                <viewController storyboardIdentifier="BCCardImageViewController" wantsFullScreenLayout="YES" id="cAu-08-eRX" customClass="BCCardImageViewController" sceneMemberID="viewController">
-                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="Shh-bh-SC4">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="zzI-gv-4Ju">
-                                <rect key="frame" x="10" y="0.0" width="300" height="420"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="myImageView" destination="zzI-gv-4Ju" id="Ho3-qB-SkU"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iop-Vh-ZGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1160" y="422"/>
-        </scene>
-        <!--Card Info View Controller-->
-        <scene sceneID="jDi-0T-pVb">
-            <objects>
-                <viewController storyboardIdentifier="BCCardInfoViewController" wantsFullScreenLayout="YES" id="15x-3X-q4i" customClass="BCCardInfoViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fQ7-aC-Lvo">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2as-fM-OUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1498" y="422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lmx-1R-mad">
@@ -387,59 +394,6 @@
             <point key="canvasLocation" x="86" y="95"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="BCCardImageInfoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardImageInfoViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="myScrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="BCCardImageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardImageViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="myImageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="BCCardInfoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardInfoViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actionFlipView:"/>
-                <relationship kind="outlet" name="myImageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="BCCardTypeFilterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardTypeFilterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actionResetFilter:"/>
-            </relationships>
-        </class>
-        <class className="BCColorRarityFilterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCColorRarityFilterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actionResetFilter:"/>
-            </relationships>
-        </class>
-        <class className="BCFullCardDatabaseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCFullCardDatabaseViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="btnSeachOptions:"/>
-                <relationship kind="outlet" name="mySearchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="myTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="BCSearchOptionsTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCSearchOptionsTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actionResetFilters:"/>
-            </relationships>
-        </class>
-        <class className="BCSetFilterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCSetFilterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actionResetFilter:"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

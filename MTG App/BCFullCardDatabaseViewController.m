@@ -241,19 +241,9 @@
 -(NSIndexPath *)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     BCCardImageInfoViewController *cardImageInfoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BCCardImageInfoViewController"];
-    
-    if(isSearching)
-    {
-        cardImageInfoViewController.cardDatabase = searchingLibrary;
-    }
-    else
-    {
-        cardImageInfoViewController.cardDatabase = filteredLibrary;
-    }
-    cardImageInfoViewController.cardIndex = indexPath.row;
-    
+    if(isSearching) cardImageInfoViewController.selectedCard = [searchingLibrary objectAtIndex:indexPath.row];
+    else cardImageInfoViewController.selectedCard = [filteredLibrary objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:cardImageInfoViewController animated:YES];
-    
     return indexPath;
 }
 

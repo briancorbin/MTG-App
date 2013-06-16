@@ -7,22 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BCCardInfoViewController.h"
-#import "BCCardImageViewController.h"
+#import "BCMagicCard.h"
 
-@interface BCCardImageInfoViewController : UIViewController <UIScrollViewDelegate>
-{
-    BCCardImageViewController *cardImageVC;
-    BCCardInfoViewController *cardInfoVC;
-    
-    UIScrollView *cardImageSV;
-}
+@interface BCCardImageInfoViewController : UIViewController
 
-@property (nonatomic, retain) BCCardImageViewController *cardImageVC;
-@property (nonatomic, retain) BCCardInfoViewController *cardInfoVC;
-@property (strong, nonatomic) IBOutlet UIScrollView *myScrollView;
-
-@property (strong, nonatomic) NSArray *cardDatabase;
-@property int cardIndex;
+@property (strong, nonatomic) BCMagicCard *selectedCard;
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 
 @end
