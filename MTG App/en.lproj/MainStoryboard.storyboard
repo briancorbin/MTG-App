@@ -357,18 +357,58 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMp-VF-qFc"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urp-a4-zJP">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbU-pf-4zn">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="494" id="ldQ-21-kGv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Card Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uP-Er-ysR">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Card Set" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nK2-d4-mIZ">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rarity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyI-tW-TIG">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nK2-d4-mIZ" firstAttribute="centerX" secondItem="XyI-tW-TIG" secondAttribute="centerX" type="default" id="2b1-dq-cDW"/>
+                                    <constraint firstItem="9uP-Er-ysR" firstAttribute="top" secondItem="Urp-a4-zJP" secondAttribute="top" constant="524" id="TTs-69-gdm"/>
+                                    <constraint firstItem="nK2-d4-mIZ" firstAttribute="centerX" secondItem="9uP-Er-ysR" secondAttribute="centerX" type="default" id="X4Y-C5-IIm"/>
+                                    <constraint firstItem="kbU-pf-4zn" firstAttribute="centerX" secondItem="9uP-Er-ysR" secondAttribute="centerX" type="default" id="YNl-Kr-GTN"/>
+                                    <constraint firstItem="XyI-tW-TIG" firstAttribute="top" secondItem="nK2-d4-mIZ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="aZu-jP-jfI"/>
+                                    <constraint firstItem="nK2-d4-mIZ" firstAttribute="top" secondItem="9uP-Er-ysR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cfP-vR-MHR"/>
+                                    <constraint firstItem="kbU-pf-4zn" firstAttribute="trailing" secondItem="Urp-a4-zJP" secondAttribute="trailing" type="default" id="ez7-9G-w67"/>
+                                    <constraint firstItem="kbU-pf-4zn" firstAttribute="top" secondItem="Urp-a4-zJP" secondAttribute="top" type="default" id="jzx-J3-nCK"/>
+                                    <constraint firstItem="kbU-pf-4zn" firstAttribute="leading" secondItem="Urp-a4-zJP" secondAttribute="leading" type="default" id="kWc-Q4-3Hr"/>
+                                    <constraint firstItem="9uP-Er-ysR" firstAttribute="centerX" secondItem="Urp-a4-zJP" secondAttribute="centerX" type="default" id="lMC-Dt-I1h"/>
+                                    <constraint firstAttribute="bottom" secondItem="9uP-Er-ysR" secondAttribute="bottom" constant="7" id="x5b-kh-Awe"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HMp-VF-qFc" firstAttribute="top" secondItem="scL-yt-T1g" secondAttribute="top" type="default" id="D7X-YR-UIr"/>
-                            <constraint firstItem="HMp-VF-qFc" firstAttribute="bottom" secondItem="scL-yt-T1g" secondAttribute="bottom" type="default" id="RYS-dF-yXs"/>
-                            <constraint firstItem="HMp-VF-qFc" firstAttribute="leading" secondItem="scL-yt-T1g" secondAttribute="leading" type="default" id="dFd-qt-ZxC"/>
-                            <constraint firstItem="HMp-VF-qFc" firstAttribute="trailing" secondItem="scL-yt-T1g" secondAttribute="trailing" type="default" id="mr2-Nz-Dm0"/>
+                            <constraint firstItem="Urp-a4-zJP" firstAttribute="top" secondItem="scL-yt-T1g" secondAttribute="top" constant="-2" id="7Z7-N8-OcI"/>
+                            <constraint firstItem="Urp-a4-zJP" firstAttribute="leading" secondItem="scL-yt-T1g" secondAttribute="leading" type="default" id="CLB-q4-bbf"/>
+                            <constraint firstItem="Urp-a4-zJP" firstAttribute="trailing" secondItem="scL-yt-T1g" secondAttribute="trailing" type="default" id="Ocr-er-384"/>
+                            <constraint firstItem="Urp-a4-zJP" firstAttribute="centerY" secondItem="scL-yt-T1g" secondAttribute="centerY" type="default" id="YKb-T7-fgN"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myImageView" destination="HMp-VF-qFc" id="sVi-Ha-4kA"/>
+                        <outlet property="lblCardName" destination="9uP-Er-ysR" id="tJo-f0-M63"/>
+                        <outlet property="lblCardRarity" destination="XyI-tW-TIG" id="QUD-T0-gNh"/>
+                        <outlet property="lblCardSet" destination="nK2-d4-mIZ" id="5EO-aZ-Rjz"/>
+                        <outlet property="myImageView" destination="kbU-pf-4zn" id="9jP-dV-wGu"/>
+                        <outlet property="myScrollView" destination="Urp-a4-zJP" id="h6i-cN-QLz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGR-BW-qW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -394,6 +434,53 @@
             <point key="canvasLocation" x="86" y="95"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="BCCardImageInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardImageInfoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="lblCardName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblCardRarity" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblCardSet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="myScrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="BCCardTypeFilterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardTypeFilterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionResetFilter:"/>
+            </relationships>
+        </class>
+        <class className="BCColorRarityFilterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCColorRarityFilterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionResetFilter:"/>
+            </relationships>
+        </class>
+        <class className="BCFullCardDatabaseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCFullCardDatabaseViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnSeachOptions:"/>
+                <relationship kind="outlet" name="mySearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="myTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="BCSearchOptionsTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCSearchOptionsTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionResetFilters:"/>
+            </relationships>
+        </class>
+        <class className="BCSetFilterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCSetFilterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionResetFilter:"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
