@@ -11,8 +11,8 @@
 
 @interface BCFullCardDatabaseViewController : UIViewController<BCSearchOptionsTableViewControllerDelegate,UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *myTableView;
 @property (weak, nonatomic) IBOutlet UISearchBar *mySearchBar;
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
 - (IBAction)btnSeachOptions:(id)sender;
 
 @property (nonatomic, strong) NSArray *fullLibrary;

@@ -10,7 +10,7 @@
 #import "BCMagicCard.h"
 
 @implementation BCCardImageInfoViewController
-@synthesize selectedCard, myImageView, myScrollView, lblCardName, lblCardRarity, lblCardSet;
+@synthesize selectedCard, myImageView, lblCardName, lblCardRarity, lblCardSet;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +26,7 @@
     [super viewDidLoad];
     
     [myScrollView setScrollEnabled:YES];
-    [myScrollView setContentSize:CGSizeMake(320, 2000)];
+    [myScrollView setContentSize:CGSizeMake(320, 650)];
     
     NSString *strSetNameForImage = [selectedCard.set stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
     strSetNameForImage = [strSetNameForImage stringByReplacingOccurrencesOfString:@":" withString:@""];

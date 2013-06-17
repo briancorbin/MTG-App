@@ -10,10 +10,13 @@
 #import "BCMagicCard.h"
 
 @interface BCCardImageInfoViewController : UIViewController
+{
+    IBOutlet UIScrollView *myScrollView;
+}
+
 
 @property (strong, nonatomic) BCMagicCard *selectedCard;
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
-@property (weak, nonatomic) IBOutlet UIScrollView *myScrollView;
 @property (weak, nonatomic) IBOutlet UILabel *lblCardName;
 @property (weak, nonatomic) IBOutlet UILabel *lblCardSet;
 @property (weak, nonatomic) IBOutlet UILabel *lblCardRarity;
