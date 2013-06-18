@@ -320,32 +320,158 @@
         <!--Card Image Info View Controller-->
         <scene sceneID="4Id-1e-ys6">
             <objects>
-                <viewController storyboardIdentifier="BCCardImageInfoViewController" wantsFullScreenLayout="YES" id="ptR-nC-L8y" customClass="BCCardImageInfoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BCCardImageInfoViewController" autoresizesArchivedViewToFullSize="NO" wantsFullScreenLayout="YES" id="ptR-nC-L8y" customClass="BCCardImageInfoViewController" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="scL-yt-T1g">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="z35-iH-xd9">
-                                <rect key="frame" x="33" y="0.0" width="254" height="374"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Zhn-KZ-g7d">
-                                <rect key="frame" x="0.0" y="374" width="320" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="F1f-hT-X7g">
+                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="XXB-PD-hGy"/>
+                                    <barButtonItem title="Flip" id="LEF-dq-kcf">
+                                        <connections>
+                                            <action selector="actionFlipImage:" destination="ptR-nC-L8y" id="lrL-od-zw6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="myImageView" destination="z35-iH-xd9" id="mfu-aa-vR9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGR-BW-qW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="821" y="332"/>
+        </scene>
+        <!--Card Image View Controller-->
+        <scene sceneID="F05-As-PSZ">
+            <objects>
+                <viewController storyboardIdentifier="BCCardImageViewController" autoresizesArchivedViewToFullSize="NO" id="6sO-pq-rpN" customClass="BCCardImageViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="GeS-S7-I27">
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="mqw-O0-4jZ">
+                                <rect key="frame" x="36" y="0.0" width="248" height="372"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="cardImageView" destination="mqw-O0-4jZ" id="vVS-5y-NRt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPt-x0-CaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1159" y="360"/>
+        </scene>
+        <!--Card Info View Controller-->
+        <scene sceneID="uhY-S2-5gm">
+            <objects>
+                <viewController storyboardIdentifier="BCCardInfoViewController" autoresizesArchivedViewToFullSize="NO" id="XkC-l5-gJt" customClass="BCCardInfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xhO-Em-TWg">
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="hil-YP-sZi">
+                                <rect key="frame" x="7" y="7" width="103" height="149"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" id="42E-g5-Uk2">
+                                <rect key="frame" x="20" y="164" width="280" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ability Text">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Card Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jkx-g0-z4D">
+                                <rect key="frame" x="118" y="7" width="194" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" id="De4-oh-CQQ">
+                                <rect key="frame" x="20" y="264" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ruling">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" id="YCL-24-m2R">
+                                <rect key="frame" x="20" y="322" width="280" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Flavor Text">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Set:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yl4-Bf-PSI">
+                                <rect key="frame" x="118" y="40" width="28" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Set Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9tK-iV-qR0">
+                                <rect key="frame" x="143" y="40" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="x6s-vU-73C">
+                                <rect key="frame" x="258" y="37" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="cardAbilityTextField" destination="42E-g5-Uk2" id="jJo-UI-9FR"/>
+                        <outlet property="cardFlavorTextField" destination="YCL-24-m2R" id="GUG-1o-8ob"/>
+                        <outlet property="cardImageView" destination="hil-YP-sZi" id="DFn-GN-3bk"/>
+                        <outlet property="cardOtherInfoTextField" destination="De4-oh-CQQ" id="Ubx-qE-xbB"/>
+                        <outlet property="imgSetSymbol" destination="x6s-vU-73C" id="nUq-aR-fC4"/>
+                        <outlet property="lblCardName" destination="Jkx-g0-z4D" id="H0Z-xN-4DJ"/>
+                        <outlet property="lblSetName" destination="9tK-iV-qR0" id="Pfv-Xv-auB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dz6-7J-VJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1506" y="360"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lmx-1R-mad">
@@ -367,50 +493,6 @@
             <point key="canvasLocation" x="139" y="332"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="BCCardImageInfoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardImageInfoViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="lblCardName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lblCardRarity" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lblCardSet" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="myScrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="BCCardTypeFilterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardTypeFilterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actionResetFilter:"/>
-            </relationships>
-        </class>
-        <class className="BCColorRarityFilterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCColorRarityFilterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actionResetFilter:"/>
-            </relationships>
-        </class>
-        <class className="BCFullCardDatabaseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCFullCardDatabaseViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="btnSeachOptions:"/>
-                <relationship kind="outlet" name="mySearchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="myTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="BCSearchOptionsTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCSearchOptionsTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actionResetFilters:"/>
-            </relationships>
-        </class>
-        <class className="BCSetFilterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCSetFilterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actionResetFilter:"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

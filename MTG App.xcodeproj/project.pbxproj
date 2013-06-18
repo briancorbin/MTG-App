@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D307A23F176FB46700510217 /* BCCardImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A23E176FB46700510217 /* BCCardImageViewController.m */; };
+		D307A242176FB47000510217 /* BCCardInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A241176FB47000510217 /* BCCardInfoViewController.m */; };
 		D324979E1767CBB10060C563 /* Dragon's Maze_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D324979A1767CBB10060C563 /* Dragon's Maze_Common.gif */; };
 		D324979F1767CBB10060C563 /* Dragon's Maze_Mythic.gif in Resources */ = {isa = PBXBuildFile; fileRef = D324979B1767CBB10060C563 /* Dragon's Maze_Mythic.gif */; };
 		D32497A01767CBB10060C563 /* Dragon's Maze_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D324979C1767CBB10060C563 /* Dragon's Maze_Rare.gif */; };
@@ -415,6 +417,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D307A23D176FB46700510217 /* BCCardImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardImageViewController.h; sourceTree = "<group>"; };
+		D307A23E176FB46700510217 /* BCCardImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardImageViewController.m; sourceTree = "<group>"; };
+		D307A240176FB47000510217 /* BCCardInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardInfoViewController.h; sourceTree = "<group>"; };
+		D307A241176FB47000510217 /* BCCardInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardInfoViewController.m; sourceTree = "<group>"; };
 		D324979A1767CBB10060C563 /* Dragon's Maze_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Dragon's Maze_Common.gif"; sourceTree = "<group>"; };
 		D324979B1767CBB10060C563 /* Dragon's Maze_Mythic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Dragon's Maze_Mythic.gif"; sourceTree = "<group>"; };
 		D324979C1767CBB10060C563 /* Dragon's Maze_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Dragon's Maze_Rare.gif"; sourceTree = "<group>"; };
@@ -849,6 +855,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D307A236176FB3FF00510217 /* CardImageInfoViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D307A23D176FB46700510217 /* BCCardImageViewController.h */,
+				D307A23E176FB46700510217 /* BCCardImageViewController.m */,
+				D307A240176FB47000510217 /* BCCardInfoViewController.h */,
+				D307A241176FB47000510217 /* BCCardInfoViewController.m */,
+			);
+			name = CardImageInfoViewControllers;
+			sourceTree = "<group>";
+		};
 		D31D853E1762C7700037636A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -897,6 +914,7 @@
 			children = (
 				D33884CD176A0F9D00C87C35 /* BCCardImageInfoViewController.h */,
 				D33884CE176A0F9D00C87C35 /* BCCardImageInfoViewController.m */,
+				D307A236176FB3FF00510217 /* CardImageInfoViewControllers */,
 				D366400A17628F0A00010672 /* BCSearchOptionsTableViewController.h */,
 				D366400B17628F0A00010672 /* BCSearchOptionsTableViewController.m */,
 				D31D85441762C9F00037636A /* SearchOptionTo */,
@@ -1856,6 +1874,8 @@
 				D35A5C2C1763731700E96F4D /* BCCardTypeFilterViewController.m in Sources */,
 				D3A8BA5B1763786A007D23CE /* BCColorRarityFilterViewController.m in Sources */,
 				D33884CF176A0F9D00C87C35 /* BCCardImageInfoViewController.m in Sources */,
+				D307A23F176FB46700510217 /* BCCardImageViewController.m in Sources */,
+				D307A242176FB47000510217 /* BCCardInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

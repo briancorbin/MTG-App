@@ -8,17 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "BCMagicCard.h"
+#import "BCCardInfoViewController.h"
+#import "BCCardImageViewController.h"
 
 @interface BCCardImageInfoViewController : UIViewController
 {
-    IBOutlet UIScrollView *myScrollView;
+    BCCardImageViewController *cardImageVC;
+    BCCardInfoViewController *cardInfoVC;
 }
 
+@property (strong, nonatomic) BCCardImageViewController *cardImageVC;
+@property (strong, nonatomic) BCCardInfoViewController *cardInfoVC;
+
+- (IBAction)actionFlipImage:(id)sender;
 
 @property (strong, nonatomic) BCMagicCard *selectedCard;
-@property (weak, nonatomic) IBOutlet UIImageView *myImageView;
-@property (weak, nonatomic) IBOutlet UILabel *lblCardName;
-@property (weak, nonatomic) IBOutlet UILabel *lblCardSet;
-@property (weak, nonatomic) IBOutlet UILabel *lblCardRarity;
+@property BOOL isFlipped;
 
 @end

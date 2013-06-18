@@ -10,7 +10,7 @@
 #import "BCMagicCard.h"
 
 @implementation BCCardImageInfoViewController
-@synthesize selectedCard, myImageView, lblCardName, lblCardRarity, lblCardSet;
+@synthesize selectedCard, isFlipped, cardImageVC, cardInfoVC;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,24 +24,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    isFlipped = NO;
     
-    [myScrollView setScrollEnabled:YES];
-    [myScrollView setContentSize:CGSizeMake(320, 650)];
+    cardImageVC= [self.storyboard instantiateViewControllerWithIdentifier:@"BCCardImageViewController"];
+    cardInfoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BCCardInfoViewController"];
+    cardImageVC.selectedCard = self.selectedCard;
+    cardInfoVC.selectedCard = self.selectedCard;
     
-    NSString *strSetNameForImage = [selectedCard.set stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
-    strSetNameForImage = [strSetNameForImage stringByReplacingOccurrencesOfString:@":" withString:@""];
-    NSString *strCardNameForImage = [selectedCard.name stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
-    strCardNameForImage = [strCardNameForImage stringByReplacingOccurrencesOfString:@"\"" withString:@""];
-    
-    //loading image from ark42.com's database
-    myImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://ark42.com/mtg/cards/%@/%@.full.jpg",strSetNameForImage, strCardNameForImage]]]];
-    
-    //if image is not found at ark42.com, load image from gatherer.wizards.com
-    if(myImageView.image == nil) myImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=%@&type=card",selectedCard.imageID ]]]];
-    
-    lblCardName.text = selectedCard.name;
-    lblCardSet.text = selectedCard.set;
-    lblCardRarity.text = selectedCard.rarity;
+    if(isFlipped) [self.view addSubview:cardInfoVC.view];
+    else [self.view addSubview:cardImageVC.view];
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,5 +40,46 @@
     [super didReceiveMemoryWarning];
 }
 
+-(IBAction)actionFlipImage:(id)sender
+{
+    [UIView beginAnimations:@"Flip" context:nil];
+    [UIView setAnimationDuration:1.25];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    
+    if(isFlipped == NO)
+    {
+        isFlipped = YES;
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:cardImageVC.view cache:YES];
+        [cardInfoVC viewWillAppear:YES];
+        [cardImageVC viewWillDisappear:YES];
+        [cardImageVC.view removeFromSuperview];
+        [self.view addSubview:cardInfoVC.view];
+        [cardImageVC viewDidDisappear:YES];
+        [cardInfoVC viewDidAppear:YES];
+    }
+    else
+    {
+        isFlipped = NO;
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:cardInfoVC.view cache:YES];
+        [cardImageVC viewWillAppear:YES];
+        [cardInfoVC viewWillDisappear:YES];
+        [cardInfoVC.view removeFromSuperview];
+        [self.view addSubview:cardImageVC.view];
+        [cardInfoVC viewDidDisappear:YES];
+        [cardImageVC viewDidAppear:YES];
+    }
+    
+    [UIView commitAnimations];
+    
+}
 
 @end
+
+
+
+
+
+
+
+
+
