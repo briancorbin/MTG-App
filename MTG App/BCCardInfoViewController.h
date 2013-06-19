@@ -10,14 +10,16 @@
 #import "BCMagicCard.h"
 
 @interface BCCardInfoViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIImageView *cardImageView;
 @property (weak, nonatomic) IBOutlet UILabel *lblCardName;
 @property (strong, nonatomic) BCMagicCard *selectedCard;
-@property (weak, nonatomic) IBOutlet UITextView *cardOtherInfoTextField;
-@property (weak, nonatomic) IBOutlet UITextView *cardAbilityTextField;
-@property (weak, nonatomic) IBOutlet UITextView *cardFlavorTextField;
+@property (weak, nonatomic) IBOutlet UITextView *cardInfoTextField;
 @property (weak, nonatomic) IBOutlet UILabel *lblSetName;
+@property (weak, nonatomic) IBOutlet UILabel *lblCardType;
+@property (weak, nonatomic) IBOutlet UILabel *lblPTorL;
 @property (weak, nonatomic) IBOutlet UIImageView *imgSetSymbol;
-
+- (IBAction)actionChangeSelection:(id)sender;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *cardInfoSegmentController;
 
 @end
