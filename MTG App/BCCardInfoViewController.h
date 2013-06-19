@@ -18,6 +18,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblSetName;
 @property (weak, nonatomic) IBOutlet UILabel *lblCardType;
 @property (weak, nonatomic) IBOutlet UILabel *lblPTorL;
+@property (weak, nonatomic) IBOutlet UILabel *lblArtistName;
+@property (weak, nonatomic) IBOutlet UILabel *lblCardNumber;
+@property (weak, nonatomic) IBOutlet UILabel *lblCMC;
 @property (weak, nonatomic) IBOutlet UIImageView *imgSetSymbol;
 - (IBAction)actionChangeSelection:(id)sender;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *cardInfoSegmentController;

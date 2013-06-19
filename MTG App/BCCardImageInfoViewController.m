@@ -10,7 +10,7 @@
 #import "BCMagicCard.h"
 
 @implementation BCCardImageInfoViewController
-@synthesize selectedCard, isFlipped, cardImageVC, cardInfoVC;
+@synthesize selectedCard, isFlipped, cardImageVC, cardInfoVC, btnFlip;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,14 +25,21 @@
 {
     [super viewDidLoad];
     isFlipped = NO;
-    
     cardImageVC= [self.storyboard instantiateViewControllerWithIdentifier:@"BCCardImageViewController"];
     cardInfoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BCCardInfoViewController"];
     cardImageVC.selectedCard = self.selectedCard;
     cardInfoVC.selectedCard = self.selectedCard;
     
-    if(isFlipped) [self.view addSubview:cardInfoVC.view];
-    else [self.view addSubview:cardImageVC.view];
+    if(isFlipped)
+    {
+        [self.view addSubview:cardInfoVC.view];
+        btnFlip.title = @"Less";
+    }
+    else
+    {
+        [self.view addSubview:cardImageVC.view];
+        btnFlip.title = @"More";
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,35 +49,20 @@
 
 -(IBAction)actionFlipImage:(id)sender
 {
-    [UIView beginAnimations:@"Flip" context:nil];
-    [UIView setAnimationDuration:1.25];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-    
     if(isFlipped == NO)
     {
         isFlipped = YES;
-        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:cardImageVC.view cache:YES];
-        [cardInfoVC viewWillAppear:YES];
-        [cardImageVC viewWillDisappear:YES];
+        btnFlip.title = @"Less";
         [cardImageVC.view removeFromSuperview];
         [self.view addSubview:cardInfoVC.view];
-        [cardImageVC viewDidDisappear:YES];
-        [cardInfoVC viewDidAppear:YES];
     }
     else
     {
         isFlipped = NO;
-        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:cardInfoVC.view cache:YES];
-        [cardImageVC viewWillAppear:YES];
-        [cardInfoVC viewWillDisappear:YES];
+        btnFlip.title = @"More";
         [cardInfoVC.view removeFromSuperview];
         [self.view addSubview:cardImageVC.view];
-        [cardInfoVC viewDidDisappear:YES];
-        [cardImageVC viewDidAppear:YES];
     }
-    
-    [UIView commitAnimations];
-    
 }
 
 @end

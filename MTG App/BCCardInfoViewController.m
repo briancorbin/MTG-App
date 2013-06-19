@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @implementation BCCardInfoViewController
-@synthesize cardImageView, lblCardName, selectedCard, cardInfoTextField, lblSetName, imgSetSymbol, cardInfoSegmentController, lblCardType, lblPTorL;
+@synthesize cardImageView, lblCardName, selectedCard, cardInfoTextField, lblSetName, imgSetSymbol, cardInfoSegmentController, lblCardType, lblPTorL, lblArtistName, lblCardNumber, lblCMC;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -75,6 +75,9 @@
         //imgViewManaSymbol.image = [UIImage imageNamed:@"B.png"];
         [self.view addSubview:imgViewManaSymbol];
     }
+    lblArtistName.text = [NSString stringWithFormat:@"%@", selectedCard.artist];
+    lblCardNumber.text = [NSString stringWithFormat:@"%@", selectedCard.number];
+    lblCMC.text = [NSString stringWithFormat:@"%@", selectedCard.cmc];
 }
 
 - (void)didReceiveMemoryWarning

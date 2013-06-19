@@ -21,6 +21,7 @@
 @property (strong, nonatomic) BCCardInfoViewController *cardInfoVC;
 
 - (IBAction)actionFlipImage:(id)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *btnFlip;
 
 @property (strong, nonatomic) BCMagicCard *selectedCard;
 @property BOOL isFlipped;
