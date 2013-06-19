@@ -70,10 +70,7 @@
     UILabel *labelCardType =(UILabel *)[cell viewWithTag:2];
     UIImageView *imageViewSet =(UIImageView *)[cell viewWithTag:3];
     
-    if(cell == nil)
-    {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CardCell"];
-    }
+    if(cell == nil) cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CardCell"];
     
     if(isSearching)
     {
@@ -90,6 +87,17 @@
         BOOL fileCommonExists = [[NSFileManager defaultManager]fileExistsAtPath:[NSString stringWithFormat:@"/Users/Brian/Documents/iOS Apps/MTG App/MTG App/Set Symbols/Small/%@_%@.gif", strSetName, strRarity]];
         if (fileCommonExists) imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, strRarity]];
         else imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"Custom_%@.gif", strRarity]];
+        
+        NSMutableArray *manaSymbols = [[NSMutableArray alloc]initWithArray:[tempMC.mc componentsSeparatedByString:@"}"]];
+        [manaSymbols removeLastObject];
+        for(int i=0; i<10; i++)
+        {
+            NSString *manaSymbol;
+            if(i<[manaSymbols count]) manaSymbol = [[manaSymbols objectAtIndex:i] stringByReplacingOccurrencesOfString:@"{" withString:@""];
+            UIImageView *imgManaSymbol = (UIImageView *)[cell viewWithTag:i+4];
+            imgManaSymbol.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", manaSymbol]];
+            if(i >= [manaSymbols count]) imgManaSymbol.image = nil;
+        }
     }
     else
     {
@@ -106,6 +114,17 @@
         BOOL fileCommonExists = [[NSFileManager defaultManager]fileExistsAtPath:[NSString stringWithFormat:@"/Users/Brian/Documents/iOS Apps/MTG App/MTG App/Set Symbols/Small/%@_%@.gif", strSetName, strRarity]];
         if (fileCommonExists) imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, strRarity]];
         else imageViewSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"Custom_%@.gif", strRarity]];
+        
+        NSMutableArray *manaSymbols = [[NSMutableArray alloc]initWithArray:[tempMC.mc componentsSeparatedByString:@"}"]];
+        [manaSymbols removeLastObject];
+        for(int i=0; i<10; i++)
+        {
+            NSString *manaSymbol;
+            if(i<[manaSymbols count]) manaSymbol = [[manaSymbols objectAtIndex:i] stringByReplacingOccurrencesOfString:@"{" withString:@""];
+            UIImageView *imgManaSymbol = (UIImageView *)[cell viewWithTag:i+4];
+            imgManaSymbol.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", manaSymbol]];
+            if(i >= [manaSymbols count]) imgManaSymbol.image = nil;
+        }
     }
     
     return cell;

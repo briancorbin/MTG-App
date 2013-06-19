@@ -64,6 +64,11 @@
     for(int i=0; i<manaSymbols.count; i++)
     {
         CGRect frame = CGRectMake(118 + (20*i), 48, 20, 20);
+        if(i>8)
+        {
+            frame.origin.y += 20;
+            frame.origin.x = (118 + (20*(i-9)));
+        }
         NSString *manaSymbol = [[manaSymbols objectAtIndex:i] stringByReplacingOccurrencesOfString:@"{" withString:@""];
         UIImageView *imgViewManaSymbol = [[UIImageView alloc]initWithFrame:frame];
         imgViewManaSymbol.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", manaSymbol]];

@@ -28,4 +28,5 @@
 @property (nonatomic, strong) NSMutableArray *colorRarityIndexPaths;
 
 @property BOOL isSearching;
+
 @end
