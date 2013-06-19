@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		D307A23F176FB46700510217 /* BCCardImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A23E176FB46700510217 /* BCCardImageViewController.m */; };
 		D307A242176FB47000510217 /* BCCardInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A241176FB47000510217 /* BCCardInfoViewController.m */; };
+		D30C37A617715676002351E2 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C37A017715675002351E2 /* 0.png */; };
+		D30C37A717715676002351E2 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C37A117715676002351E2 /* 1.png */; };
+		D30C37A817715676002351E2 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C37A217715676002351E2 /* 2.png */; };
+		D30C37A917715676002351E2 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C37A317715676002351E2 /* 3.png */; };
+		D30C37AA17715676002351E2 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C37A417715676002351E2 /* 4.png */; };
+		D30C37AB17715676002351E2 /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C37A517715676002351E2 /* X.png */; };
 		D324979E1767CBB10060C563 /* Dragon's Maze_Common.gif in Resources */ = {isa = PBXBuildFile; fileRef = D324979A1767CBB10060C563 /* Dragon's Maze_Common.gif */; };
 		D324979F1767CBB10060C563 /* Dragon's Maze_Mythic.gif in Resources */ = {isa = PBXBuildFile; fileRef = D324979B1767CBB10060C563 /* Dragon's Maze_Mythic.gif */; };
 		D32497A01767CBB10060C563 /* Dragon's Maze_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D324979C1767CBB10060C563 /* Dragon's Maze_Rare.gif */; };
@@ -34,11 +40,11 @@
 		D32497C91767E2850060C563 /* Custom_Rare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497C51767E2850060C563 /* Custom_Rare.gif */; };
 		D32497CA1767E2850060C563 /* Custom_Uncommon.gif in Resources */ = {isa = PBXBuildFile; fileRef = D32497C61767E2850060C563 /* Custom_Uncommon.gif */; };
 		D33884CF176A0F9D00C87C35 /* BCCardImageInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33884CE176A0F9D00C87C35 /* BCCardImageInfoViewController.m */; };
-		D3394F311764E1E300510E51 /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2C1764E1E300510E51 /* Black.png */; };
-		D3394F321764E1E300510E51 /* White.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2D1764E1E300510E51 /* White.png */; };
-		D3394F331764E1E300510E51 /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2E1764E1E300510E51 /* Blue.png */; };
-		D3394F341764E1E300510E51 /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2F1764E1E300510E51 /* Green.png */; };
-		D3394F351764E1E300510E51 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F301764E1E300510E51 /* Red.png */; };
+		D3394F311764E1E300510E51 /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2C1764E1E300510E51 /* B.png */; };
+		D3394F321764E1E300510E51 /* W.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2D1764E1E300510E51 /* W.png */; };
+		D3394F331764E1E300510E51 /* U.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2E1764E1E300510E51 /* U.png */; };
+		D3394F341764E1E300510E51 /* G.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F2F1764E1E300510E51 /* G.png */; };
+		D3394F351764E1E300510E51 /* R.png in Resources */ = {isa = PBXBuildFile; fileRef = D3394F301764E1E300510E51 /* R.png */; };
 		D35A5C29176371B100E96F4D /* Card Types.txt in Resources */ = {isa = PBXBuildFile; fileRef = D35A5C28176371B100E96F4D /* Card Types.txt */; };
 		D35A5C2C1763731700E96F4D /* BCCardTypeFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35A5C2B1763731700E96F4D /* BCCardTypeFilterViewController.m */; };
 		D366400C17628F0A00010672 /* BCSearchOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D366400B17628F0A00010672 /* BCSearchOptionsTableViewController.m */; };
@@ -421,6 +427,12 @@
 		D307A23E176FB46700510217 /* BCCardImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardImageViewController.m; sourceTree = "<group>"; };
 		D307A240176FB47000510217 /* BCCardInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardInfoViewController.h; sourceTree = "<group>"; };
 		D307A241176FB47000510217 /* BCCardInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardInfoViewController.m; sourceTree = "<group>"; };
+		D30C37A017715675002351E2 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		D30C37A117715676002351E2 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		D30C37A217715676002351E2 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		D30C37A317715676002351E2 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		D30C37A417715676002351E2 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		D30C37A517715676002351E2 /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X.png; sourceTree = "<group>"; };
 		D324979A1767CBB10060C563 /* Dragon's Maze_Common.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Dragon's Maze_Common.gif"; sourceTree = "<group>"; };
 		D324979B1767CBB10060C563 /* Dragon's Maze_Mythic.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Dragon's Maze_Mythic.gif"; sourceTree = "<group>"; };
 		D324979C1767CBB10060C563 /* Dragon's Maze_Rare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Dragon's Maze_Rare.gif"; sourceTree = "<group>"; };
@@ -447,11 +459,11 @@
 		D32497C61767E2850060C563 /* Custom_Uncommon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Custom_Uncommon.gif; sourceTree = "<group>"; };
 		D33884CD176A0F9D00C87C35 /* BCCardImageInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardImageInfoViewController.h; sourceTree = "<group>"; };
 		D33884CE176A0F9D00C87C35 /* BCCardImageInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardImageInfoViewController.m; sourceTree = "<group>"; };
-		D3394F2C1764E1E300510E51 /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
-		D3394F2D1764E1E300510E51 /* White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White.png; sourceTree = "<group>"; };
-		D3394F2E1764E1E300510E51 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
-		D3394F2F1764E1E300510E51 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
-		D3394F301764E1E300510E51 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
+		D3394F2C1764E1E300510E51 /* B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B.png; sourceTree = "<group>"; };
+		D3394F2D1764E1E300510E51 /* W.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = W.png; sourceTree = "<group>"; };
+		D3394F2E1764E1E300510E51 /* U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = U.png; sourceTree = "<group>"; };
+		D3394F2F1764E1E300510E51 /* G.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = G.png; sourceTree = "<group>"; };
+		D3394F301764E1E300510E51 /* R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = R.png; sourceTree = "<group>"; };
 		D35A5C28176371B100E96F4D /* Card Types.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Card Types.txt"; sourceTree = "<group>"; };
 		D35A5C2A1763731700E96F4D /* BCCardTypeFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCardTypeFilterViewController.h; sourceTree = "<group>"; };
 		D35A5C2B1763731700E96F4D /* BCCardTypeFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCardTypeFilterViewController.m; sourceTree = "<group>"; };
@@ -958,11 +970,17 @@
 		D3394F2B1764E1CD00510E51 /* Mana Symbols */ = {
 			isa = PBXGroup;
 			children = (
-				D3394F2C1764E1E300510E51 /* Black.png */,
-				D3394F2D1764E1E300510E51 /* White.png */,
-				D3394F2E1764E1E300510E51 /* Blue.png */,
-				D3394F2F1764E1E300510E51 /* Green.png */,
-				D3394F301764E1E300510E51 /* Red.png */,
+				D30C37A017715675002351E2 /* 0.png */,
+				D30C37A117715676002351E2 /* 1.png */,
+				D30C37A217715676002351E2 /* 2.png */,
+				D30C37A317715676002351E2 /* 3.png */,
+				D30C37A417715676002351E2 /* 4.png */,
+				D30C37A517715676002351E2 /* X.png */,
+				D3394F2C1764E1E300510E51 /* B.png */,
+				D3394F2D1764E1E300510E51 /* W.png */,
+				D3394F2E1764E1E300510E51 /* U.png */,
+				D3394F2F1764E1E300510E51 /* G.png */,
+				D3394F301764E1E300510E51 /* R.png */,
 			);
 			name = "Mana Symbols";
 			sourceTree = "<group>";
@@ -1472,11 +1490,11 @@
 				D35A5C29176371B100E96F4D /* Card Types.txt in Resources */,
 				D3A8BA5D176378F7007D23CE /* Colors.txt in Resources */,
 				D3A8BA5F17637903007D23CE /* Rarities.txt in Resources */,
-				D3394F311764E1E300510E51 /* Black.png in Resources */,
-				D3394F321764E1E300510E51 /* White.png in Resources */,
-				D3394F331764E1E300510E51 /* Blue.png in Resources */,
-				D3394F341764E1E300510E51 /* Green.png in Resources */,
-				D3394F351764E1E300510E51 /* Red.png in Resources */,
+				D3394F311764E1E300510E51 /* B.png in Resources */,
+				D3394F321764E1E300510E51 /* W.png in Resources */,
+				D3394F331764E1E300510E51 /* U.png in Resources */,
+				D3394F341764E1E300510E51 /* G.png in Resources */,
+				D3394F351764E1E300510E51 /* R.png in Resources */,
 				D3C6DE3C1767965200F88A9E /* Full Database.csv in Resources */,
 				D3C6DFA61767969D00F88A9E /* Alara Reborn_Common.gif in Resources */,
 				D3C6DFA71767969D00F88A9E /* Alara Reborn_Mythic.gif in Resources */,
@@ -1853,6 +1871,12 @@
 				D32497C81767E2850060C563 /* Custom_Mythic.gif in Resources */,
 				D32497C91767E2850060C563 /* Custom_Rare.gif in Resources */,
 				D32497CA1767E2850060C563 /* Custom_Uncommon.gif in Resources */,
+				D30C37A617715676002351E2 /* 0.png in Resources */,
+				D30C37A717715676002351E2 /* 1.png in Resources */,
+				D30C37A817715676002351E2 /* 2.png in Resources */,
+				D30C37A917715676002351E2 /* 3.png in Resources */,
+				D30C37AA17715676002351E2 /* 4.png in Resources */,
+				D30C37AB17715676002351E2 /* X.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

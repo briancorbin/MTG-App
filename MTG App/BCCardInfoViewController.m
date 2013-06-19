@@ -57,6 +57,19 @@
     if (fileCommonExists) imgSetSymbol.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif",strSymbolName, strRarity]];
     else imgSetSymbol.image = [UIImage imageNamed:[NSString stringWithFormat:@"Custom_%@.gif", strRarity]];
     lblSetName.text = [NSString stringWithFormat:@"%@ - %@", selectedCard.set, strRarity];
+    
+    //Display Mana Symbols for Mana Cost
+    NSMutableArray *manaSymbols = [[NSMutableArray alloc] initWithArray:[selectedCard.mc componentsSeparatedByString:@"}"]];
+    [manaSymbols removeLastObject];
+    for(int i=0; i<manaSymbols.count; i++)
+    {
+        CGRect frame = CGRectMake(118 + (20*i), 48, 20, 20);
+        NSString *manaSymbol = [[manaSymbols objectAtIndex:i] stringByReplacingOccurrencesOfString:@"{" withString:@""];
+        UIImageView *imgViewManaSymbol = [[UIImageView alloc]initWithFrame:frame];
+        imgViewManaSymbol.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", manaSymbol]];
+        //imgViewManaSymbol.image = [UIImage imageNamed:@"B.png"];
+        [self.view addSubview:imgViewManaSymbol];
+    }
 }
 
 - (void)didReceiveMemoryWarning
