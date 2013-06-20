@@ -92,7 +92,7 @@
 		D3A437F81761111E00A9AE45 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A437F71761111E00A9AE45 /* Default.png */; };
 		D3A437FA1761111E00A9AE45 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A437F91761111E00A9AE45 /* Default@2x.png */; };
 		D3A437FC1761111E00A9AE45 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A437FB1761111E00A9AE45 /* Default-568h@2x.png */; };
-		D3A437FF1761111E00A9AE45 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A437FD1761111E00A9AE45 /* MainStoryboard.storyboard */; };
+		D3A437FF1761111E00A9AE45 /* iPhone35inch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A437FD1761111E00A9AE45 /* iPhone35inch.storyboard */; };
 		D3A4380A1761120B00A9AE45 /* BCLoadData.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A438091761120B00A9AE45 /* BCLoadData.m */; };
 		D3A4380D176112A700A9AE45 /* BCMagicCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4380C176112A700A9AE45 /* BCMagicCard.m */; };
 		D3A43810176112C800A9AE45 /* BCSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4380F176112C800A9AE45 /* BCSet.m */; };
@@ -550,7 +550,7 @@
 		D3A437F71761111E00A9AE45 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D3A437F91761111E00A9AE45 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D3A437FB1761111E00A9AE45 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D3A437FE1761111E00A9AE45 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D3A437FE1761111E00A9AE45 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone35inch.storyboard; sourceTree = "<group>"; };
 		D3A438081761120B00A9AE45 /* BCLoadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCLoadData.h; sourceTree = "<group>"; };
 		D3A438091761120B00A9AE45 /* BCLoadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCLoadData.m; sourceTree = "<group>"; };
 		D3A4380B176112A700A9AE45 /* BCMagicCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMagicCard.h; sourceTree = "<group>"; };
@@ -1113,7 +1113,7 @@
 			children = (
 				D3A437F41761111E00A9AE45 /* AppDelegate.h */,
 				D3A437F51761111E00A9AE45 /* AppDelegate.m */,
-				D3A437FD1761111E00A9AE45 /* MainStoryboard.storyboard */,
+				D3A437FD1761111E00A9AE45 /* iPhone35inch.storyboard */,
 				D31D85401762C7A60037636A /* Custom Classes */,
 				D31D853F1762C7940037636A /* Custom Objects */,
 				D31D853E1762C7700037636A /* View Controllers */,
@@ -1580,7 +1580,7 @@
 				D3A437F81761111E00A9AE45 /* Default.png in Resources */,
 				D3A437FA1761111E00A9AE45 /* Default@2x.png in Resources */,
 				D3A437FC1761111E00A9AE45 /* Default-568h@2x.png in Resources */,
-				D3A437FF1761111E00A9AE45 /* MainStoryboard.storyboard in Resources */,
+				D3A437FF1761111E00A9AE45 /* iPhone35inch.storyboard in Resources */,
 				D366401117629A8C00010672 /* Set List.txt in Resources */,
 				D366401317629AA400010672 /* Block List.txt in Resources */,
 				D35A5C29176371B100E96F4D /* Card Types.txt in Resources */,
@@ -2042,12 +2042,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D3A437FD1761111E00A9AE45 /* MainStoryboard.storyboard */ = {
+		D3A437FD1761111E00A9AE45 /* iPhone35inch.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D3A437FE1761111E00A9AE45 /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = iPhone35inch.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

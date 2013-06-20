@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXy-YL-pL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="332"/>
+            <point key="canvasLocation" x="1530" y="74"/>
         </scene>
         <!--Search Options Table View Controller-->
         <scene sceneID="MZB-Lq-ZZd">
@@ -181,11 +181,10 @@
                         </connections>
                     </tableView>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIt-Qa-1Lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="-236"/>
+            <point key="canvasLocation" x="1873" y="-236"/>
         </scene>
         <!--Set Filter View Controller-->
         <scene sceneID="52N-Is-1wM">
@@ -229,11 +228,10 @@
                         </connections>
                     </tableView>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNG-i0-leS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1159" y="-215"/>
+            <point key="canvasLocation" x="2211" y="-215"/>
         </scene>
         <!--Card Type Filter View Controller-->
         <scene sceneID="ugB-bT-AqT">
@@ -268,11 +266,10 @@
                         </connections>
                     </tableView>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pra-dQ-dEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1499" y="-215"/>
+            <point key="canvasLocation" x="2551" y="-215"/>
         </scene>
         <!--Color Rarity Filter View Controller-->
         <scene sceneID="7KS-9W-0fC">
@@ -341,11 +338,10 @@
                         </connections>
                     </tableView>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqm-cn-WNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1840" y="-215"/>
+            <point key="canvasLocation" x="2892" y="-215"/>
         </scene>
         <!--Card Image Info View Controller-->
         <scene sceneID="4Id-1e-ys6">
@@ -372,14 +368,13 @@
                     </view>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="btnFlip" destination="LEF-dq-kcf" id="tNY-Na-jCx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGR-BW-qW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="332"/>
+            <point key="canvasLocation" x="1873" y="335"/>
         </scene>
         <!--Card Image View Controller-->
         <scene sceneID="F05-As-PSZ">
@@ -398,14 +393,13 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="cardImageView" destination="mqw-O0-4jZ" id="vVS-5y-NRt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPt-x0-CaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1159" y="360"/>
+            <point key="canvasLocation" x="2211" y="359"/>
         </scene>
         <!--Card Info View Controller-->
         <scene sceneID="uhY-S2-5gm">
@@ -596,7 +590,6 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="cardImageView" destination="hil-YP-sZi" id="DFn-GN-3bk"/>
                         <outlet property="cardInfoSegmentController" destination="8D5-Zu-MVx" id="AwP-3m-r57"/>
@@ -613,14 +606,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dz6-7J-VJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1506" y="360"/>
+            <point key="canvasLocation" x="2551" y="359"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Database-->
         <scene sceneID="lmx-1R-mad">
             <objects>
                 <navigationController id="yav-sb-OKd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Database" id="0Fm-LC-gQx"/>
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Fk-Ez-wfH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -632,12 +625,76 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0IX-nR-oaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="332"/>
+            <point key="canvasLocation" x="1157" y="74"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="BCCardImageInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardImageInfoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionFlipImage:"/>
+                <relationship kind="outlet" name="btnFlip" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="BCCardImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardImageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cardImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="BCCardInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardInfoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionChangeSelection:"/>
+                <relationship kind="outlet" name="cardImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cardInfoSegmentController" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="cardInfoTextField" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="imgSetSymbol" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lblArtistName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblCMC" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblCardName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblCardNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblCardType" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblPTorL" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblSetName" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BCCardTypeFilterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCCardTypeFilterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionResetFilter:"/>
+            </relationships>
+        </class>
+        <class className="BCColorRarityFilterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCColorRarityFilterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionResetFilter:"/>
+            </relationships>
+        </class>
+        <class className="BCFullCardDatabaseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCFullCardDatabaseViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnSeachOptions:"/>
+                <relationship kind="outlet" name="mySearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="myTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="BCSearchOptionsTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCSearchOptionsTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionResetFilters:"/>
+            </relationships>
+        </class>
+        <class className="BCSetFilterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BCSetFilterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionResetFilter:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
