@@ -291,6 +291,9 @@
     [self.navigationController pushViewController:newVC animated:YES];
 }
 
+- (IBAction)actionDone:(id)sender {
+}
+
 -(void)passBackSetFilterData:(BCSearchOptionsTableViewController *)controller didFinishWithFilter:(NSMutableArray *)Filter AndIndexPaths:(NSMutableArray *)IndexPaths
 {
     if (setFilter == NULL) setFilter = [[NSMutableArray alloc]init];
